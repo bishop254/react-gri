@@ -1,38 +1,81 @@
-.App {
+.brsr-report-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  background-color: #f9fafb;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 280px;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-right: 1px solid #e2e8f0;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  color: #2d3748;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sidebar-scroll {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 0.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.principles-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.principle-item {
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  color: #4a5568;
+  border-radius: 6px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.principle-item:hover {
+  background-color: #edf2f7;
+}
+
+.principle-item.selected {
+  background-color: #3182ce;
   color: white;
+  font-weight: 600;
 }
 
-.App-link {
-  color: #61dafb;
+.main-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.content-card {
+  margin-bottom: 2rem;
+}
+
+.export-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 }
