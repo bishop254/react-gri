@@ -1,4 +1,5 @@
 import React from "react";
+import BoxTableComponent from "./boxTable";
 
 const GRI400 = () => {
   return (
@@ -18,7 +19,20 @@ const GRI400 = () => {
         >
           GRI 401 Employment
         </h3>
-        <p id="disclosure-401-1" style={{ fontWeight: "bold", color: "blue" }}>
+
+        <p
+          id="disclosure-401-3-3"
+          style={{ fontWeight: "bold", color: "blue" }}
+        >
+          Disclosure 3-3 Management of material topics
+        </p>
+
+        <BoxTableComponent />
+
+        <p
+          id="disclosure-401-1"
+          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
+        >
           Disclosure 401-1 New employee hires and employee turnover
         </p>
 
@@ -118,6 +132,7 @@ const GRI400 = () => {
             width: "100%",
             border: "1px solid black",
             textAlign: "center",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -201,13 +216,7 @@ const GRI400 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div style={{ maxWidth: "900px", margin: "auto" }}>
@@ -222,6 +231,7 @@ const GRI400 = () => {
             width: "100%",
             border: "1px solid black",
             textAlign: "left",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -292,13 +302,7 @@ const GRI400 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div style={{ maxWidth: "900px", margin: "auto" }}>
@@ -312,6 +316,7 @@ const GRI400 = () => {
             width: "100%",
             border: "1px solid black",
             textAlign: "left",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -379,13 +384,7 @@ const GRI400 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div style={{ maxWidth: "900px", margin: "auto" }}>
@@ -395,7 +394,20 @@ const GRI400 = () => {
         >
           GRI 402 Labor Management
         </h3>
-        <p id="disclosure-402-1" style={{ fontWeight: "bold", color: "blue" }}>
+
+        <p
+          id="disclosure-402-3-3"
+          style={{ fontWeight: "bold", color: "blue" }}
+        >
+          Disclosure 3-3 Management of material topics
+        </p>
+
+        <BoxTableComponent />
+
+        <p
+          id="disclosure-402-1"
+          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
+        >
           Disclosure 402-1 Minimum notice periods regarding operational changes
         </p>
 
@@ -405,6 +417,7 @@ const GRI400 = () => {
             width: "100%",
             border: "1px solid black",
             textAlign: "left",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -443,13 +456,7 @@ const GRI400 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div style={{ maxWidth: "900px", margin: "auto" }}>
@@ -459,16 +466,24 @@ const GRI400 = () => {
         >
           GRI 403 Occupational Health and Safety
         </h3>
-        <p id="disclosure-403-1" style={{ fontWeight: "bold", color: "blue" }}>
+
+        <p
+          id="disclosure-403-3-3"
+          style={{ fontWeight: "bold", color: "blue" }}
+        >
+          Disclosure 3-3 Management of material topics
+        </p>
+
+        <BoxTableComponent />
+
+        <p
+          id="disclosure-403-1"
+          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
+        >
           Disclosure 403-1 Occupational health and safety management system
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div style={{ maxWidth: "900px", margin: "auto" }}>
@@ -477,12 +492,7 @@ const GRI400 = () => {
           investigation
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div style={{ maxWidth: "900px", margin: "auto" }}>
@@ -490,12 +500,7 @@ const GRI400 = () => {
           Disclosure 403-3 Occupational health services
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div style={{ maxWidth: "900px", margin: "auto" }}>
@@ -504,12 +509,7 @@ const GRI400 = () => {
           on occupational health and safety
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div style={{ maxWidth: "900px", margin: "auto" }}>
@@ -523,6 +523,7 @@ const GRI400 = () => {
             width: "100%",
             border: "1px solid black",
             textAlign: "left",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -561,13 +562,7 @@ const GRI400 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div style={{ maxWidth: "900px", margin: "auto" }}>
@@ -581,6 +576,7 @@ const GRI400 = () => {
             width: "100%",
             border: "1px solid black",
             textAlign: "left",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -621,13 +617,7 @@ const GRI400 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div style={{ maxWidth: "900px", margin: "auto" }}>
@@ -636,12 +626,7 @@ const GRI400 = () => {
           safety impacts directly linked by business relationships
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div style={{ maxWidth: "900px", margin: "auto" }}>
@@ -656,6 +641,7 @@ const GRI400 = () => {
             width: "100%",
             border: "1px solid black",
             textAlign: "left",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -740,13 +726,7 @@ const GRI400 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div style={{ maxWidth: "900px", margin: "auto" }}>
@@ -969,7 +949,20 @@ const GRI400 = () => {
         >
           GRI 404 Training and Education
         </h3>
-        <p id="disclosure-404-1" style={{ fontWeight: "bold", color: "blue" }}>
+
+        <p
+          id="disclosure-404-3-3"
+          style={{ fontWeight: "bold", color: "blue" }}
+        >
+          Disclosure 3-3 Management of material topics
+        </p>
+
+        <BoxTableComponent />
+
+        <p
+          id="disclosure-404-1"
+          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
+        >
           Disclosure 404-1 Average hours of training per year per employee
         </p>
 
@@ -979,6 +972,7 @@ const GRI400 = () => {
             width: "100%",
             border: "1px solid black",
             textAlign: "left",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -1026,13 +1020,7 @@ const GRI400 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div style={{ maxWidth: "900px", margin: "auto" }}>
@@ -1041,12 +1029,7 @@ const GRI400 = () => {
           assistance programs
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div style={{ maxWidth: "900px", margin: "auto" }}>
@@ -1141,6 +1124,7 @@ const GRI400 = () => {
             borderCollapse: "collapse",
             width: "100%",
             border: "1px solid black",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -1216,13 +1200,7 @@ const GRI400 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -1237,7 +1215,20 @@ const GRI400 = () => {
         >
           GRI 405 Diversity & Inclusion
         </h3>
-        <p id="disclosure-405-1" style={{ fontWeight: "bold", color: "blue" }}>
+
+        <p
+          id="disclosure-405-3-3"
+          style={{ fontWeight: "bold", color: "blue" }}
+        >
+          Disclosure 3-3 Management of material topics
+        </p>
+
+        <BoxTableComponent />
+
+        <p
+          id="disclosure-405-1"
+          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
+        >
           Disclosure 401-1 New employee hires and employee turnover
         </p>
 
@@ -1329,6 +1320,7 @@ const GRI400 = () => {
             borderCollapse: "collapse",
             width: "100%",
             border: "1px solid black",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -1398,13 +1390,7 @@ const GRI400 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div style={{ maxWidth: "900px", margin: "auto" }}>
@@ -1495,7 +1481,20 @@ const GRI400 = () => {
         >
           GRI 406 Non-discrimination
         </h3>
-        <p id="disclosure-406-1" style={{ fontWeight: "bold", color: "blue" }}>
+
+        <p
+          id="disclosure-406-3-3"
+          style={{ fontWeight: "bold", color: "blue" }}
+        >
+          Disclosure 3-3 Management of material topics
+        </p>
+
+        <BoxTableComponent />
+
+        <p
+          id="disclosure-406-1"
+          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
+        >
           Disclosure 406-1 Incidents of discrimination and corrective actions
           taken
         </p>
@@ -1506,6 +1505,7 @@ const GRI400 = () => {
             width: "100%",
             border: "1px solid black",
             textAlign: "left",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -1540,13 +1540,7 @@ const GRI400 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -1561,17 +1555,25 @@ const GRI400 = () => {
         >
           GRI 407 Freedom of Association and Collective Bargaining
         </h3>
-        <p id="disclosure-407-1" style={{ fontWeight: "bold", color: "blue" }}>
+
+        <p
+          id="disclosure-407-3-3"
+          style={{ fontWeight: "bold", color: "blue" }}
+        >
+          Disclosure 3-3 Management of material topics
+        </p>
+
+        <BoxTableComponent />
+
+        <p
+          id="disclosure-407-1"
+          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
+        >
           Disclosure 407-1 Operations and suppliers in which the right to
           freedom of association and collective bargaining may be at risk
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -1586,7 +1588,20 @@ const GRI400 = () => {
         >
           GRI 408 Child Labor
         </h3>
-        <p id="disclosure-408-1" style={{ fontWeight: "bold", color: "blue" }}>
+
+        <p
+          id="disclosure-408-3-3"
+          style={{ fontWeight: "bold", color: "blue" }}
+        >
+          Disclosure 3-3 Management of material topics
+        </p>
+
+        <BoxTableComponent />
+
+        <p
+          id="disclosure-408-1"
+          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
+        >
           Disclosure 408-1 Operations and suppliers at significant risk for
           incidents of child labor
         </p>
@@ -1597,6 +1612,7 @@ const GRI400 = () => {
             width: "100%",
             border: "1px solid black",
             textAlign: "left",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -1630,13 +1646,7 @@ const GRI400 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -1651,17 +1661,25 @@ const GRI400 = () => {
         >
           GRI 409 Forced or Compulsory Labor
         </h3>
-        <p id="disclosure-409-1" style={{ fontWeight: "bold", color: "blue" }}>
+
+        <p
+          id="disclosure-409-3-3"
+          style={{ fontWeight: "bold", color: "blue" }}
+        >
+          Disclosure 3-3 Management of material topics
+        </p>
+
+        <BoxTableComponent />
+
+        <p
+          id="disclosure-409-1"
+          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
+        >
           Disclosure 409-1 Operations and suppliers at significant risk for
           incidents of forced or compulsory labor
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -1676,7 +1694,20 @@ const GRI400 = () => {
         >
           GRI 410: Security Practices
         </h3>
-        <p id="disclosure-410-1" style={{ fontWeight: "bold", color: "blue" }}>
+
+        <p
+          id="disclosure-410-3-3"
+          style={{ fontWeight: "bold", color: "blue" }}
+        >
+          Disclosure 3-3 Management of material topics
+        </p>
+
+        <BoxTableComponent />
+
+        <p
+          id="disclosure-410-1"
+          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
+        >
           Disclosure 410-1 Security personnel trained in human rights policies
           or procedures
         </p>
@@ -1687,6 +1718,7 @@ const GRI400 = () => {
             width: "100%",
             border: "1px solid black",
             textAlign: "left",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -1722,13 +1754,7 @@ const GRI400 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -1743,7 +1769,20 @@ const GRI400 = () => {
         >
           GRI 411: Rights of Indigenous Peoples
         </h3>
-        <p id="disclosure-411-1" style={{ fontWeight: "bold", color: "blue" }}>
+
+        <p
+          id="disclosure-411-3-3"
+          style={{ fontWeight: "bold", color: "blue" }}
+        >
+          Disclosure 3-3 Management of material topics
+        </p>
+
+        <BoxTableComponent />
+
+        <p
+          id="disclosure-411-1"
+          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
+        >
           Disclosure 411-1 Incidents of violations involving rights of
           indigenous peoples
         </p>
@@ -1754,6 +1793,7 @@ const GRI400 = () => {
             width: "100%",
             border: "1px solid black",
             textAlign: "left",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -1788,13 +1828,7 @@ const GRI400 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -1809,7 +1843,20 @@ const GRI400 = () => {
         >
           GRI 413: Local Communities
         </h3>
-        <p id="disclosure-413-1" style={{ fontWeight: "bold", color: "blue" }}>
+
+        <p
+          id="disclosure-413-3-3"
+          style={{ fontWeight: "bold", color: "blue" }}
+        >
+          Disclosure 3-3 Management of material topics
+        </p>
+
+        <BoxTableComponent />
+
+        <p
+          id="disclosure-413-1"
+          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
+        >
           Disclosure 413-1 Operations with local community engagement, impact
           assessments, and development programs
         </p>
@@ -1820,6 +1867,7 @@ const GRI400 = () => {
             width: "100%",
             border: "1px solid black",
             textAlign: "left",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -1854,13 +1902,7 @@ const GRI400 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -1874,12 +1916,7 @@ const GRI400 = () => {
           negative impacts on local communities
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -1894,7 +1931,20 @@ const GRI400 = () => {
         >
           GRI 414: Supplier Social Assessment
         </h3>
-        <p id="disclosure-414-1" style={{ fontWeight: "bold", color: "blue" }}>
+
+        <p
+          id="disclosure-414-3-3"
+          style={{ fontWeight: "bold", color: "blue" }}
+        >
+          Disclosure 3-3 Management of material topics
+        </p>
+
+        <BoxTableComponent />
+
+        <p
+          id="disclosure-414-1"
+          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
+        >
           Disclosure 414-1 New suppliers that were screened using social
           criteria
         </p>
@@ -1905,6 +1955,7 @@ const GRI400 = () => {
             width: "100%",
             border: "1px solid black",
             textAlign: "left",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -1939,13 +1990,7 @@ const GRI400 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -1965,6 +2010,7 @@ const GRI400 = () => {
             width: "100%",
             border: "1px solid black",
             textAlign: "left",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -2021,13 +2067,7 @@ const GRI400 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -2042,7 +2082,20 @@ const GRI400 = () => {
         >
           GRI 415: Public Policy
         </h3>
-        <p id="disclosure-415-1" style={{ fontWeight: "bold", color: "blue" }}>
+
+        <p
+          id="disclosure-415-3-3"
+          style={{ fontWeight: "bold", color: "blue" }}
+        >
+          Disclosure 3-3 Management of material topics
+        </p>
+
+        <BoxTableComponent />
+
+        <p
+          id="disclosure-415-1"
+          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
+        >
           Disclosure 415-1 Political contributions
         </p>
 
@@ -2052,6 +2105,7 @@ const GRI400 = () => {
             width: "100%",
             border: "1px solid black",
             textAlign: "left",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -2087,13 +2141,7 @@ const GRI400 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -2108,7 +2156,20 @@ const GRI400 = () => {
         >
           GRI 416: Customer Health and Safety
         </h3>
-        <p id="disclosure-416-1" style={{ fontWeight: "bold", color: "blue" }}>
+
+        <p
+          id="disclosure-416-3-3"
+          style={{ fontWeight: "bold", color: "blue" }}
+        >
+          Disclosure 3-3 Management of material topics
+        </p>
+
+        <BoxTableComponent />
+
+        <p
+          id="disclosure-416-1"
+          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
+        >
           Disclosure 416-1 Assessment of the health and safety impacts of
           product and service categories
         </p>
@@ -2119,6 +2180,7 @@ const GRI400 = () => {
             width: "100%",
             border: "1px solid black",
             textAlign: "left",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -2153,13 +2215,7 @@ const GRI400 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -2179,6 +2235,7 @@ const GRI400 = () => {
             width: "100%",
             border: "1px solid black",
             textAlign: "left",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -2240,13 +2297,7 @@ const GRI400 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -2261,7 +2312,20 @@ const GRI400 = () => {
         >
           GRI 417: Marketing and Labeling
         </h3>
-        <p id="disclosure-417-1" style={{ fontWeight: "bold", color: "blue" }}>
+
+        <p
+          id="disclosure-417-3-3"
+          style={{ fontWeight: "bold", color: "blue" }}
+        >
+          Disclosure 3-3 Management of material topics
+        </p>
+
+        <BoxTableComponent />
+
+        <p
+          id="disclosure-417-1"
+          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
+        >
           Disclosure 417-1 Requirements for product and service information and
           labeling
         </p>
@@ -2272,6 +2336,7 @@ const GRI400 = () => {
             width: "100%",
             border: "1px solid black",
             textAlign: "left",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -2306,13 +2371,7 @@ const GRI400 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -2332,6 +2391,7 @@ const GRI400 = () => {
             width: "100%",
             border: "1px solid black",
             textAlign: "left",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -2392,13 +2452,7 @@ const GRI400 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -2418,6 +2472,7 @@ const GRI400 = () => {
             width: "100%",
             border: "1px solid black",
             textAlign: "left",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -2479,13 +2534,7 @@ const GRI400 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -2500,7 +2549,20 @@ const GRI400 = () => {
         >
           GRI 418: Customer Privacy
         </h3>
-        <p id="disclosure-418-1" style={{ fontWeight: "bold", color: "blue" }}>
+
+        <p
+          id="disclosure-418-3-3"
+          style={{ fontWeight: "bold", color: "blue" }}
+        >
+          Disclosure 3-3 Management of material topics
+        </p>
+
+        <BoxTableComponent />
+
+        <p
+          id="disclosure-418-1"
+          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
+        >
           Disclosure 418-1 Substantiated complaints concerning breaches of
           customer privacy and losses of customer data
         </p>
@@ -2511,6 +2573,7 @@ const GRI400 = () => {
             width: "100%",
             border: "1px solid black",
             textAlign: "left",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -2571,13 +2634,7 @@ const GRI400 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
     </div>
   );

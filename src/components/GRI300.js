@@ -1,4 +1,5 @@
 import React from "react";
+import BoxTableComponent from "./boxTable";
 
 const GRI300 = () => {
   return (
@@ -18,7 +19,20 @@ const GRI300 = () => {
         >
           GRI 301 Materials
         </h3>
-        <p id="gri301-1" style={{ fontWeight: "bold", color: "blue" }}>
+
+        <p
+          id="disclosure-301-3-3"
+          style={{ fontWeight: "bold", color: "blue" }}
+        >
+          Disclosure 3-3 Management of material topics
+        </p>
+
+        <BoxTableComponent />
+
+        <p
+          id="gri301-1"
+          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
+        >
           Disclosure 301-1 Materials used by weight or volume
         </p>
 
@@ -81,12 +95,7 @@ const GRI300 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -105,6 +114,7 @@ const GRI300 = () => {
             width: "100%",
             textAlign: "left",
             border: "1px solid black",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -143,13 +153,7 @@ const GRI300 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -168,6 +172,7 @@ const GRI300 = () => {
             width: "100%",
             textAlign: "left",
             border: "1px solid black",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -213,13 +218,7 @@ const GRI300 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -234,7 +233,20 @@ const GRI300 = () => {
         >
           GRI 302 Energy
         </h3>
-        <p id="gri302-1" style={{ fontWeight: "bold", color: "blue" }}>
+
+        <p
+          id="disclosure-302-3-3"
+          style={{ fontWeight: "bold", color: "blue" }}
+        >
+          Disclosure 3-3 Management of material topics
+        </p>
+
+        <BoxTableComponent />
+
+        <p
+          id="gri302-1"
+          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
+        >
           Disclosure 302-1 Energy consumption within the organization
         </p>
 
@@ -313,6 +325,7 @@ const GRI300 = () => {
             width: "100%",
             border: "1px solid black",
             textAlign: "left",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -377,13 +390,7 @@ const GRI300 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -455,6 +462,7 @@ const GRI300 = () => {
             width: "100%",
             textAlign: "left",
             border: "1px solid black",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -556,13 +564,7 @@ const GRI300 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -628,13 +630,7 @@ const GRI300 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -654,6 +650,7 @@ const GRI300 = () => {
             width: "100%",
             textAlign: "left",
             border: "1px solid black",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -699,13 +696,7 @@ const GRI300 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -720,16 +711,24 @@ const GRI300 = () => {
         >
           GRI 303 Water & effluents
         </h3>
-        <p id="gri303-1" style={{ fontWeight: "bold", color: "blue" }}>
+
+        <p
+          id="disclosure-303-3-3"
+          style={{ fontWeight: "bold", color: "blue" }}
+        >
+          Disclosure 3-3 Management of material topics
+        </p>
+
+        <BoxTableComponent />
+
+        <p
+          id="gri303-1"
+          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
+        >
           Disclosure 303-1 Interactions with water as a shared resource
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -742,12 +741,7 @@ const GRI300 = () => {
           Disclosure 303-2 Management of water discharge-related impacts
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -760,13 +754,7 @@ const GRI300 = () => {
           Disclosure 303-3 Water withdrawal
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginBottom: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
 
         <table
           style={{
@@ -774,6 +762,7 @@ const GRI300 = () => {
             width: "100%",
             border: "1px solid black",
             textAlign: "left",
+            marginTop: "2rem",
           }}
         >
           <thead>
@@ -896,13 +885,7 @@ const GRI300 = () => {
           Disclosure 303-4 Water discharge
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginBottom: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
 
         <table
           style={{
@@ -910,6 +893,7 @@ const GRI300 = () => {
             width: "100%",
             border: "1px solid black",
             textAlign: "left",
+            marginTop: "2rem",
           }}
         >
           <thead>
@@ -1040,13 +1024,7 @@ const GRI300 = () => {
           Disclosure 303-5 Water consumption
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginBottom: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
 
         <table
           style={{
@@ -1054,6 +1032,7 @@ const GRI300 = () => {
             width: "100%",
             border: "1px solid black",
             textAlign: "left",
+            marginTop: "2rem",
             marginBottom: "2rem",
           }}
         >
@@ -1118,6 +1097,7 @@ const GRI300 = () => {
             width: "100%",
             border: "1px solid black",
             textAlign: "left",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -1219,13 +1199,7 @@ const GRI300 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -1240,7 +1214,20 @@ const GRI300 = () => {
         >
           GRI 304 Biodiversity
         </h3>
-        <p id="gri304-1" style={{ fontWeight: "bold", color: "blue" }}>
+
+        <p
+          id="disclosure-304-3-3"
+          style={{ fontWeight: "bold", color: "blue" }}
+        >
+          Disclosure 3-3 Management of material topics
+        </p>
+
+        <BoxTableComponent />
+
+        <p
+          id="gri304-1"
+          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
+        >
           Disclosure 304-1 Operational sites owned, leased, managed in, or
           adjacent to, protected areas and areas of high biodiversity value
           outside protected areas.
@@ -1375,12 +1362,8 @@ const GRI300 = () => {
           Disclosure 304-2 Significant impacts of activities, products and
           services on biodiversity
         </p>
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-          }}
-        ></div>
+
+        <BoxTableComponent />
       </div>
 
       <div
@@ -1399,6 +1382,7 @@ const GRI300 = () => {
             width: "100%",
             textAlign: "left",
             border: "1px solid black",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -1451,13 +1435,7 @@ const GRI300 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -1477,6 +1455,7 @@ const GRI300 = () => {
             width: "100%",
             border: "1px solid black",
             textAlign: "left",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -1520,13 +1499,7 @@ const GRI300 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -1541,7 +1514,20 @@ const GRI300 = () => {
         >
           GRI 305 Emissions
         </h3>
-        <p id="gri305-1" style={{ fontWeight: "bold", color: "blue" }}>
+
+        <p
+          id="disclosure-305-3-3"
+          style={{ fontWeight: "bold", color: "blue" }}
+        >
+          Disclosure 3-3 Management of material topics
+        </p>
+
+        <BoxTableComponent />
+
+        <p
+          id="gri305-1"
+          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
+        >
           Disclosure 305-1 Direct (Scope 1) GHG emissions
         </p>
 
@@ -1551,6 +1537,7 @@ const GRI300 = () => {
             width: "100%",
             textAlign: "left",
             border: "1px solid black",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -1614,13 +1601,7 @@ const GRI300 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -1695,13 +1676,7 @@ const GRI300 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -1720,6 +1695,7 @@ const GRI300 = () => {
             width: "100%",
             textAlign: "left",
             border: "1px solid black",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -1797,13 +1773,7 @@ const GRI300 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -1822,6 +1792,7 @@ const GRI300 = () => {
             width: "100%",
             border: "1px solid black",
             textAlign: "left",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -1889,13 +1860,7 @@ const GRI300 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -1986,6 +1951,7 @@ const GRI300 = () => {
             width: "100%",
             textAlign: "left",
             border: "1px solid black",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -2038,13 +2004,7 @@ const GRI300 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -2063,6 +2023,7 @@ const GRI300 = () => {
             width: "100%",
             textAlign: "left",
             border: "1px solid black",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -2119,13 +2080,7 @@ const GRI300 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -2140,16 +2095,24 @@ const GRI300 = () => {
         >
           GRI 306 Waste
         </h3>
-        <p id="gri306-1" style={{ fontWeight: "bold", color: "blue" }}>
+
+        <p
+          id="disclosure-306-3-3"
+          style={{ fontWeight: "bold", color: "blue" }}
+        >
+          Disclosure 3-3 Management of material topics
+        </p>
+
+        <BoxTableComponent />
+
+        <p
+          id="gri306-1"
+          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
+        >
           Disclosure 306-1 Waste generation and impacts
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -2162,12 +2125,7 @@ const GRI300 = () => {
           Disclosure 306-2 Management of waste impacts
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -2343,6 +2301,7 @@ const GRI300 = () => {
             borderCollapse: "collapse",
             width: "100%",
             border: "1px solid black",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -2389,13 +2348,7 @@ const GRI300 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -2465,6 +2418,7 @@ const GRI300 = () => {
             borderCollapse: "collapse",
             width: "100%",
             border: "1px solid black",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -2561,13 +2515,7 @@ const GRI300 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -2586,6 +2534,7 @@ const GRI300 = () => {
             width: "100%",
             border: "1px solid black",
             textAlign: "left",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -2620,7 +2569,6 @@ const GRI300 = () => {
             </tr>
           </thead>
           <tbody>
-            {/* Hazardous Waste Section */}
             <tr>
               <td
                 colSpan={3}
@@ -2652,7 +2600,6 @@ const GRI300 = () => {
               </tr>
             ))}
 
-            {/* Non-Hazardous Waste Section */}
             <tr>
               <td
                 colSpan={3}
@@ -2686,13 +2633,7 @@ const GRI300 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -2707,7 +2648,20 @@ const GRI300 = () => {
         >
           GRI 308 Supplier Environmental Assessment
         </h3>
-        <p id="gri308-1" style={{ fontWeight: "bold", color: "blue" }}>
+
+        <p
+          id="disclosure-308-3-3"
+          style={{ fontWeight: "bold", color: "blue" }}
+        >
+          Disclosure 3-3 Management of material topics
+        </p>
+
+        <BoxTableComponent />
+
+        <p
+          id="gri308-1"
+          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
+        >
           Disclosure 308-1 New suppliers screened using environmental criteria
         </p>
 
@@ -2717,7 +2671,7 @@ const GRI300 = () => {
             width: "100%",
             textAlign: "left",
             border: "1px solid black",
-            marginBottom: "30px",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -2754,12 +2708,7 @@ const GRI300 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -2778,6 +2727,7 @@ const GRI300 = () => {
             width: "100%",
             border: "1px solid black",
             textAlign: "left",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -2862,13 +2812,7 @@ const GRI300 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
     </div>
   );

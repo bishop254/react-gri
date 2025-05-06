@@ -1,4 +1,5 @@
 import React from "react";
+import BoxTableComponent from "./boxTable";
 
 const GRI200 = () => {
   return (
@@ -18,7 +19,20 @@ const GRI200 = () => {
         >
           GRI 201 Economic Performance
         </h3>
-        <p id="disclosure-201-1" style={{ fontWeight: "bold", color: "blue" }}>
+
+        <p
+          id="disclosure-201-3-3"
+          style={{ fontWeight: "bold", color: "blue" }}
+        >
+          Disclosure 3-3 Management of material topics
+        </p>
+
+        <BoxTableComponent />
+
+        <p
+          id="disclosure-201-1"
+          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
+        >
           Disclosure 201-1 Direct economic value generated and distributed
         </p>
 
@@ -28,6 +42,7 @@ const GRI200 = () => {
             width: "100%",
             textAlign: "left",
             border: "1px solid black",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -77,13 +92,7 @@ const GRI200 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -97,13 +106,7 @@ const GRI200 = () => {
           opportunities due to climate change
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -117,13 +120,7 @@ const GRI200 = () => {
           plans
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -231,13 +228,7 @@ const GRI200 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -252,18 +243,25 @@ const GRI200 = () => {
         >
           GRI 202 Market Presence
         </h3>
-        <p id="disclosure-202-1" style={{ fontWeight: "bold", color: "blue" }}>
+
+        <p
+          id="disclosure-202-3-3"
+          style={{ fontWeight: "bold", color: "blue" }}
+        >
+          Disclosure 3-3 Management of material topics
+        </p>
+
+        <BoxTableComponent />
+
+        <p
+          id="disclosure-202-1"
+          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
+        >
           Disclosure 202-1 Ratios of standard entry-level wage by gender
           compared to local minimum wage
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -277,13 +275,7 @@ const GRI200 = () => {
           community
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -298,17 +290,24 @@ const GRI200 = () => {
         >
           GRI 203 Indirect Economic Impact
         </h3>
-        <p id="disclosure-203-1" style={{ fontWeight: "bold", color: "blue" }}>
+
+        <p
+          id="disclosure-203-3-3"
+          style={{ fontWeight: "bold", color: "blue" }}
+        >
+          Disclosure 3-3 Management of material topics
+        </p>
+
+        <BoxTableComponent />
+
+        <p
+          id="disclosure-203-1"
+          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
+        >
           Disclosure 203-1 Infrastructure investments and services supported
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -321,13 +320,7 @@ const GRI200 = () => {
           Disclosure 203-2 Significant indirect economic impacts
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -342,7 +335,20 @@ const GRI200 = () => {
         >
           GRI 204 Procurement Practices
         </h3>
-        <p id="disclosure-204-1" style={{ fontWeight: "bold", color: "blue" }}>
+
+        <p
+          id="disclosure-204-3-3"
+          style={{ fontWeight: "bold", color: "blue" }}
+        >
+          Disclosure 3-3 Management of material topics
+        </p>
+
+        <BoxTableComponent />
+
+        <p
+          id="disclosure-204-1"
+          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
+        >
           Disclosure 204-1 Proportion of spending on local suppliers
         </p>
 
@@ -352,6 +358,7 @@ const GRI200 = () => {
             width: "100%",
             textAlign: "left",
             border: "1px solid black",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -404,13 +411,7 @@ const GRI200 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -425,7 +426,20 @@ const GRI200 = () => {
         >
           GRI 205 Anti-Corruption
         </h3>
-        <p id="disclosure-205-1" style={{ fontWeight: "bold", color: "blue" }}>
+
+        <p
+          id="disclosure-205-3-3"
+          style={{ fontWeight: "bold", color: "blue" }}
+        >
+          Disclosure 3-3 Management of material topics
+        </p>
+
+        <BoxTableComponent />
+
+        <p
+          id="disclosure-205-1"
+          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
+        >
           Disclosure 205-1 Operations assessed for risks related to corruption
         </p>
 
@@ -435,6 +449,7 @@ const GRI200 = () => {
             width: "100%",
             textAlign: "left",
             border: "1px solid black",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -488,13 +503,7 @@ const GRI200 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -638,6 +647,7 @@ const GRI200 = () => {
             width: "100%",
             border: "1px solid black",
             textAlign: "left",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -688,13 +698,7 @@ const GRI200 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -716,6 +720,7 @@ const GRI200 = () => {
             width: "100%",
             textAlign: "left",
             border: "1px solid black",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -756,13 +761,7 @@ const GRI200 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -777,7 +776,20 @@ const GRI200 = () => {
         >
           GRI 206: Anti-competitive Behavior
         </h3>
-        <p id="disclosure-206-1" style={{ fontWeight: "bold", color: "blue" }}>
+
+        <p
+          id="disclosure-206-3-3"
+          style={{ fontWeight: "bold", color: "blue" }}
+        >
+          Disclosure 3-3 Management of material topics
+        </p>
+
+        <BoxTableComponent />
+
+        <p
+          id="disclosure-206-1"
+          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
+        >
           Disclosure 206-1 Legal actions for anti-competitive behavior,
           anti-trust, and monopoly practices
         </p>
@@ -788,6 +800,7 @@ const GRI200 = () => {
             width: "100%",
             textAlign: "left",
             border: "1px solid black",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -826,13 +839,7 @@ const GRI200 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -847,17 +854,24 @@ const GRI200 = () => {
         >
           GRI 207: Tax
         </h3>
-        <p id="disclosure-207-1" style={{ fontWeight: "bold", color: "blue" }}>
+
+        <p
+          id="disclosure-207-3-3"
+          style={{ fontWeight: "bold", color: "blue" }}
+        >
+          Disclosure 3-3 Management of material topics
+        </p>
+
+        <BoxTableComponent />
+
+        <p
+          id="disclosure-207-1"
+          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
+        >
           Disclosure 207-1 Approach to tax
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -870,13 +884,7 @@ const GRI200 = () => {
           Disclosure 207-2 Tax governance, control, and risk management
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -890,13 +898,7 @@ const GRI200 = () => {
           related to tax
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -915,6 +917,7 @@ const GRI200 = () => {
             width: "100%",
             textAlign: "left",
             border: "1px solid black",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -963,13 +966,7 @@ const GRI200 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
     </div>
   );

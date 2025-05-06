@@ -1,4 +1,5 @@
 import React from "react";
+import BoxTableComponent from "./boxTable";
 
 const GRI2 = () => {
   return (
@@ -120,6 +121,7 @@ const GRI2 = () => {
             width: "100%",
             textAlign: "left",
             border: "1px solid black",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -161,13 +163,7 @@ const GRI2 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "100px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -272,12 +268,7 @@ const GRI2 = () => {
           Disclosure 2-4 Restatements of information
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -293,12 +284,7 @@ const GRI2 = () => {
           Disclosure 2-5 External assurance
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -318,12 +304,7 @@ const GRI2 = () => {
           relationships
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -350,7 +331,7 @@ const GRI2 = () => {
             width: "100%",
             textAlign: "left",
             border: "1px solid black",
-            marginBottom: "30px",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -399,6 +380,7 @@ const GRI2 = () => {
             width: "100%",
             textAlign: "left",
             border: "1px solid black",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -438,13 +420,7 @@ const GRI2 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -460,12 +436,7 @@ const GRI2 = () => {
           Disclosure 2-8 Workers who are not employees
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -595,12 +566,7 @@ const GRI2 = () => {
           body
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -616,12 +582,7 @@ const GRI2 = () => {
           Disclosure 2-11 Chair of the highest governance body
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -638,12 +599,7 @@ const GRI2 = () => {
           management of impacts
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -659,12 +615,7 @@ const GRI2 = () => {
           Disclosure 2-13 Delegation of responsibility for managing impacts
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -681,12 +632,7 @@ const GRI2 = () => {
           reporting
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -702,12 +648,7 @@ const GRI2 = () => {
           Disclosure 2-15 Conflicts of interest
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -729,6 +670,7 @@ const GRI2 = () => {
             width: "100%",
             textAlign: "left",
             border: "1px solid black",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -771,13 +713,7 @@ const GRI2 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -793,12 +729,7 @@ const GRI2 = () => {
           Disclosure 2-17 Collective knowledge of the highest governance body
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -815,12 +746,7 @@ const GRI2 = () => {
           governance body
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -836,12 +762,7 @@ const GRI2 = () => {
           Disclosure 2-19 Remuneration policies
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -857,12 +778,7 @@ const GRI2 = () => {
           Disclosure 2-20 Process to determine remuneration
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -982,12 +898,7 @@ const GRI2 = () => {
           Disclosure 2-22 Statement on sustainable development strategy
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -1003,12 +914,7 @@ const GRI2 = () => {
           Disclosure 2-23 Policy commitments
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -1024,12 +930,7 @@ const GRI2 = () => {
           Disclosure 2-24 Embedding policy commitments
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -1045,12 +946,7 @@ const GRI2 = () => {
           Disclosure 2-25 Processes to remediate negative impacts
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -1066,12 +962,7 @@ const GRI2 = () => {
           Disclosure 2-26 Mechanisms for seeking advice and raising concerns
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -1197,12 +1088,7 @@ const GRI2 = () => {
           Disclosure 2-28 Membership associations
         </p>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
 
       <div
@@ -1302,6 +1188,7 @@ const GRI2 = () => {
             width: "100%",
             textAlign: "left",
             border: "1px solid black",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -1340,13 +1227,7 @@ const GRI2 = () => {
           </tbody>
         </table>
 
-        <div
-          style={{
-            border: "1px solid black",
-            height: "50px",
-            marginTop: "2rem",
-          }}
-        ></div>
+        <BoxTableComponent />
       </div>
     </div>
   );
