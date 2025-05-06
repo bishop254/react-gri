@@ -408,21 +408,72 @@ function App() {
     };
   }, []);
 
+  const generateTocList = (items) => {
+    return `<ol>${items
+      .map((item) => {
+        const childrenList = item.children
+          ? `<ul>${item.children
+              .map(
+                (child) =>
+                  `<li style="list-style: none; font-size: 0.9rem;">${child.title}</li>`
+              )
+              .join("")}</ul>`
+          : "";
+        return `<li><strong>${item.title}</strong>${childrenList}</li>`;
+      })
+      .join("")}</ol>`;
+  };
+
   const exportWord = () => {
     setLoadingType("word");
     setTimeout(() => {
       try {
         const element = document.getElementById("report-content");
-        const html = element.outerHTML;
+        const html = element?.outerHTML || "";
+
         const css = `
-        <style>
-          table { width:100%; border-collapse:collapse; }
-          th, td { border:1px solid #333; padding:6px; }
-        </style>`;
-        const fullDoc = `<!DOCTYPE html><html><head><meta charset='utf-8'/>${css}</head><body>${html}</body></html>`;
+          <style>
+            body { font-family: Arial; margin: 0; padding: 0; }
+            table { width: 100%; border-collapse: collapse; }
+            th, td { border: 1px solid #333; padding: 0px; text-align: left; }
+            h1, h2 { color: #2c3e50; margin: 20px; }
+          </style>`;
+
+        const coverPage = `
+          <img 
+            src="${window.location.origin}/coverPage.jpg" 
+            alt="Cover"
+          />
+          <br style="page-break-before: always;">`;
+
+        const tocHtml = generateTocList(principles);
+        const tocPage = `
+          <div style="padding: 40px;">
+            <h2>Table of Contents</h2>
+            ${tocHtml}
+          </div>
+          <br style="page-break-before: always;">`;
+
+        const fullDoc = `
+          <!DOCTYPE html>
+          <html>
+            <head>
+              <meta charset='utf-8'/>
+              ${css}
+            </head>
+            <body>
+              ${coverPage}
+              ${tocPage}
+              <div style="padding: 40px;">
+                ${html}
+              </div>
+            </body>
+          </html>`;
+
         const blob = new Blob([fullDoc], {
           type: "application/msword;charset=utf-8",
         });
+
         saveAs(blob, "GRI_Report.doc");
       } catch (e) {
         console.error(e);
@@ -440,6 +491,28 @@ function App() {
       const content = document.getElementById("report-content");
       if (!content) throw new Error("Report content not found");
 
+      const coverPage = `
+        <table style="width: 100%; height: 100%; border: none; margin: -1cm; padding: 0;">
+          <tr>
+            <td style="border: none; margin: 0; padding: 0;">
+              <img 
+                src="${window.location.origin}/coverPage.jpg" 
+                alt="Cover" 
+                style="width: 22cm; height: 31cm; display: block; border: none; margin: 0; padding: 0;" 
+              />
+            </td>
+          </tr>
+        </table>
+        <br style="page-break-before: always;">`;
+
+      const tocHtml = generateTocList(principles);
+      const tocPage = `
+        <div style="padding: 40px;">
+          <h2>Table of Contents</h2>
+          ${tocHtml}
+        </div>
+        <br style="page-break-before: always;">`;
+
       const html = `
         <html>
           <head>
@@ -452,6 +525,8 @@ function App() {
             </style>
           </head>
           <body>
+            ${coverPage}
+            ${tocPage}
             ${content.innerHTML}
           </body>
         </html>
@@ -490,7 +565,7 @@ function App() {
   return (
     <div className="brsr-report-container">
       <div className="sidebar">
-        <h2 className="sidebar-title">BRSR Report Index</h2>
+        <h2 className="sidebar-title">GRI Report Index</h2>
         <ScrollPanel className="sidebar-scroll">
           <ul className="principles-list">
             {principles.map((item) => (
