@@ -19,12 +19,12 @@ const principles = [
     id: "gri2",
     children: [
       {
-        title: "1. The organization and its reporting practices",
+        title: "The organization and its reporting practices",
         targetId: "gri2-org-reporting",
       },
       {
-        title: "Disclosure 2-1",
-        targetId: "gri2-disclosure-2-1",
+        title: "Organizational details",
+        targetId: "Organizational-details",
       },
       {
         title: "Disclosure 2-2",

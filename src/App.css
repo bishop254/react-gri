@@ -73,6 +73,14 @@
   margin-top: 2rem;
 }
 
+.section-ref {
+  color: #ed7d31;
+}
+
+.section-marker{
+  margin-bottom: 0;
+}
+
 @media print {
   body {
     -webkit-print-color-adjust: exact;

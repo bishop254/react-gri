@@ -1,24 +1,33 @@
 import React from "react";
 import BoxTableComponent from "./boxTable";
+import { BoldLettersOnly } from "./BoldLetters";
 
 const GRI2 = () => {
   return (
-    <div style={{ minHeight: "80vh" }}>
+    <div style={{ minHeight: "80vh", fontFamily: "Lato, sans-serif" }}>
       <div
         style={{
           maxWidth: "900px",
           margin: "auto",
         }}
       >
-        <h3 class="section-marker" id="gri2-org-reporting" style={{ fontWeight: "bold" }}>
-          1. The organization and its reporting practices
+        <h3
+          class="section-marker"
+          id="gri2-org-reporting"
+          style={{ fontWeight: "bold" }}
+        >
+          The organization and its reporting practices
         </h3>
         <p
-          class="section-marker" id="gri2-disclosure-2-1"
-          style={{ fontWeight: "bold", color: "blue" }}
+          class="section-marker"
+          id="Organizational-details"
+          style={{ fontWeight: "bold", color: "blue", margin: 0 }}
         >
-          Disclosure 2-1 Organizational details
+          Organizational details
         </p>
+        <small className="section-ref">
+          <BoldLettersOnly text="GRI 2-1" />
+        </small>
         <p style={{ fontWeight: "normal", marginBottom: "1rem" }}>
           The organization shall:
         </p>
@@ -86,7 +95,6 @@ const GRI2 = () => {
             </tr>
           </tbody>
         </table>
-
         <p
           style={{
             fontStyle: "italic",
@@ -106,12 +114,16 @@ const GRI2 = () => {
         }}
       >
         <p
-          class="section-marker" id="gri2-disclosure-2-2"
+          class="section-marker"
+          id="gri2-disclosure-2-2"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 2-2 Entities included in the organization’s sustainability
           reporting
         </p>
+        <small className="section-ref">
+          <BoldLettersOnly text="GRI 2-2, ESRS 1 5.1, ESRS 2, BP-1" />
+        </small>
         <p style={{ fontWeight: "normal", marginBottom: "1rem" }}>
           The organization shall:
         </p>
@@ -173,11 +185,15 @@ const GRI2 = () => {
         }}
       >
         <p
-          class="section-marker" id="gri2-disclosure-2-3"
+          class="section-marker"
+          id="gri2-disclosure-2-3"
           style={{ fontWeight: "bold", color: "blue" }}
         >
-          Disclosure 2-3 Reporting period, frequency and contact point
+          Reporting period, frequency and contact point
         </p>
+        <small className="section-ref">
+          <BoldLettersOnly text="GRI 2-3, ESRS 1 73" />
+        </small>
         <p style={{ fontWeight: "normal", marginBottom: "1rem" }}>
           The organization shall:
         </p>
@@ -262,11 +278,34 @@ const GRI2 = () => {
         }}
       >
         <p
-          class="section-marker" id="gri2-disclosure-2-4"
+          class="section-marker"
+          id="gri2-disclosure-2-4"
           style={{ fontWeight: "bold", color: "blue" }}
         >
-          Disclosure 2-4 Restatements of information
+          Restatements of information
         </p>
+        <small className="section-ref">
+          <BoldLettersOnly text="GRI 2-3, ESRS 1 73" />
+        </small>
+        <BoxTableComponent />
+      </div>
+
+      <div
+        style={{
+          maxWidth: "900px",
+          margin: "auto",
+        }}
+      >
+        <p
+          class="section-marker"
+          id="gri2-disclosure-2-5"
+          style={{ fontWeight: "bold", color: "blue" }}
+        >
+          External assurance
+        </p>
+        <small className="section-ref">
+          <BoldLettersOnly text="GRI 2-5" />
+        </small>
 
         <BoxTableComponent />
       </div>
@@ -278,31 +317,15 @@ const GRI2 = () => {
         }}
       >
         <p
-          class="section-marker" id="gri2-disclosure-2-5"
+          class="section-marker"
+          id="gri2-disclosure-2-6"
           style={{ fontWeight: "bold", color: "blue" }}
         >
-          Disclosure 2-5 External assurance
+          Activities and workers
         </p>
-
-        <BoxTableComponent />
-      </div>
-
-      <div
-        style={{
-          maxWidth: "900px",
-          margin: "auto",
-        }}
-      >
-        <h3 class="section-marker" id="gri2-activities-workers" style={{ fontWeight: "bold" }}>
-          2. Activities and workers
-        </h3>
-        <p
-          class="section-marker" id="gri2-disclosure-2-6"
-          style={{ fontWeight: "bold", color: "blue" }}
-        >
-          Disclosure 2-6 Activities, value chain and other business
-          relationships
-        </p>
+        <small className="section-ref">
+          <BoldLettersOnly text="GRI 2-6, ESRS 2, SBM-1 40, SBM-1_01, SBM-1_01, SBM-1_05, SBM-1_07, SBM-1_08, SBM-1_09, SBM-1_15, SBM-1_16, SBM-1_17, SBM-1_18, SBM-1_19, SBM-1_25, SBM-1_28" />
+        </small>
 
         <BoxTableComponent />
       </div>
@@ -314,11 +337,15 @@ const GRI2 = () => {
         }}
       >
         <p
-          class="section-marker" id="gri2-disclosure-2-7"
+          class="section-marker"
+          id="gri2-disclosure-2-7"
           style={{ fontWeight: "bold", color: "blue" }}
         >
-          Disclosure 2-7 Employees
+          Workforce
         </p>
+        <small className="section-ref">
+          <BoldLettersOnly text="GRI 2-7, ESRS 2 SBM-1 40, SBM-1_03, SBM-1_04, ESRS S1 S1-6 50, 51 to 52, S1-6_01 to S1-6_10, S1-6_13 to S1-6_20, S2-4_01 to S2-5_06, GRI 2-8, S1-7_01 to S1-7_10, S2-4_01 to S2-5_06" />
+        </small>
         <p style={{ fontWeight: "normal", marginBottom: "1rem" }}>
           The organization shall:
         </p>
@@ -429,683 +456,16 @@ const GRI2 = () => {
           margin: "auto",
         }}
       >
-        <p
-          class="section-marker" id="gri2-disclosure-2-8"
-          style={{ fontWeight: "bold", color: "blue" }}
+        <h3
+          class="section-marker"
+          id="gri2-stakeholder-engagement"
+          style={{ fontWeight: "bold" }}
         >
-          Disclosure 2-8 Workers who are not employees
-        </p>
-
-        <BoxTableComponent />
-      </div>
-
-      <div
-        style={{
-          maxWidth: "900px",
-          margin: "auto",
-        }}
-      >
-        <h3 class="section-marker" id="gri2-governance" style={{ fontWeight: "bold" }}>
-          3. Governance
+          Stakeholder engagement
         </h3>
-        <p
-          class="section-marker" id="gri2-disclosure-2-9"
-          style={{ fontWeight: "bold", color: "blue" }}
-        >
-          Disclosure 2-9 Governance structure and composition
-        </p>
-
-        <table
-          style={{
-            borderCollapse: "collapse",
-            width: "100%",
-            textAlign: "left",
-            border: "1px solid black",
-          }}
-        >
-          <thead>
-            <tr>
-              <th
-                style={{
-                  border: "1px solid black",
-                  padding: "8px",
-                  fontWeight: "bold",
-                  width: "50%",
-                }}
-              >
-                List of Committees
-              </th>
-              <th
-                style={{
-                  border: "1px solid black",
-                  padding: "8px",
-                  fontWeight: "bold",
-                }}
-              >
-                &nbsp;
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td style={{ border: "1px solid black", padding: "8px" }}>
-                &nbsp;
-              </td>
-              <td style={{ border: "1px solid black", padding: "8px" }}>
-                &nbsp;
-              </td>
-            </tr>
-          </tbody>
-        </table>
-
-        <table
-          style={{
-            borderCollapse: "collapse",
-            width: "100%",
-            textAlign: "left",
-            border: "1px solid black",
-            marginTop: "2rem",
-          }}
-        >
-          <thead>
-            <tr>
-              <th
-                style={{
-                  border: "1px solid black",
-                  padding: "8px",
-                  fontWeight: "bold",
-                  width: "50%",
-                }}
-              >
-                Particulars
-              </th>
-              <th
-                style={{
-                  border: "1px solid black",
-                  padding: "8px",
-                  fontWeight: "bold",
-                }}
-              >
-                Response
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {[
-              "executive and non-executive members",
-              "Independence",
-              "tenure of members on the governance body",
-              "number of other significant positions and commitments held by each member, and the nature of the commitments;",
-              "gender",
-              "under-represented social groups;",
-              "competencies relevant to the impacts of the organization;",
-              "stakeholder representation.",
-            ].map((label, index) => (
-              <tr key={index}>
-                <td style={{ border: "1px solid black", padding: "8px" }}>
-                  {label}
-                </td>
-                <td style={{ border: "1px solid black", padding: "8px" }}></td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-
-      <div
-        style={{
-          maxWidth: "900px",
-          margin: "auto",
-        }}
-      >
-        <p
-          class="section-marker" id="gri2-disclosure-2-10"
-          style={{ fontWeight: "bold", color: "blue" }}
-        >
-          Disclosure 2-10 Nomination and selection of the highest governance
-          body
-        </p>
-
-        <BoxTableComponent />
-      </div>
-
-      <div
-        style={{
-          maxWidth: "900px",
-          margin: "auto",
-        }}
-      >
-        <p
-          class="section-marker" id="gri2-disclosure-2-11"
-          style={{ fontWeight: "bold", color: "blue" }}
-        >
-          Disclosure 2-11 Chair of the highest governance body
-        </p>
-
-        <BoxTableComponent />
-      </div>
-
-      <div
-        style={{
-          maxWidth: "900px",
-          margin: "auto",
-        }}
-      >
-        <p
-          class="section-marker" id="gri2-disclosure-2-12"
-          style={{ fontWeight: "bold", color: "blue" }}
-        >
-          Disclosure 2-12 Role of the highest governance body in overseeing the
-          management of impacts
-        </p>
-
-        <BoxTableComponent />
-      </div>
-
-      <div
-        style={{
-          maxWidth: "900px",
-          margin: "auto",
-        }}
-      >
-        <p
-          class="section-marker" id="gri2-disclosure-2-13"
-          style={{ fontWeight: "bold", color: "blue" }}
-        >
-          Disclosure 2-13 Delegation of responsibility for managing impacts
-        </p>
-
-        <BoxTableComponent />
-      </div>
-
-      <div
-        style={{
-          maxWidth: "900px",
-          margin: "auto",
-        }}
-      >
-        <p
-          class="section-marker" id="gri2-disclosure-2-14"
-          style={{ fontWeight: "bold", color: "blue" }}
-        >
-          Disclosure 2-14 Role of the highest governance body in sustainability
-          reporting
-        </p>
-
-        <BoxTableComponent />
-      </div>
-
-      <div
-        style={{
-          maxWidth: "900px",
-          margin: "auto",
-        }}
-      >
-        <p
-          class="section-marker" id="gri2-disclosure-2-15"
-          style={{ fontWeight: "bold", color: "blue" }}
-        >
-          Disclosure 2-15 Conflicts of interest
-        </p>
-
-        <BoxTableComponent />
-      </div>
-
-      <div
-        style={{
-          maxWidth: "900px",
-          margin: "auto",
-        }}
-      >
-        <p
-          class="section-marker" id="gri2-disclosure-2-16"
-          style={{ fontWeight: "bold", color: "blue" }}
-        >
-          Disclosure 2-16 Communication of critical concerns
-        </p>
-
-        <table
-          style={{
-            borderCollapse: "collapse",
-            width: "100%",
-            textAlign: "left",
-            border: "1px solid black",
-            marginBottom: "2rem",
-          }}
-        >
-          <thead>
-            <tr>
-              <th
-                style={{
-                  border: "1px solid black",
-                  padding: "8px",
-                  fontWeight: "bold",
-                  width: "50%",
-                }}
-              >
-                Particulars
-              </th>
-              <th
-                style={{
-                  border: "1px solid black",
-                  padding: "8px",
-                  fontWeight: "bold",
-                }}
-              >
-                Response
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td style={{ border: "1px solid black", padding: "8px" }}>
-                total number of critical concerns
-              </td>
-              <td style={{ border: "1px solid black", padding: "8px" }}></td>
-            </tr>
-            <tr>
-              <td style={{ border: "1px solid black", padding: "8px" }}>
-                nature of critical concerns that were communicated to the
-                highest governance body during the reporting period
-              </td>
-              <td style={{ border: "1px solid black", padding: "8px" }}></td>
-            </tr>
-          </tbody>
-        </table>
-
-        <BoxTableComponent />
-      </div>
-
-      <div
-        style={{
-          maxWidth: "900px",
-          margin: "auto",
-        }}
-      >
-        <p
-          class="section-marker" id="gri2-disclosure-2-17"
-          style={{ fontWeight: "bold", color: "blue" }}
-        >
-          Disclosure 2-17 Collective knowledge of the highest governance body
-        </p>
-
-        <BoxTableComponent />
-      </div>
-
-      <div
-        style={{
-          maxWidth: "900px",
-          margin: "auto",
-        }}
-      >
-        <p
-          class="section-marker" id="gri2-disclosure-2-18"
-          style={{ fontWeight: "bold", color: "blue" }}
-        >
-          Disclosure 2-18 Evaluation of the performance of the highest
-          governance body
-        </p>
-
-        <BoxTableComponent />
-      </div>
-
-      <div
-        style={{
-          maxWidth: "900px",
-          margin: "auto",
-        }}
-      >
-        <p
-          class="section-marker" id="gri2-disclosure-2-19"
-          style={{ fontWeight: "bold", color: "blue" }}
-        >
-          Disclosure 2-19 Remuneration policies
-        </p>
-
-        <BoxTableComponent />
-      </div>
-
-      <div
-        style={{
-          maxWidth: "900px",
-          margin: "auto",
-        }}
-      >
-        <p
-          class="section-marker" id="gri2-disclosure-2-20"
-          style={{ fontWeight: "bold", color: "blue" }}
-        >
-          Disclosure 2-20 Process to determine remuneration
-        </p>
-
-        <BoxTableComponent />
-      </div>
-
-      <div
-        style={{
-          maxWidth: "900px",
-          margin: "auto",
-        }}
-      >
-        <p
-          class="section-marker" id="gri2-disclosure-2-21"
-          style={{ fontWeight: "bold", color: "blue" }}
-        >
-          Disclosure 2-21 Annual total compensation ratio
-        </p>
-
-        <table
-          style={{
-            borderCollapse: "collapse",
-            width: "100%",
-            textAlign: "left",
-            border: "1px solid black",
-          }}
-        >
-          <thead>
-            <tr>
-              <th
-                style={{
-                  border: "1px solid black",
-                  padding: "8px",
-                  fontWeight: "bold",
-                  width: "50%",
-                }}
-              >
-                Particulars
-              </th>
-              <th
-                style={{
-                  border: "1px solid black",
-                  padding: "8px",
-                  fontWeight: "bold",
-                }}
-              >
-                Response
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td style={{ border: "1px solid black", padding: "8px" }}>
-                ratio of the annual total compensation for the organization’s
-                highest-paid individual to the median annual total compensation
-                for all employees
-              </td>
-              <td style={{ border: "1px solid black", padding: "8px" }}></td>
-            </tr>
-          </tbody>
-        </table>
-
-        <table
-          style={{
-            borderCollapse: "collapse",
-            width: "100%",
-            textAlign: "left",
-            border: "1px solid black",
-            marginTop: "2rem",
-          }}
-        >
-          <thead>
-            <tr>
-              <th
-                style={{
-                  border: "1px solid black",
-                  padding: "8px",
-                  fontWeight: "bold",
-                  width: "50%",
-                }}
-              >
-                Particulars
-              </th>
-              <th
-                style={{
-                  border: "1px solid black",
-                  padding: "8px",
-                  fontWeight: "bold",
-                }}
-              >
-                Response
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td style={{ border: "1px solid black", padding: "8px" }}>
-                percentage increase in annual total compensation for the
-                organization’s highest-paid individual to the median percentage
-                increase in annual total compensation for all employees
-              </td>
-              <td style={{ border: "1px solid black", padding: "8px" }}></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div
-        style={{
-          maxWidth: "900px",
-          margin: "auto",
-        }}
-      >
-        <h3 class="section-marker" id="gri2-strategy-policies" style={{ fontWeight: "bold" }}>
-          4. Strategy, policies and practices
-        </h3>
-        <p
-          class="section-marker" id="gri2-disclosure-2-22"
-          style={{ fontWeight: "bold", color: "blue" }}
-        >
-          Disclosure 2-22 Statement on sustainable development strategy
-        </p>
-
-        <BoxTableComponent />
-      </div>
-
-      <div
-        style={{
-          maxWidth: "900px",
-          margin: "auto",
-        }}
-      >
-        <p
-          class="section-marker" id="gri2-disclosure-2-23"
-          style={{ fontWeight: "bold", color: "blue" }}
-        >
-          Disclosure 2-23 Policy commitments
-        </p>
-
-        <BoxTableComponent />
-      </div>
-
-      <div
-        style={{
-          maxWidth: "900px",
-          margin: "auto",
-        }}
-      >
-        <p
-          class="section-marker" id="gri2-disclosure-2-24"
-          style={{ fontWeight: "bold", color: "blue" }}
-        >
-          Disclosure 2-24 Embedding policy commitments
-        </p>
-
-        <BoxTableComponent />
-      </div>
-
-      <div
-        style={{
-          maxWidth: "900px",
-          margin: "auto",
-        }}
-      >
-        <p
-          class="section-marker" id="gri2-disclosure-2-25"
-          style={{ fontWeight: "bold", color: "blue" }}
-        >
-          Disclosure 2-25 Processes to remediate negative impacts
-        </p>
-
-        <BoxTableComponent />
-      </div>
-
-      <div
-        style={{
-          maxWidth: "900px",
-          margin: "auto",
-        }}
-      >
-        <p
-          class="section-marker" id="gri2-disclosure-2-26"
-          style={{ fontWeight: "bold", color: "blue" }}
-        >
-          Disclosure 2-26 Mechanisms for seeking advice and raising concerns
-        </p>
-
-        <BoxTableComponent />
-      </div>
-
-      <div
-        style={{
-          maxWidth: "900px",
-          margin: "auto",
-        }}
-      >
-        <p
-          class="section-marker" id="gri2-disclosure-2-27"
-          style={{ fontWeight: "bold", color: "blue" }}
-        >
-          Disclosure 2-27 Compliance with laws and regulations
-        </p>
-
-        <table
-          style={{
-            borderCollapse: "collapse",
-            width: "100%",
-            textAlign: "left",
-            border: "1px solid black",
-            marginBottom: "40px",
-          }}
-        >
-          <thead>
-            <tr>
-              <th
-                style={{
-                  border: "1px solid black",
-                  padding: "8px",
-                  fontWeight: "bold",
-                  width: "60%",
-                }}
-              >
-                Particulars
-              </th>
-              <th
-                style={{
-                  border: "1px solid black",
-                  padding: "8px",
-                  fontWeight: "bold",
-                }}
-              >
-                Response
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {[
-              "the total number of significant instances of non-compliance with laws and regulations during the reporting period,",
-              "Number of instances for which fines were incurred;",
-              "Number of instances for which non-monetary sanctions were incurred;",
-            ].map((label, index) => (
-              <tr key={index}>
-                <td style={{ border: "1px solid black", padding: "8px" }}>
-                  {label}
-                </td>
-                <td style={{ border: "1px solid black", padding: "8px" }}></td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-
-        <table
-          style={{
-            borderCollapse: "collapse",
-            width: "100%",
-            textAlign: "left",
-            border: "1px solid black",
-            marginTop: "2rem",
-          }}
-        >
-          <thead>
-            <tr>
-              <th
-                style={{
-                  border: "1px solid black",
-                  padding: "8px",
-                  fontWeight: "bold",
-                  width: "60%",
-                }}
-              >
-                Particulars
-              </th>
-              <th
-                style={{
-                  border: "1px solid black",
-                  padding: "8px",
-                  fontWeight: "bold",
-                }}
-              >
-                Response
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {[
-              "total number and the monetary value of fines for instances of noncompliance with laws and regulations that were paid during the reporting period",
-              "Number of instances for fines for instances of non-compliance with laws and regulations that occurred in the current reporting period;",
-              "Number of instances for fines for instances of non-compliance with laws and regulations that occurred in previous reporting periods;",
-            ].map((label, index) => (
-              <tr key={index}>
-                <td style={{ border: "1px solid black", padding: "8px" }}>
-                  {label}
-                </td>
-                <td style={{ border: "1px solid black", padding: "8px" }}></td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-
-      <div
-        style={{
-          maxWidth: "900px",
-          margin: "auto",
-        }}
-      >
-        <p
-          class="section-marker" id="gri2-disclosure-2-28"
-          style={{ fontWeight: "bold", color: "blue" }}
-        >
-          Disclosure 2-28 Membership associations
-        </p>
-
-        <BoxTableComponent />
-      </div>
-
-      <div
-        style={{
-          maxWidth: "900px",
-          margin: "auto",
-        }}
-      >
-        <h3 class="section-marker" id="gri2-stakeholder-engagement" style={{ fontWeight: "bold" }}>
-          5. Stakeholder engagement
-        </h3>
-        <p
-          class="section-marker" id="gri2-disclosure-2-29"
-          style={{ fontWeight: "bold", color: "blue" }}
-        >
-          Disclosure 2-29 Approach to stakeholder engagement
-        </p>
+        <small className="section-ref">
+          <BoldLettersOnly text="GRI 2-29, ESRS 2 SBM-2_01, SBM-2_02, SBM-2_03, SBM-2_04, SBM-2_05, SBM-2_06, S1-1_05, S1-2_02, S1-2_03, S1-2_06, S1-2_07, S1-2_10, S1-2_11, S1-2_12, S1-2_14, S2-1_03, S2-2_02, S2-2_03, S2-2_06, S2-2_07, S2-3_09, S3-1_04, S3-2_02, S3-2_03, S3-2_05, S3-2_06" />
+        </small>
 
         <table
           style={{
@@ -1124,7 +484,7 @@ const GRI2 = () => {
                   border: "none",
                   padding: "8px",
                   fontWeight: "bold",
-                  width: "60%",
+                  width: "30%",
                 }}
               >
                 Stakeholder
@@ -1176,7 +536,8 @@ const GRI2 = () => {
         }}
       >
         <p
-          class="section-marker" id="gri2-disclosure-2-30"
+          class="section-marker"
+          id="gri2-disclosure-2-30"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 2-30 Collective bargaining agreements
