@@ -10,18 +10,18 @@ const GRI200 = () => {
           margin: "auto",
         }}
       >
-        <h3 id="gri200-heading" style={{ fontWeight: "bold" }}>
+        <h3 class="section-marker" id="gri200-heading" style={{ fontWeight: "bold" }}>
           GRI 200
         </h3>
         <h3
-          id="gri201-title"
+          class="section-marker" id="gri201-title"
           style={{ fontWeight: "bold", textAlign: "center", color: "blue" }}
         >
           GRI 201 Economic Performance
         </h3>
 
         <p
-          id="disclosure-201-3-3"
+          class="section-marker" id="disclosure-201-3-3"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 3-3 Management of material topics
@@ -30,7 +30,7 @@ const GRI200 = () => {
         <BoxTableComponent />
 
         <p
-          id="disclosure-201-1"
+          class="section-marker" id="disclosure-201-1"
           style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
         >
           Disclosure 201-1 Direct economic value generated and distributed
@@ -101,7 +101,7 @@ const GRI200 = () => {
           margin: "auto",
         }}
       >
-        <p id="disclosure-201-2" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="disclosure-201-2" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 201-2 Financial implications and other risks and
           opportunities due to climate change
         </p>
@@ -115,7 +115,7 @@ const GRI200 = () => {
           margin: "auto",
         }}
       >
-        <p id="disclosure-201-3" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="disclosure-201-3" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 201-3 Defined benefit plan obligations and other retirement
           plans
         </p>
@@ -129,7 +129,7 @@ const GRI200 = () => {
           margin: "auto",
         }}
       >
-        <p id="disclosure-201-4" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="disclosure-201-4" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 201-4 Financial assistance received from government
         </p>
         <p style={{ fontWeight: "normal" }}>
@@ -238,14 +238,14 @@ const GRI200 = () => {
         }}
       >
         <h3
-          id="gri202-title"
+          class="section-marker" id="gri202-title"
           style={{ fontWeight: "bold", textAlign: "center", color: "blue" }}
         >
           GRI 202 Market Presence
         </h3>
 
         <p
-          id="disclosure-202-3-3"
+          class="section-marker" id="disclosure-202-3-3"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 3-3 Management of material topics
@@ -254,7 +254,7 @@ const GRI200 = () => {
         <BoxTableComponent />
 
         <p
-          id="disclosure-202-1"
+          class="section-marker" id="disclosure-202-1"
           style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
         >
           Disclosure 202-1 Ratios of standard entry-level wage by gender
@@ -270,7 +270,7 @@ const GRI200 = () => {
           margin: "auto",
         }}
       >
-        <p id="disclosure-202-2" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="disclosure-202-2" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 202-2 Proportion of senior management hired from the local
           community
         </p>
@@ -285,14 +285,14 @@ const GRI200 = () => {
         }}
       >
         <h3
-          id="gri203-title"
+          class="section-marker" id="gri203-title"
           style={{ fontWeight: "bold", textAlign: "center", color: "blue" }}
         >
           GRI 203 Indirect Economic Impact
         </h3>
 
         <p
-          id="disclosure-203-3-3"
+          class="section-marker" id="disclosure-203-3-3"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 3-3 Management of material topics
@@ -301,7 +301,7 @@ const GRI200 = () => {
         <BoxTableComponent />
 
         <p
-          id="disclosure-203-1"
+          class="section-marker" id="disclosure-203-1"
           style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
         >
           Disclosure 203-1 Infrastructure investments and services supported
@@ -316,7 +316,7 @@ const GRI200 = () => {
           margin: "auto",
         }}
       >
-        <p id="disclosure-203-2" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="disclosure-203-2" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 203-2 Significant indirect economic impacts
         </p>
 
@@ -330,14 +330,14 @@ const GRI200 = () => {
         }}
       >
         <h3
-          id="gri204-title"
+          class="section-marker" id="gri204-title"
           style={{ fontWeight: "bold", textAlign: "center", color: "blue" }}
         >
           GRI 204 Procurement Practices
         </h3>
 
         <p
-          id="disclosure-204-3-3"
+          class="section-marker" id="disclosure-204-3-3"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 3-3 Management of material topics
@@ -346,7 +346,7 @@ const GRI200 = () => {
         <BoxTableComponent />
 
         <p
-          id="disclosure-204-1"
+          class="section-marker" id="disclosure-204-1"
           style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
         >
           Disclosure 204-1 Proportion of spending on local suppliers
@@ -421,14 +421,14 @@ const GRI200 = () => {
         }}
       >
         <h3
-          id="gri205-title"
+          class="section-marker" id="gri205-title"
           style={{ fontWeight: "bold", textAlign: "center", color: "blue" }}
         >
           GRI 205 Anti-Corruption
         </h3>
 
         <p
-          id="disclosure-205-3-3"
+          class="section-marker" id="disclosure-205-3-3"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 3-3 Management of material topics
@@ -437,7 +437,7 @@ const GRI200 = () => {
         <BoxTableComponent />
 
         <p
-          id="disclosure-205-1"
+          class="section-marker" id="disclosure-205-1"
           style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
         >
           Disclosure 205-1 Operations assessed for risks related to corruption
@@ -512,7 +512,7 @@ const GRI200 = () => {
           margin: "auto",
         }}
       >
-        <p id="disclosure-205-2" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="disclosure-205-2" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 205-2 Communication and training about anti-corruption
           policies and procedures
         </p>
@@ -707,7 +707,7 @@ const GRI200 = () => {
           margin: "auto",
         }}
       >
-        <p id="disclosure-205-3" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="disclosure-205-3" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 205-3 Confirmed incidents of corruption and actions taken
         </p>
         <p style={{ fontWeight: "normal", marginLeft: "1rem" }}>
@@ -771,14 +771,14 @@ const GRI200 = () => {
         }}
       >
         <h3
-          id="gri206-title"
+          class="section-marker" id="gri206-title"
           style={{ fontWeight: "bold", textAlign: "center", color: "blue" }}
         >
           GRI 206: Anti-competitive Behavior
         </h3>
 
         <p
-          id="disclosure-206-3-3"
+          class="section-marker" id="disclosure-206-3-3"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 3-3 Management of material topics
@@ -787,7 +787,7 @@ const GRI200 = () => {
         <BoxTableComponent />
 
         <p
-          id="disclosure-206-1"
+          class="section-marker" id="disclosure-206-1"
           style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
         >
           Disclosure 206-1 Legal actions for anti-competitive behavior,
@@ -849,14 +849,14 @@ const GRI200 = () => {
         }}
       >
         <h3
-          id="gri207-title"
+          class="section-marker" id="gri207-title"
           style={{ fontWeight: "bold", textAlign: "center", color: "blue" }}
         >
           GRI 207: Tax
         </h3>
 
         <p
-          id="disclosure-207-3-3"
+          class="section-marker" id="disclosure-207-3-3"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 3-3 Management of material topics
@@ -865,7 +865,7 @@ const GRI200 = () => {
         <BoxTableComponent />
 
         <p
-          id="disclosure-207-1"
+          class="section-marker" id="disclosure-207-1"
           style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
         >
           Disclosure 207-1 Approach to tax
@@ -880,7 +880,7 @@ const GRI200 = () => {
           margin: "auto",
         }}
       >
-        <p id="disclosure-207-2" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="disclosure-207-2" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 207-2 Tax governance, control, and risk management
         </p>
 
@@ -893,7 +893,7 @@ const GRI200 = () => {
           margin: "auto",
         }}
       >
-        <p id="disclosure-207-3" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="disclosure-207-3" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 207-3 Stakeholder engagement and management of concerns
           related to tax
         </p>
@@ -907,7 +907,7 @@ const GRI200 = () => {
           margin: "auto",
         }}
       >
-        <p id="disclosure-207-4" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="disclosure-207-4" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 207-4 Country-by-country reporting
         </p>
 

@@ -10,18 +10,18 @@ const GRI400 = () => {
           margin: "auto",
         }}
       >
-        <h3 id="gri400" style={{ fontWeight: "bold" }}>
+        <h3 class="section-marker" id="gri400" style={{ fontWeight: "bold" }}>
           GRI 400
         </h3>
         <h3
-          id="gri401-title"
+          class="section-marker" id="gri401-title"
           style={{ fontWeight: "bold", color: "blue", textAlign: "center" }}
         >
           GRI 401 Employment
         </h3>
 
         <p
-          id="disclosure-401-3-3"
+          class="section-marker" id="disclosure-401-3-3"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 3-3 Management of material topics
@@ -30,7 +30,7 @@ const GRI400 = () => {
         <BoxTableComponent />
 
         <p
-          id="disclosure-401-1"
+          class="section-marker" id="disclosure-401-1"
           style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
         >
           Disclosure 401-1 New employee hires and employee turnover
@@ -220,7 +220,7 @@ const GRI400 = () => {
       </div>
 
       <div style={{ maxWidth: "900px", margin: "auto" }}>
-        <p id="disclosure-401-2" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="disclosure-401-2" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 401-2 Benefits provided to full-time employees that are not
           provided to temporary or part-time employees
         </p>
@@ -306,7 +306,7 @@ const GRI400 = () => {
       </div>
 
       <div style={{ maxWidth: "900px", margin: "auto" }}>
-        <p id="disclosure-401-3" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="disclosure-401-3" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 401-3 Parental leave
         </p>
 
@@ -389,14 +389,14 @@ const GRI400 = () => {
 
       <div style={{ maxWidth: "900px", margin: "auto" }}>
         <h3
-          id="gri402-title"
+          class="section-marker" id="gri402-title"
           style={{ fontWeight: "bold", color: "blue", textAlign: "center" }}
         >
           GRI 402 Labor Management
         </h3>
 
         <p
-          id="disclosure-402-3-3"
+          class="section-marker" id="disclosure-402-3-3"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 3-3 Management of material topics
@@ -405,7 +405,7 @@ const GRI400 = () => {
         <BoxTableComponent />
 
         <p
-          id="disclosure-402-1"
+          class="section-marker" id="disclosure-402-1"
           style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
         >
           Disclosure 402-1 Minimum notice periods regarding operational changes
@@ -461,14 +461,14 @@ const GRI400 = () => {
 
       <div style={{ maxWidth: "900px", margin: "auto" }}>
         <h3
-          id="gri403-title"
+          class="section-marker" id="gri403-title"
           style={{ fontWeight: "bold", color: "blue", textAlign: "center" }}
         >
           GRI 403 Occupational Health and Safety
         </h3>
 
         <p
-          id="disclosure-403-3-3"
+          class="section-marker" id="disclosure-403-3-3"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 3-3 Management of material topics
@@ -477,7 +477,7 @@ const GRI400 = () => {
         <BoxTableComponent />
 
         <p
-          id="disclosure-403-1"
+          class="section-marker" id="disclosure-403-1"
           style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
         >
           Disclosure 403-1 Occupational health and safety management system
@@ -487,7 +487,7 @@ const GRI400 = () => {
       </div>
 
       <div style={{ maxWidth: "900px", margin: "auto" }}>
-        <p id="disclosure-403-2" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="disclosure-403-2" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 403-2 Hazard identification, risk assessment, and incident
           investigation
         </p>
@@ -496,7 +496,7 @@ const GRI400 = () => {
       </div>
 
       <div style={{ maxWidth: "900px", margin: "auto" }}>
-        <p id="disclosure-403-3" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="disclosure-403-3" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 403-3 Occupational health services
         </p>
 
@@ -504,7 +504,7 @@ const GRI400 = () => {
       </div>
 
       <div style={{ maxWidth: "900px", margin: "auto" }}>
-        <p id="disclosure-403-4" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="disclosure-403-4" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 403-4 Worker participation, consultation, and communication
           on occupational health and safety
         </p>
@@ -513,7 +513,7 @@ const GRI400 = () => {
       </div>
 
       <div style={{ maxWidth: "900px", margin: "auto" }}>
-        <p id="disclosure-403-5" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="disclosure-403-5" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 403-5 Worker training on occupational health and safety
         </p>
 
@@ -566,7 +566,7 @@ const GRI400 = () => {
       </div>
 
       <div style={{ maxWidth: "900px", margin: "auto" }}>
-        <p id="disclosure-403-6" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="disclosure-403-6" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 403-6 Promotion of worker health
         </p>
 
@@ -621,7 +621,7 @@ const GRI400 = () => {
       </div>
 
       <div style={{ maxWidth: "900px", margin: "auto" }}>
-        <p id="disclosure-403-7" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="disclosure-403-7" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 403-7 Prevention and mitigation of occupational health and
           safety impacts directly linked by business relationships
         </p>
@@ -630,7 +630,7 @@ const GRI400 = () => {
       </div>
 
       <div style={{ maxWidth: "900px", margin: "auto" }}>
-        <p id="disclosure-403-8" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="disclosure-403-8" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 403-8 Workers covered by an occupational health and safety
           management system
         </p>
@@ -730,7 +730,7 @@ const GRI400 = () => {
       </div>
 
       <div style={{ maxWidth: "900px", margin: "auto" }}>
-        <p id="disclosure-403-9" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="disclosure-403-9" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 403-9 Work-related injuries
         </p>
 
@@ -859,7 +859,7 @@ const GRI400 = () => {
       </div>
 
       <div style={{ maxWidth: "900px", margin: "auto" }}>
-        <p id="disclosure-403-10" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="disclosure-403-10" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 403-10 Work-related ill health
         </p>
 
@@ -944,14 +944,14 @@ const GRI400 = () => {
         }}
       >
         <h3
-          id="gri404-title"
+          class="section-marker" id="gri404-title"
           style={{ fontWeight: "bold", color: "blue", textAlign: "center" }}
         >
           GRI 404 Training and Education
         </h3>
 
         <p
-          id="disclosure-404-3-3"
+          class="section-marker" id="disclosure-404-3-3"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 3-3 Management of material topics
@@ -960,7 +960,7 @@ const GRI400 = () => {
         <BoxTableComponent />
 
         <p
-          id="disclosure-404-1"
+          class="section-marker" id="disclosure-404-1"
           style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
         >
           Disclosure 404-1 Average hours of training per year per employee
@@ -1024,7 +1024,7 @@ const GRI400 = () => {
       </div>
 
       <div style={{ maxWidth: "900px", margin: "auto" }}>
-        <p id="disclosure-404-2" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="disclosure-404-2" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 404-2 Programs for upgrading employee skills and transition
           assistance programs
         </p>
@@ -1033,7 +1033,7 @@ const GRI400 = () => {
       </div>
 
       <div style={{ maxWidth: "900px", margin: "auto" }}>
-        <p id="disclosure-404-3" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="disclosure-404-3" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 404-3 Percentage of employees receiving regular performance
           and career development reviews
         </p>
@@ -1210,14 +1210,14 @@ const GRI400 = () => {
         }}
       >
         <h3
-          id="gri405-title"
+          class="section-marker" id="gri405-title"
           style={{ fontWeight: "bold", color: "blue", textAlign: "center" }}
         >
           GRI 405 Diversity & Inclusion
         </h3>
 
         <p
-          id="disclosure-405-3-3"
+          class="section-marker" id="disclosure-405-3-3"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 3-3 Management of material topics
@@ -1226,7 +1226,7 @@ const GRI400 = () => {
         <BoxTableComponent />
 
         <p
-          id="disclosure-405-1"
+          class="section-marker" id="disclosure-405-1"
           style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
         >
           Disclosure 401-1 New employee hires and employee turnover
@@ -1394,7 +1394,7 @@ const GRI400 = () => {
       </div>
 
       <div style={{ maxWidth: "900px", margin: "auto" }}>
-        <p id="disclosure-405-2" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="disclosure-405-2" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 405-2 Ratio of basic salary and remuneration of women to
           men
         </p>
@@ -1476,14 +1476,14 @@ const GRI400 = () => {
         }}
       >
         <h3
-          id="gri406-title"
+          class="section-marker" id="gri406-title"
           style={{ fontWeight: "bold", color: "blue", textAlign: "center" }}
         >
           GRI 406 Non-discrimination
         </h3>
 
         <p
-          id="disclosure-406-3-3"
+          class="section-marker" id="disclosure-406-3-3"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 3-3 Management of material topics
@@ -1492,7 +1492,7 @@ const GRI400 = () => {
         <BoxTableComponent />
 
         <p
-          id="disclosure-406-1"
+          class="section-marker" id="disclosure-406-1"
           style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
         >
           Disclosure 406-1 Incidents of discrimination and corrective actions
@@ -1550,14 +1550,14 @@ const GRI400 = () => {
         }}
       >
         <h3
-          id="gri407-title"
+          class="section-marker" id="gri407-title"
           style={{ fontWeight: "bold", color: "blue", textAlign: "center" }}
         >
           GRI 407 Freedom of Association and Collective Bargaining
         </h3>
 
         <p
-          id="disclosure-407-3-3"
+          class="section-marker" id="disclosure-407-3-3"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 3-3 Management of material topics
@@ -1566,7 +1566,7 @@ const GRI400 = () => {
         <BoxTableComponent />
 
         <p
-          id="disclosure-407-1"
+          class="section-marker" id="disclosure-407-1"
           style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
         >
           Disclosure 407-1 Operations and suppliers in which the right to
@@ -1583,14 +1583,14 @@ const GRI400 = () => {
         }}
       >
         <h3
-          id="gri408-title"
+          class="section-marker" id="gri408-title"
           style={{ fontWeight: "bold", color: "blue", textAlign: "center" }}
         >
           GRI 408 Child Labor
         </h3>
 
         <p
-          id="disclosure-408-3-3"
+          class="section-marker" id="disclosure-408-3-3"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 3-3 Management of material topics
@@ -1599,7 +1599,7 @@ const GRI400 = () => {
         <BoxTableComponent />
 
         <p
-          id="disclosure-408-1"
+          class="section-marker" id="disclosure-408-1"
           style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
         >
           Disclosure 408-1 Operations and suppliers at significant risk for
@@ -1656,14 +1656,14 @@ const GRI400 = () => {
         }}
       >
         <h3
-          id="gri409-title"
+          class="section-marker" id="gri409-title"
           style={{ fontWeight: "bold", color: "blue", textAlign: "center" }}
         >
           GRI 409 Forced or Compulsory Labor
         </h3>
 
         <p
-          id="disclosure-409-3-3"
+          class="section-marker" id="disclosure-409-3-3"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 3-3 Management of material topics
@@ -1672,7 +1672,7 @@ const GRI400 = () => {
         <BoxTableComponent />
 
         <p
-          id="disclosure-409-1"
+          class="section-marker" id="disclosure-409-1"
           style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
         >
           Disclosure 409-1 Operations and suppliers at significant risk for
@@ -1689,14 +1689,14 @@ const GRI400 = () => {
         }}
       >
         <h3
-          id="gri410-title"
+          class="section-marker" id="gri410-title"
           style={{ fontWeight: "bold", color: "blue", textAlign: "center" }}
         >
           GRI 410: Security Practices
         </h3>
 
         <p
-          id="disclosure-410-3-3"
+          class="section-marker" id="disclosure-410-3-3"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 3-3 Management of material topics
@@ -1705,7 +1705,7 @@ const GRI400 = () => {
         <BoxTableComponent />
 
         <p
-          id="disclosure-410-1"
+          class="section-marker" id="disclosure-410-1"
           style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
         >
           Disclosure 410-1 Security personnel trained in human rights policies
@@ -1764,14 +1764,14 @@ const GRI400 = () => {
         }}
       >
         <h3
-          id="gri411-title"
+          class="section-marker" id="gri411-title"
           style={{ fontWeight: "bold", color: "blue", textAlign: "center" }}
         >
           GRI 411: Rights of Indigenous Peoples
         </h3>
 
         <p
-          id="disclosure-411-3-3"
+          class="section-marker" id="disclosure-411-3-3"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 3-3 Management of material topics
@@ -1780,7 +1780,7 @@ const GRI400 = () => {
         <BoxTableComponent />
 
         <p
-          id="disclosure-411-1"
+          class="section-marker" id="disclosure-411-1"
           style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
         >
           Disclosure 411-1 Incidents of violations involving rights of
@@ -1838,14 +1838,14 @@ const GRI400 = () => {
         }}
       >
         <h3
-          id="gri413-title"
+          class="section-marker" id="gri413-title"
           style={{ fontWeight: "bold", color: "blue", textAlign: "center" }}
         >
           GRI 413: Local Communities
         </h3>
 
         <p
-          id="disclosure-413-3-3"
+          class="section-marker" id="disclosure-413-3-3"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 3-3 Management of material topics
@@ -1854,7 +1854,7 @@ const GRI400 = () => {
         <BoxTableComponent />
 
         <p
-          id="disclosure-413-1"
+          class="section-marker" id="disclosure-413-1"
           style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
         >
           Disclosure 413-1 Operations with local community engagement, impact
@@ -1911,7 +1911,7 @@ const GRI400 = () => {
           margin: "auto",
         }}
       >
-        <p id="disclosure-413-2" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="disclosure-413-2" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 413-2 Operations with significant actual and potential
           negative impacts on local communities
         </p>
@@ -1926,14 +1926,14 @@ const GRI400 = () => {
         }}
       >
         <h3
-          id="gri414-title"
+          class="section-marker" id="gri414-title"
           style={{ fontWeight: "bold", color: "blue", textAlign: "center" }}
         >
           GRI 414: Supplier Social Assessment
         </h3>
 
         <p
-          id="disclosure-414-3-3"
+          class="section-marker" id="disclosure-414-3-3"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 3-3 Management of material topics
@@ -1942,7 +1942,7 @@ const GRI400 = () => {
         <BoxTableComponent />
 
         <p
-          id="disclosure-414-1"
+          class="section-marker" id="disclosure-414-1"
           style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
         >
           Disclosure 414-1 New suppliers that were screened using social
@@ -1999,7 +1999,7 @@ const GRI400 = () => {
           margin: "auto",
         }}
       >
-        <p id="disclosure-414-2" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="disclosure-414-2" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 414-2 Negative social impacts in the supply chain and
           actions taken
         </p>
@@ -2077,14 +2077,14 @@ const GRI400 = () => {
         }}
       >
         <h3
-          id="gri415-title"
+          class="section-marker" id="gri415-title"
           style={{ fontWeight: "bold", color: "blue", textAlign: "center" }}
         >
           GRI 415: Public Policy
         </h3>
 
         <p
-          id="disclosure-415-3-3"
+          class="section-marker" id="disclosure-415-3-3"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 3-3 Management of material topics
@@ -2093,7 +2093,7 @@ const GRI400 = () => {
         <BoxTableComponent />
 
         <p
-          id="disclosure-415-1"
+          class="section-marker" id="disclosure-415-1"
           style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
         >
           Disclosure 415-1 Political contributions
@@ -2151,14 +2151,14 @@ const GRI400 = () => {
         }}
       >
         <h3
-          id="gri416-title"
+          class="section-marker" id="gri416-title"
           style={{ fontWeight: "bold", color: "blue", textAlign: "center" }}
         >
           GRI 416: Customer Health and Safety
         </h3>
 
         <p
-          id="disclosure-416-3-3"
+          class="section-marker" id="disclosure-416-3-3"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 3-3 Management of material topics
@@ -2167,7 +2167,7 @@ const GRI400 = () => {
         <BoxTableComponent />
 
         <p
-          id="disclosure-416-1"
+          class="section-marker" id="disclosure-416-1"
           style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
         >
           Disclosure 416-1 Assessment of the health and safety impacts of
@@ -2224,7 +2224,7 @@ const GRI400 = () => {
           margin: "auto",
         }}
       >
-        <p id="disclosure-416-2" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="disclosure-416-2" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 416-2 Incidents of non-compliance concerning the health and
           safety impacts of products and services
         </p>
@@ -2307,14 +2307,14 @@ const GRI400 = () => {
         }}
       >
         <h3
-          id="gri417-title"
+          class="section-marker" id="gri417-title"
           style={{ fontWeight: "bold", color: "blue", textAlign: "center" }}
         >
           GRI 417: Marketing and Labeling
         </h3>
 
         <p
-          id="disclosure-417-3-3"
+          class="section-marker" id="disclosure-417-3-3"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 3-3 Management of material topics
@@ -2323,7 +2323,7 @@ const GRI400 = () => {
         <BoxTableComponent />
 
         <p
-          id="disclosure-417-1"
+          class="section-marker" id="disclosure-417-1"
           style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
         >
           Disclosure 417-1 Requirements for product and service information and
@@ -2380,7 +2380,7 @@ const GRI400 = () => {
           margin: "auto",
         }}
       >
-        <p id="disclosure-417-2" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="disclosure-417-2" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 417-2 Incidents of non-compliance concerning product and
           service information and labeling
         </p>
@@ -2461,7 +2461,7 @@ const GRI400 = () => {
           margin: "auto",
         }}
       >
-        <p id="disclosure-417-3" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="disclosure-417-3" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 417-3 Incidents of non-compliance concerning marketing
           communications
         </p>
@@ -2544,14 +2544,14 @@ const GRI400 = () => {
         }}
       >
         <h3
-          id="gri418-title"
+          class="section-marker" id="gri418-title"
           style={{ fontWeight: "bold", color: "blue", textAlign: "center" }}
         >
           GRI 418: Customer Privacy
         </h3>
 
         <p
-          id="disclosure-418-3-3"
+          class="section-marker" id="disclosure-418-3-3"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 3-3 Management of material topics
@@ -2560,7 +2560,7 @@ const GRI400 = () => {
         <BoxTableComponent />
 
         <p
-          id="disclosure-418-1"
+          class="section-marker" id="disclosure-418-1"
           style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
         >
           Disclosure 418-1 Substantiated complaints concerning breaches of

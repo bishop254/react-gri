@@ -10,11 +10,11 @@ const GRI2 = () => {
           margin: "auto",
         }}
       >
-        <h3 id="gri2-org-reporting" style={{ fontWeight: "bold" }}>
+        <h3 class="section-marker" id="gri2-org-reporting" style={{ fontWeight: "bold" }}>
           1. The organization and its reporting practices
         </h3>
         <p
-          id="gri2-disclosure-2-1"
+          class="section-marker" id="gri2-disclosure-2-1"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 2-1 Organizational details
@@ -106,7 +106,7 @@ const GRI2 = () => {
         }}
       >
         <p
-          id="gri2-disclosure-2-2"
+          class="section-marker" id="gri2-disclosure-2-2"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 2-2 Entities included in the organization’s sustainability
@@ -173,7 +173,7 @@ const GRI2 = () => {
         }}
       >
         <p
-          id="gri2-disclosure-2-3"
+          class="section-marker" id="gri2-disclosure-2-3"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 2-3 Reporting period, frequency and contact point
@@ -262,7 +262,7 @@ const GRI2 = () => {
         }}
       >
         <p
-          id="gri2-disclosure-2-4"
+          class="section-marker" id="gri2-disclosure-2-4"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 2-4 Restatements of information
@@ -278,7 +278,7 @@ const GRI2 = () => {
         }}
       >
         <p
-          id="gri2-disclosure-2-5"
+          class="section-marker" id="gri2-disclosure-2-5"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 2-5 External assurance
@@ -293,11 +293,11 @@ const GRI2 = () => {
           margin: "auto",
         }}
       >
-        <h3 id="gri2-activities-workers" style={{ fontWeight: "bold" }}>
+        <h3 class="section-marker" id="gri2-activities-workers" style={{ fontWeight: "bold" }}>
           2. Activities and workers
         </h3>
         <p
-          id="gri2-disclosure-2-6"
+          class="section-marker" id="gri2-disclosure-2-6"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 2-6 Activities, value chain and other business
@@ -314,7 +314,7 @@ const GRI2 = () => {
         }}
       >
         <p
-          id="gri2-disclosure-2-7"
+          class="section-marker" id="gri2-disclosure-2-7"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 2-7 Employees
@@ -430,7 +430,7 @@ const GRI2 = () => {
         }}
       >
         <p
-          id="gri2-disclosure-2-8"
+          class="section-marker" id="gri2-disclosure-2-8"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 2-8 Workers who are not employees
@@ -445,11 +445,11 @@ const GRI2 = () => {
           margin: "auto",
         }}
       >
-        <h3 id="gri2-governance" style={{ fontWeight: "bold" }}>
+        <h3 class="section-marker" id="gri2-governance" style={{ fontWeight: "bold" }}>
           3. Governance
         </h3>
         <p
-          id="gri2-disclosure-2-9"
+          class="section-marker" id="gri2-disclosure-2-9"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 2-9 Governance structure and composition
@@ -559,7 +559,7 @@ const GRI2 = () => {
         }}
       >
         <p
-          id="gri2-disclosure-2-10"
+          class="section-marker" id="gri2-disclosure-2-10"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 2-10 Nomination and selection of the highest governance
@@ -576,7 +576,7 @@ const GRI2 = () => {
         }}
       >
         <p
-          id="gri2-disclosure-2-11"
+          class="section-marker" id="gri2-disclosure-2-11"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 2-11 Chair of the highest governance body
@@ -592,7 +592,7 @@ const GRI2 = () => {
         }}
       >
         <p
-          id="gri2-disclosure-2-12"
+          class="section-marker" id="gri2-disclosure-2-12"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 2-12 Role of the highest governance body in overseeing the
@@ -609,7 +609,7 @@ const GRI2 = () => {
         }}
       >
         <p
-          id="gri2-disclosure-2-13"
+          class="section-marker" id="gri2-disclosure-2-13"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 2-13 Delegation of responsibility for managing impacts
@@ -625,7 +625,7 @@ const GRI2 = () => {
         }}
       >
         <p
-          id="gri2-disclosure-2-14"
+          class="section-marker" id="gri2-disclosure-2-14"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 2-14 Role of the highest governance body in sustainability
@@ -642,7 +642,7 @@ const GRI2 = () => {
         }}
       >
         <p
-          id="gri2-disclosure-2-15"
+          class="section-marker" id="gri2-disclosure-2-15"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 2-15 Conflicts of interest
@@ -658,7 +658,7 @@ const GRI2 = () => {
         }}
       >
         <p
-          id="gri2-disclosure-2-16"
+          class="section-marker" id="gri2-disclosure-2-16"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 2-16 Communication of critical concerns
@@ -723,7 +723,7 @@ const GRI2 = () => {
         }}
       >
         <p
-          id="gri2-disclosure-2-17"
+          class="section-marker" id="gri2-disclosure-2-17"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 2-17 Collective knowledge of the highest governance body
@@ -739,7 +739,7 @@ const GRI2 = () => {
         }}
       >
         <p
-          id="gri2-disclosure-2-18"
+          class="section-marker" id="gri2-disclosure-2-18"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 2-18 Evaluation of the performance of the highest
@@ -756,7 +756,7 @@ const GRI2 = () => {
         }}
       >
         <p
-          id="gri2-disclosure-2-19"
+          class="section-marker" id="gri2-disclosure-2-19"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 2-19 Remuneration policies
@@ -772,7 +772,7 @@ const GRI2 = () => {
         }}
       >
         <p
-          id="gri2-disclosure-2-20"
+          class="section-marker" id="gri2-disclosure-2-20"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 2-20 Process to determine remuneration
@@ -788,7 +788,7 @@ const GRI2 = () => {
         }}
       >
         <p
-          id="gri2-disclosure-2-21"
+          class="section-marker" id="gri2-disclosure-2-21"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 2-21 Annual total compensation ratio
@@ -888,11 +888,11 @@ const GRI2 = () => {
           margin: "auto",
         }}
       >
-        <h3 id="gri2-strategy-policies" style={{ fontWeight: "bold" }}>
+        <h3 class="section-marker" id="gri2-strategy-policies" style={{ fontWeight: "bold" }}>
           4. Strategy, policies and practices
         </h3>
         <p
-          id="gri2-disclosure-2-22"
+          class="section-marker" id="gri2-disclosure-2-22"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 2-22 Statement on sustainable development strategy
@@ -908,7 +908,7 @@ const GRI2 = () => {
         }}
       >
         <p
-          id="gri2-disclosure-2-23"
+          class="section-marker" id="gri2-disclosure-2-23"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 2-23 Policy commitments
@@ -924,7 +924,7 @@ const GRI2 = () => {
         }}
       >
         <p
-          id="gri2-disclosure-2-24"
+          class="section-marker" id="gri2-disclosure-2-24"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 2-24 Embedding policy commitments
@@ -940,7 +940,7 @@ const GRI2 = () => {
         }}
       >
         <p
-          id="gri2-disclosure-2-25"
+          class="section-marker" id="gri2-disclosure-2-25"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 2-25 Processes to remediate negative impacts
@@ -956,7 +956,7 @@ const GRI2 = () => {
         }}
       >
         <p
-          id="gri2-disclosure-2-26"
+          class="section-marker" id="gri2-disclosure-2-26"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 2-26 Mechanisms for seeking advice and raising concerns
@@ -972,7 +972,7 @@ const GRI2 = () => {
         }}
       >
         <p
-          id="gri2-disclosure-2-27"
+          class="section-marker" id="gri2-disclosure-2-27"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 2-27 Compliance with laws and regulations
@@ -1082,7 +1082,7 @@ const GRI2 = () => {
         }}
       >
         <p
-          id="gri2-disclosure-2-28"
+          class="section-marker" id="gri2-disclosure-2-28"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 2-28 Membership associations
@@ -1097,11 +1097,11 @@ const GRI2 = () => {
           margin: "auto",
         }}
       >
-        <h3 id="gri2-stakeholder-engagement" style={{ fontWeight: "bold" }}>
+        <h3 class="section-marker" id="gri2-stakeholder-engagement" style={{ fontWeight: "bold" }}>
           5. Stakeholder engagement
         </h3>
         <p
-          id="gri2-disclosure-2-29"
+          class="section-marker" id="gri2-disclosure-2-29"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 2-29 Approach to stakeholder engagement
@@ -1176,7 +1176,7 @@ const GRI2 = () => {
         }}
       >
         <p
-          id="gri2-disclosure-2-30"
+          class="section-marker" id="gri2-disclosure-2-30"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 2-30 Collective bargaining agreements

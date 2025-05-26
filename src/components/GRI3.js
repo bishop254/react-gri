@@ -10,14 +10,21 @@ const GRI3 = () => {
           margin: "auto",
         }}
       >
-        <h3 style={{ fontWeight: "bold" }} id="gri3">
+        <h3 style={{ fontWeight: "bold" }} className="section-marker" id="gri3">
           GRI 3
         </h3>
-        <h3 style={{ fontWeight: "bold" }} id="gri3-disclosures">
+        <h3
+          style={{ fontWeight: "bold" }}
+          className="section-marker"
+          id="gri3-disclosures"
+          data-title="2. Disclosures on material topics"
+        >
           2. Disclosures on material topics
         </h3>
         <p
+          className="section-marker"
           id="gri3-disclosure-3-1"
+          data-title="Disclosure 3-1 Process to determine material topics"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 3-1 Process to determine material topics
@@ -33,7 +40,9 @@ const GRI3 = () => {
         }}
       >
         <p
+          className="section-marker"
           id="gri3-disclosure-3-2"
+          data-title="Disclosure 3-2 List of material topics"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 3-2 List of material topics

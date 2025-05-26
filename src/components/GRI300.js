@@ -10,18 +10,18 @@ const GRI300 = () => {
           margin: "auto",
         }}
       >
-        <h3 id="gri301-materials" style={{ fontWeight: "bold" }}>
+        <h3 class="section-marker" id="gri301-materials" style={{ fontWeight: "bold" }}>
           GRI 300
         </h3>
         <h3
-          id="gri301-materials"
+          class="section-marker" id="gri301-materials"
           style={{ fontWeight: "bold", color: "blue", textAlign: "center" }}
         >
           GRI 301 Materials
         </h3>
 
         <p
-          id="disclosure-301-3-3"
+          class="section-marker" id="disclosure-301-3-3"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 3-3 Management of material topics
@@ -30,7 +30,7 @@ const GRI300 = () => {
         <BoxTableComponent />
 
         <p
-          id="gri301-1"
+          class="section-marker" id="gri301-1"
           style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
         >
           Disclosure 301-1 Materials used by weight or volume
@@ -104,7 +104,7 @@ const GRI300 = () => {
           margin: "auto",
         }}
       >
-        <p id="gri301-2" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="gri301-2" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 301-2 Recycled input materials used
         </p>
 
@@ -162,7 +162,7 @@ const GRI300 = () => {
           margin: "auto",
         }}
       >
-        <p id="gri301-3" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="gri301-3" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 301-3 Reclaimed products and their packaging materials
         </p>
 
@@ -228,14 +228,14 @@ const GRI300 = () => {
         }}
       >
         <h3
-          id="gri302-energy"
+          class="section-marker" id="gri302-energy"
           style={{ fontWeight: "bold", color: "blue", textAlign: "center" }}
         >
           GRI 302 Energy
         </h3>
 
         <p
-          id="disclosure-302-3-3"
+          class="section-marker" id="disclosure-302-3-3"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 3-3 Management of material topics
@@ -244,7 +244,7 @@ const GRI300 = () => {
         <BoxTableComponent />
 
         <p
-          id="gri302-1"
+          class="section-marker" id="gri302-1"
           style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
         >
           Disclosure 302-1 Energy consumption within the organization
@@ -399,7 +399,7 @@ const GRI300 = () => {
           margin: "auto",
         }}
       >
-        <p id="gri302-2" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="gri302-2" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 302-2 Energy consumption outside of the organization
         </p>
 
@@ -573,7 +573,7 @@ const GRI300 = () => {
           margin: "auto",
         }}
       >
-        <p id="gri302-3" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="gri302-3" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 302-3 Energy intensity
         </p>
 
@@ -639,7 +639,7 @@ const GRI300 = () => {
           margin: "auto",
         }}
       >
-        <p id="gri302-5" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="gri302-5" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 302-5 Reductions in energy requirements of products and
           services
         </p>
@@ -706,14 +706,14 @@ const GRI300 = () => {
         }}
       >
         <h3
-          id="gri303-water"
+          class="section-marker" id="gri303-water"
           style={{ fontWeight: "bold", color: "blue", textAlign: "center" }}
         >
           GRI 303 Water & effluents
         </h3>
 
         <p
-          id="disclosure-303-3-3"
+          class="section-marker" id="disclosure-303-3-3"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 3-3 Management of material topics
@@ -722,7 +722,7 @@ const GRI300 = () => {
         <BoxTableComponent />
 
         <p
-          id="gri303-1"
+          class="section-marker" id="gri303-1"
           style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
         >
           Disclosure 303-1 Interactions with water as a shared resource
@@ -737,7 +737,7 @@ const GRI300 = () => {
           margin: "auto",
         }}
       >
-        <p id="gri303-2" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="gri303-2" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 303-2 Management of water discharge-related impacts
         </p>
 
@@ -750,7 +750,7 @@ const GRI300 = () => {
           margin: "auto",
         }}
       >
-        <p id="gri303-3" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="gri303-3" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 303-3 Water withdrawal
         </p>
 
@@ -881,7 +881,7 @@ const GRI300 = () => {
           margin: "auto",
         }}
       >
-        <p id="gri303-4" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="gri303-4" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 303-4 Water discharge
         </p>
 
@@ -1020,7 +1020,7 @@ const GRI300 = () => {
           margin: "auto",
         }}
       >
-        <p id="gri303-5" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="gri303-5" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 303-5 Water consumption
         </p>
 
@@ -1209,14 +1209,14 @@ const GRI300 = () => {
         }}
       >
         <h3
-          id="gri304-biodiversity"
+          class="section-marker" id="gri304-biodiversity"
           style={{ fontWeight: "bold", color: "blue", textAlign: "center" }}
         >
           GRI 304 Biodiversity
         </h3>
 
         <p
-          id="disclosure-304-3-3"
+          class="section-marker" id="disclosure-304-3-3"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 3-3 Management of material topics
@@ -1225,7 +1225,7 @@ const GRI300 = () => {
         <BoxTableComponent />
 
         <p
-          id="gri304-1"
+          class="section-marker" id="gri304-1"
           style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
         >
           Disclosure 304-1 Operational sites owned, leased, managed in, or
@@ -1358,7 +1358,7 @@ const GRI300 = () => {
           margin: "auto",
         }}
       >
-        <p id="gri304-2" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="gri304-2" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 304-2 Significant impacts of activities, products and
           services on biodiversity
         </p>
@@ -1372,7 +1372,7 @@ const GRI300 = () => {
           margin: "auto",
         }}
       >
-        <p id="gri304-3" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="gri304-3" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 304-3 Habitats protected or restored
         </p>
 
@@ -1444,7 +1444,7 @@ const GRI300 = () => {
           margin: "auto",
         }}
       >
-        <p id="gri304-4" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="gri304-4" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 304-4 IUCN Red List species and national conservation list
           species with habitats in areas affected by operations
         </p>
@@ -1509,14 +1509,14 @@ const GRI300 = () => {
         }}
       >
         <h3
-          id="gri305-emissions"
+          class="section-marker" id="gri305-emissions"
           style={{ fontWeight: "bold", color: "blue", textAlign: "center" }}
         >
           GRI 305 Emissions
         </h3>
 
         <p
-          id="disclosure-305-3-3"
+          class="section-marker" id="disclosure-305-3-3"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 3-3 Management of material topics
@@ -1525,7 +1525,7 @@ const GRI300 = () => {
         <BoxTableComponent />
 
         <p
-          id="gri305-1"
+          class="section-marker" id="gri305-1"
           style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
         >
           Disclosure 305-1 Direct (Scope 1) GHG emissions
@@ -1610,7 +1610,7 @@ const GRI300 = () => {
           margin: "auto",
         }}
       >
-        <p id="gri305-2" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="gri305-2" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 305-2 Energy indirect (Scope 2) GHG emissions
         </p>
 
@@ -1685,7 +1685,7 @@ const GRI300 = () => {
           margin: "auto",
         }}
       >
-        <p id="gri305-3" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="gri305-3" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 305-3 Other indirect (Scope 3) GHG emissions
         </p>
 
@@ -1782,7 +1782,7 @@ const GRI300 = () => {
           margin: "auto",
         }}
       >
-        <p id="gri305-4" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="gri305-4" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 305-4 GHG emissions intensity
         </p>
 
@@ -1869,7 +1869,7 @@ const GRI300 = () => {
           margin: "auto",
         }}
       >
-        <p id="gri305-5" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="gri305-5" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 305-5 Reduction of GHG emissions
         </p>
 
@@ -1941,7 +1941,7 @@ const GRI300 = () => {
           margin: "auto",
         }}
       >
-        <p id="gri305-6" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="gri305-6" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 305-6 Emissions of ozone-depleting substances (ODS)
         </p>
 
@@ -2013,7 +2013,7 @@ const GRI300 = () => {
           margin: "auto",
         }}
       >
-        <p id="gri305-7" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="gri305-7" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 305-7 NOx, SOx, and other air emissions
         </p>
 
@@ -2090,14 +2090,14 @@ const GRI300 = () => {
         }}
       >
         <h3
-          id="gri306-waste"
+          class="section-marker" id="gri306-waste"
           style={{ fontWeight: "bold", color: "blue", textAlign: "center" }}
         >
           GRI 306 Waste
         </h3>
 
         <p
-          id="disclosure-306-3-3"
+          class="section-marker" id="disclosure-306-3-3"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 3-3 Management of material topics
@@ -2106,7 +2106,7 @@ const GRI300 = () => {
         <BoxTableComponent />
 
         <p
-          id="gri306-1"
+          class="section-marker" id="gri306-1"
           style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
         >
           Disclosure 306-1 Waste generation and impacts
@@ -2121,7 +2121,7 @@ const GRI300 = () => {
           margin: "auto",
         }}
       >
-        <p id="gri306-2" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="gri306-2" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 306-2 Management of waste impacts
         </p>
 
@@ -2134,7 +2134,7 @@ const GRI300 = () => {
           margin: "auto",
         }}
       >
-        <p id="gri306-3" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="gri306-3" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 306-3 Waste generated
         </p>
 
@@ -2357,7 +2357,7 @@ const GRI300 = () => {
           margin: "auto",
         }}
       >
-        <p id="gri306-4" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="gri306-4" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 306-4 Waste diverted from disposal
         </p>
 
@@ -2524,7 +2524,7 @@ const GRI300 = () => {
           margin: "auto",
         }}
       >
-        <p id="gri306-5" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="gri306-5" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 306-5 Waste directed to disposal
         </p>
 
@@ -2643,14 +2643,14 @@ const GRI300 = () => {
         }}
       >
         <h3
-          id="gri308-supplier"
+          class="section-marker" id="gri308-supplier"
           style={{ fontWeight: "bold", color: "blue", textAlign: "center" }}
         >
           GRI 308 Supplier Environmental Assessment
         </h3>
 
         <p
-          id="disclosure-308-3-3"
+          class="section-marker" id="disclosure-308-3-3"
           style={{ fontWeight: "bold", color: "blue" }}
         >
           Disclosure 3-3 Management of material topics
@@ -2659,7 +2659,7 @@ const GRI300 = () => {
         <BoxTableComponent />
 
         <p
-          id="gri308-1"
+          class="section-marker" id="gri308-1"
           style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
         >
           Disclosure 308-1 New suppliers screened using environmental criteria
@@ -2717,7 +2717,7 @@ const GRI300 = () => {
           margin: "auto",
         }}
       >
-        <p id="gri308-2" style={{ fontWeight: "bold", color: "blue" }}>
+        <p class="section-marker" id="gri308-2" style={{ fontWeight: "bold", color: "blue" }}>
           Disclosure 308-2 Negative environmental impacts in supply chain
         </p>
 
