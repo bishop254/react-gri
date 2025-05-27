@@ -39,6 +39,46 @@ export const principles = [
         title: "Economic Performance",
         targetId: "Economic-Performance",
       },
+      {
+        title: "Risks and opportunities due to climate change",
+        targetId: "Risks-Opportunities-Climate-Change",
+      },
+      {
+        title: "Market Presence",
+        targetId: "Market-Presence",
+      },
+      {
+        title: "Indirect Economic Impact",
+        targetId: "Indirect-Economic-Impact",
+      },
+      {
+        title: "Procurement Practices",
+        targetId: "Procurement-Practices",
+      },
+      {
+        title: "Supplier Environmental Assessment",
+        targetId: "Supplier-Environmental-Assessment",
+      },
+      {
+        title: "Anti-Corruption",
+        targetId: "Anti-Corruption",
+      },
+      {
+        title: "Anti-competitive Behavior",
+        targetId: "Anti-competitive-Behavior",
+      },
+      {
+        title: "Tax",
+        targetId: "Tax",
+      },
+      {
+        title: "Public Policy",
+        targetId: "Public-Policy",
+      },
+      {
+        title: "Political contributions",
+        targetId: "Political-contributions",
+      },
     ],
   },
   //   {
