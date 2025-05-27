@@ -81,6 +81,28 @@ export const principles = [
       },
     ],
   },
+  {
+    title: "Environment",
+    id: "Environment",
+    children: [
+      {
+        title: "Materials",
+        targetId: "Materials",
+      },
+      {
+        title: "Energy",
+        targetId: "Energy",
+      },
+      {
+        title: "Water & effluents",
+        targetId: "Water-effluents",
+      },
+      {
+        title: "Emissions",
+        targetId: "Emissions",
+      },
+    ],
+  },
   //   {
   //     title: "GRI 200",
   //     id: "gri200",

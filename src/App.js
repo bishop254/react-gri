@@ -14,6 +14,7 @@ import GRI300 from "./components/GRI300";
 import GRI400 from "./components/GRI400";
 import { principles } from "./components/principles";
 import Governance from "./components/Governance";
+import Environment from "./components/Environment";
 
 function App() {
   const [loadingType, setLoadingType] = useState(null);
@@ -256,6 +257,9 @@ function App() {
         </div>
         <div id="governance">
           <Governance />
+        </div>
+        <div id="Environment">
+          <Environment />
         </div>
         {/* <div id="gri200">
           <GRI200 />
