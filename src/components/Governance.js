@@ -44,7 +44,7 @@ const Governance = () => {
                   width: "50%",
                 }}
               >
-                List of Committees{" "}
+                List of Committees
               </th>
               <th
                 style={{
@@ -53,7 +53,7 @@ const Governance = () => {
                   fontWeight: "bold",
                 }}
               >
-                &nbsp;{" "}
+                &nbsp;
               </th>
             </tr>
           </thead>
@@ -145,7 +145,7 @@ const Governance = () => {
           className="section-marker"
           style={{ fontWeight: "bold", color: "blue" }}
         >
-          Conflicts of interest{" "}
+          Conflicts of interest
         </p>
         <small className="section-ref">
           <BoldLettersOnly text="GRI 2-15" />
@@ -178,8 +178,8 @@ const Governance = () => {
           className="section-marker"
           style={{ fontWeight: "bold", color: "blue" }}
         >
-          Annual total compensation ratio{" "}
-        </p>{" "}
+          Annual total compensation ratio
+        </p>
         <small className="section-ref">
           <BoldLettersOnly text="GRI 2-21, S1-16_02, S1-16_03" />
         </small>
@@ -289,7 +289,7 @@ const Governance = () => {
           class="section-marker"
           style={{ fontWeight: "bold", color: "blue", margin: 0 }}
         >
-          Statement on sustainable development strategy{" "}
+          Statement on sustainable development strategy
         </p>
         <small className="section-ref">
           <BoldLettersOnly text="ESRS 2 BP-2_23, ESRS 2 SBM-1_23, GRI 2-22" />
@@ -308,7 +308,7 @@ const Governance = () => {
           class="section-marker"
           style={{ fontWeight: "bold", color: "blue", margin: 0 }}
         >
-          Policy commitments{" "}
+          Policy commitments
         </p>
         <small className="section-ref">
           <BoldLettersOnly text="S1-1_01-S1-1_04, S1-1_07, S1-1_12, S1-1_14, S2-1_01, S2-1_08, S2-1_11, S3-1_02, S3-1_06, S3-1_09, S4-1_01, S4-1_02, S4-1_06, S4-1_09, G1-1_01, GRI 2-24, ESRS 2 GOV-2_02, S1-4_14, S2-4_13, S3-4_13, S4-4_13, G1-1_01, G1-1_10, GRI 2-23" />
@@ -327,7 +327,7 @@ const Governance = () => {
           class="section-marker"
           style={{ fontWeight: "bold", color: "blue", margin: 0 }}
         >
-          Grievance Redressal{" "}
+          Grievance Redressal
         </p>
         <small className="section-ref">
           <BoldLettersOnly text="S1-1_06, S1-1_21, S1-3_01 to S1-3_09, S1-17_03, S2-3_01 to S2-3_06, S2-3_11, S2-3_12, S2-1_04, S2-4_07, S3-1_05, S3-3_10 to S3-3_21, S3-4_07, S4-3_01, S4-3_02, S4-3_03, S4-1_05, S4-3_05, S4-3_06, S4-3_09, S4-3_11, S4-3_12, S4-4_07, GRI 2-26, S1-3_07, S2-3_04, S3-3_13, S4-3_04, G1-1_02, G1-1_05, G1-1_13, G1-1_14, G1-3_01, GRI 2-25" />
@@ -475,7 +475,7 @@ const Governance = () => {
           class="section-marker"
           style={{ fontWeight: "bold", color: "blue", margin: 0 }}
         >
-          Membership associations{" "}
+          Membership associations
         </p>
         <small className="section-ref">
           <BoldLettersOnly text="GRI 2-28" />
@@ -732,7 +732,7 @@ const Governance = () => {
           id="Indirect-Economic-Impact"
           style={{ fontWeight: "bold" }}
         >
-          Indirect Economic Impact{" "}
+          Indirect Economic Impact
         </h3>
         <small className="section-ref">
           <BoldLettersOnly text="GRI 203-1, GRI 203-2, S1-4_18, S2-4_17, S3-4_18, S3-4_1, S4-4_17" />
@@ -808,9 +808,9 @@ const Governance = () => {
             </tr>
             {[1, 2].map((_, index) => (
               <tr key={index}>
-                <td style={{ border: "1px solid black", padding: "8px" }}></td>
-                <td style={{ border: "1px solid black", padding: "8px" }}></td>
-                <td style={{ border: "1px solid black", padding: "8px" }}></td>
+                <td style={{ border: "1px solid black", padding: "8px" }}>&nbsp;</td>
+                <td style={{ border: "1px solid black", padding: "8px" }}>&nbsp;</td>
+                <td style={{ border: "1px solid black", padding: "8px" }}>&nbsp;</td>
               </tr>
             ))}
           </tbody>
@@ -825,7 +825,7 @@ const Governance = () => {
           id="Supplier-Environmental-Assessment"
           style={{ fontWeight: "bold" }}
         >
-          Supplier Environmental Assessment{" "}
+          Supplier Environmental Assessment
         </h3>
 
         <small className="section-ref">
@@ -862,7 +862,7 @@ const Governance = () => {
                   fontWeight: "bold",
                 }}
               >
-                &nbsp;{" "}
+                &nbsp;
               </th>
             </tr>
           </thead>
@@ -1539,7 +1539,7 @@ const Governance = () => {
           id="Public-Policy"
           style={{ fontWeight: "bold" }}
         >
-          Public Policy{" "}
+          Public Policy
         </h3>
         <small className="section-ref">
           <BoldLettersOnly text="GRI 415, G1-5_01, G1-5_02" />

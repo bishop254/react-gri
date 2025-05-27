@@ -101,6 +101,48 @@ export const principles = [
         title: "Emissions",
         targetId: "Emissions",
       },
+      {
+        title: "Waste",
+        targetId: "Waste",
+      },
+    ],
+  },
+  {
+    title: "Social",
+    id: "Social",
+    children: [
+      {
+        title: "Training and Education",
+        targetId: "Training-and-Education",
+      },
+      {
+        title: "Diversity & Inclusion",
+        targetId: "Diversity-Inclusion",
+      },
+      {
+        title: "Human Rights",
+        targetId: "Human-Rights",
+      },
+      {
+        title: "Security Practices",
+        targetId: "Security-Practices",
+      },
+      {
+        title: "Local Communities",
+        targetId: "Local-Communities",
+      },
+      {
+        title: "Impact on Customers",
+        targetId: "Impact-on-Customers",
+      },
+      {
+        title: "Product & service quality",
+        targetId: "Product-service-quality",
+      },
+      {
+        title: "Cybersecurity and data privacy",
+        targetId: "Cybersecurity-and-data-privacy",
+      },
     ],
   },
   //   {

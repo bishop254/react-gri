@@ -1,7 +1,8 @@
 import React from "react";
 import BoxTableComponent from "./boxTable";
+import { BoldLettersOnly } from "./BoldLetters";
 
-const GRI400 = () => {
+const Social = () => {
   return (
     <div style={{ minHeight: "80vh" }}>
       <div
@@ -10,31 +11,24 @@ const GRI400 = () => {
           margin: "auto",
         }}
       >
-        <h3 class="section-marker" id="gri400" style={{ fontWeight: "bold" }}>
-          GRI 400
-        </h3>
-        <h3
-          class="section-marker" id="gri401-title"
-          style={{ fontWeight: "bold", color: "blue", textAlign: "center" }}
+        <h2
+          style={{ fontWeight: "bold" }}
+          className="section-marker"
+          id="Social"
         >
-          GRI 401 Employment
-        </h3>
-
+          Social
+        </h2>
         <p
-          class="section-marker" id="disclosure-401-3-3"
+          className="section-marker"
+          id="Employment"
           style={{ fontWeight: "bold", color: "blue" }}
         >
-          Disclosure 3-3 Management of material topics
+          Employment
         </p>
 
-        <BoxTableComponent />
-
-        <p
-          class="section-marker" id="disclosure-401-1"
-          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
-        >
-          Disclosure 401-1 New employee hires and employee turnover
-        </p>
+        <small className="section-ref">
+          <BoldLettersOnly text="GRI 401-1, S1-6_11, S1-6_12" />
+        </small>
 
         <table
           style={{
@@ -42,6 +36,7 @@ const GRI400 = () => {
             width: "100%",
             border: "1px solid black",
             textAlign: "center",
+            marginTop: "1rem",
             marginBottom: "2rem",
           }}
         >
@@ -215,15 +210,19 @@ const GRI400 = () => {
             ))}
           </tbody>
         </table>
-
-        <BoxTableComponent />
       </div>
 
       <div style={{ maxWidth: "900px", margin: "auto" }}>
-        <p class="section-marker" id="disclosure-401-2" style={{ fontWeight: "bold", color: "blue" }}>
-          Disclosure 401-2 Benefits provided to full-time employees that are not
-          provided to temporary or part-time employees
+        <p
+          className="section-marker"
+          style={{ fontWeight: "bold", color: "blue" }}
+        >
+          Benefits provided to workforce
         </p>
+
+        <small className="section-ref">
+          <BoldLettersOnly text="S1-11_01 to S1-11_11, GRI 401-2" />
+        </small>
 
         <table
           style={{
@@ -231,6 +230,7 @@ const GRI400 = () => {
             width: "100%",
             border: "1px solid black",
             textAlign: "left",
+            marginTop: "1rem",
             marginBottom: "2rem",
           }}
         >
@@ -306,9 +306,16 @@ const GRI400 = () => {
       </div>
 
       <div style={{ maxWidth: "900px", margin: "auto" }}>
-        <p class="section-marker" id="disclosure-401-3" style={{ fontWeight: "bold", color: "blue" }}>
-          Disclosure 401-3 Parental leave
+        <p
+          className="section-marker"
+          style={{ fontWeight: "bold", color: "blue" }}
+        >
+          Parental leave
         </p>
+
+        <small className="section-ref">
+          <BoldLettersOnly text="S1-15_01 to S1-15_03, GRI 401-3" />
+        </small>
 
         <table
           style={{
@@ -316,12 +323,14 @@ const GRI400 = () => {
             width: "100%",
             border: "1px solid black",
             textAlign: "left",
+            marginTop: "1rem",
             marginBottom: "2rem",
           }}
         >
           <thead>
             <tr>
               <th
+                rowSpan={2}
                 style={{
                   border: "1px solid black",
                   padding: "8px",
@@ -344,7 +353,6 @@ const GRI400 = () => {
               </th>
             </tr>
             <tr>
-              <th></th>
               <th
                 style={{
                   border: "1px solid black",
@@ -388,28 +396,16 @@ const GRI400 = () => {
       </div>
 
       <div style={{ maxWidth: "900px", margin: "auto" }}>
-        <h3
-          class="section-marker" id="gri402-title"
-          style={{ fontWeight: "bold", color: "blue", textAlign: "center" }}
-        >
-          GRI 402 Labor Management
-        </h3>
-
         <p
-          class="section-marker" id="disclosure-402-3-3"
+          className="section-marker"
           style={{ fontWeight: "bold", color: "blue" }}
         >
-          Disclosure 3-3 Management of material topics
+          Occupational Health and Safety
         </p>
 
-        <BoxTableComponent />
-
-        <p
-          class="section-marker" id="disclosure-402-1"
-          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
-        >
-          Disclosure 402-1 Minimum notice periods regarding operational changes
-        </p>
+        <small className="section-ref">
+          <BoldLettersOnly text="GRI 403-1, GRI 403-8, S1-14_01, S1-14_10, S1-14_11, S2-1_05, S2.SBM-3_04" />
+        </small>
 
         <table
           style={{
@@ -417,230 +413,7 @@ const GRI400 = () => {
             width: "100%",
             border: "1px solid black",
             textAlign: "left",
-            marginBottom: "2rem",
-          }}
-        >
-          <thead>
-            <tr>
-              <th
-                style={{
-                  border: "1px solid black",
-                  padding: "8px",
-                  fontWeight: "bold",
-                  width: "40%",
-                }}
-              >
-                Particular
-              </th>
-              <th
-                style={{
-                  border: "1px solid black",
-                  padding: "8px",
-                  fontWeight: "bold",
-                }}
-              >
-                Data
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td style={{ border: "1px solid black", padding: "8px" }}>
-                Minimum number of weeks’ notice typically provided to employees
-                and their representatives prior to the implementation of
-                significant operational changes that could substantially affect
-                them.
-              </td>
-              <td style={{ border: "1px solid black", padding: "8px" }}></td>
-            </tr>
-          </tbody>
-        </table>
-
-        <BoxTableComponent />
-      </div>
-
-      <div style={{ maxWidth: "900px", margin: "auto" }}>
-        <h3
-          class="section-marker" id="gri403-title"
-          style={{ fontWeight: "bold", color: "blue", textAlign: "center" }}
-        >
-          GRI 403 Occupational Health and Safety
-        </h3>
-
-        <p
-          class="section-marker" id="disclosure-403-3-3"
-          style={{ fontWeight: "bold", color: "blue" }}
-        >
-          Disclosure 3-3 Management of material topics
-        </p>
-
-        <BoxTableComponent />
-
-        <p
-          class="section-marker" id="disclosure-403-1"
-          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
-        >
-          Disclosure 403-1 Occupational health and safety management system
-        </p>
-
-        <BoxTableComponent />
-      </div>
-
-      <div style={{ maxWidth: "900px", margin: "auto" }}>
-        <p class="section-marker" id="disclosure-403-2" style={{ fontWeight: "bold", color: "blue" }}>
-          Disclosure 403-2 Hazard identification, risk assessment, and incident
-          investigation
-        </p>
-
-        <BoxTableComponent />
-      </div>
-
-      <div style={{ maxWidth: "900px", margin: "auto" }}>
-        <p class="section-marker" id="disclosure-403-3" style={{ fontWeight: "bold", color: "blue" }}>
-          Disclosure 403-3 Occupational health services
-        </p>
-
-        <BoxTableComponent />
-      </div>
-
-      <div style={{ maxWidth: "900px", margin: "auto" }}>
-        <p class="section-marker" id="disclosure-403-4" style={{ fontWeight: "bold", color: "blue" }}>
-          Disclosure 403-4 Worker participation, consultation, and communication
-          on occupational health and safety
-        </p>
-
-        <BoxTableComponent />
-      </div>
-
-      <div style={{ maxWidth: "900px", margin: "auto" }}>
-        <p class="section-marker" id="disclosure-403-5" style={{ fontWeight: "bold", color: "blue" }}>
-          Disclosure 403-5 Worker training on occupational health and safety
-        </p>
-
-        <table
-          style={{
-            borderCollapse: "collapse",
-            width: "100%",
-            border: "1px solid black",
-            textAlign: "left",
-            marginBottom: "2rem",
-          }}
-        >
-          <thead>
-            <tr>
-              <th
-                style={{
-                  border: "1px solid black",
-                  padding: "8px",
-                  fontWeight: "bold",
-                  width: "40%",
-                }}
-              >
-                Particular
-              </th>
-              <th
-                style={{
-                  border: "1px solid black",
-                  padding: "8px",
-                  fontWeight: "bold",
-                }}
-              ></th>
-            </tr>
-          </thead>
-          <tbody>
-            {[
-              "Number of trainings provided to workers on occupational health and safety",
-              "Number of trainings provided to volunteers on occupational health and safety",
-            ].map((label, idx) => (
-              <tr key={idx}>
-                <td style={{ border: "1px solid black", padding: "8px" }}>
-                  {label}
-                </td>
-                <td style={{ border: "1px solid black", padding: "8px" }}></td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-
-        <BoxTableComponent />
-      </div>
-
-      <div style={{ maxWidth: "900px", margin: "auto" }}>
-        <p class="section-marker" id="disclosure-403-6" style={{ fontWeight: "bold", color: "blue" }}>
-          Disclosure 403-6 Promotion of worker health
-        </p>
-
-        <table
-          style={{
-            borderCollapse: "collapse",
-            width: "100%",
-            border: "1px solid black",
-            textAlign: "left",
-            marginBottom: "2rem",
-          }}
-        >
-          <thead>
-            <tr>
-              <th
-                style={{
-                  border: "1px solid black",
-                  padding: "8px",
-                  fontWeight: "bold",
-                  width: "40%",
-                }}
-              >
-                Particular
-              </th>
-              <th
-                style={{
-                  border: "1px solid black",
-                  padding: "8px",
-                  fontWeight: "bold",
-                }}
-              >
-                Data
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {[
-              "Number of health checkups carried out for workers",
-              "Number of health checkup programs conducted for workers",
-            ].map((text, idx) => (
-              <tr key={idx}>
-                <td style={{ border: "1px solid black", padding: "8px" }}>
-                  {text}
-                </td>
-                <td style={{ border: "1px solid black", padding: "8px" }}></td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-
-        <BoxTableComponent />
-      </div>
-
-      <div style={{ maxWidth: "900px", margin: "auto" }}>
-        <p class="section-marker" id="disclosure-403-7" style={{ fontWeight: "bold", color: "blue" }}>
-          Disclosure 403-7 Prevention and mitigation of occupational health and
-          safety impacts directly linked by business relationships
-        </p>
-
-        <BoxTableComponent />
-      </div>
-
-      <div style={{ maxWidth: "900px", margin: "auto" }}>
-        <p class="section-marker" id="disclosure-403-8" style={{ fontWeight: "bold", color: "blue" }}>
-          Disclosure 403-8 Workers covered by an occupational health and safety
-          management system
-        </p>
-
-        <table
-          style={{
-            borderCollapse: "collapse",
-            width: "100%",
-            border: "1px solid black",
-            textAlign: "left",
+            marginTop: "1rem",
             marginBottom: "2rem",
           }}
         >
@@ -703,7 +476,7 @@ const GRI400 = () => {
               [
                 "Number of internal review/inspections carried out for compliance with occupational health and safety",
                 "",
-                "X",
+                "",
               ],
               [
                 "Number of external review/inspections (third-party audits) carried out for compliance with occupational health and safety",
@@ -725,20 +498,179 @@ const GRI400 = () => {
             ))}
           </tbody>
         </table>
+      </div>
+
+      <div
+        style={{
+          maxWidth: "900px",
+          margin: "auto",
+        }}
+      >
+        <p class="section-marker" style={{ fontWeight: "bold", color: "blue" }}>
+          Hazard identification, risk assessment, and incident investigation
+        </p>
+        <small className="section-ref">
+          <BoldLettersOnly text="S1-3_02, S1-3_09, GRI 403-2" />
+        </small>
 
         <BoxTableComponent />
       </div>
 
-      <div style={{ maxWidth: "900px", margin: "auto" }}>
-        <p class="section-marker" id="disclosure-403-9" style={{ fontWeight: "bold", color: "blue" }}>
-          Disclosure 403-9 Work-related injuries
+      <div
+        style={{
+          maxWidth: "900px",
+          margin: "auto",
+        }}
+      >
+        <p class="section-marker" style={{ fontWeight: "bold", color: "blue" }}>
+          Occupational health services
         </p>
+        <small className="section-ref">
+          <BoldLettersOnly text="S1-1_18, GRI 403-3, GRI 403-6" />
+        </small>
+        <table
+          style={{
+            borderCollapse: "collapse",
+            width: "100%",
+            border: "1px solid black",
+            textAlign: "left",
+            marginTop: "1rem",
+            marginBottom: "2rem",
+          }}
+        >
+          <thead>
+            <tr>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                  width: "40%",
+                }}
+              >
+                Particular
+              </th>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                }}
+              >
+                Data
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              "Number of health checkups carried out for workers",
+              "Number of health checkup programs conducted for workers",
+            ].map((text, idx) => (
+              <tr key={idx}>
+                <td style={{ border: "1px solid black", padding: "8px" }}>
+                  {text}
+                </td>
+                <td style={{ border: "1px solid black", padding: "8px" }}></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <div
+        style={{
+          maxWidth: "900px",
+          margin: "auto",
+        }}
+      >
+        <p class="section-marker" style={{ fontWeight: "bold", color: "blue" }}>
+          Worker training
+        </p>
+        <small className="section-ref">
+          <BoldLettersOnly text="GRI 403-5" />
+        </small>
 
         <table
           style={{
             borderCollapse: "collapse",
             width: "100%",
             border: "1px solid black",
+            textAlign: "left",
+            marginTop: "1rem",
+            marginBottom: "2rem",
+          }}
+        >
+          <thead>
+            <tr>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                  width: "40%",
+                }}
+              >
+                Particular
+              </th>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                }}
+              ></th>
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              "Number of trainings provided to workers on occupational health and safety",
+              "Number of trainings provided to volunteers on occupational health and safety",
+            ].map((label, idx) => (
+              <tr key={idx}>
+                <td style={{ border: "1px solid black", padding: "8px" }}>
+                  {label}
+                </td>
+                <td style={{ border: "1px solid black", padding: "8px" }}></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <div
+        style={{
+          maxWidth: "900px",
+          margin: "auto",
+        }}
+      >
+        <p class="section-marker" style={{ fontWeight: "bold", color: "blue" }}>
+          Prevention and mitigation of occupational health and safety impacts
+        </p>
+        <small className="section-ref">
+          <BoldLettersOnly text="S2-4_01, GRI 403-7" />
+        </small>
+
+        <BoxTableComponent />
+      </div>
+
+      <div
+        style={{
+          maxWidth: "900px",
+          margin: "auto",
+        }}
+      >
+        <p class="section-marker" style={{ fontWeight: "bold", color: "blue" }}>
+          Work-related injuries
+        </p>
+        <small className="section-ref">
+          <BoldLettersOnly text="S1-4_01, S1-14_02, S1-14_03, S1-14_04, S1-14_05, S1-14_07, S1-14_09, S2-1_05, S2.SBM-3_04, GRI 403-9" />
+        </small>
+        <table
+          style={{
+            borderCollapse: "collapse",
+            width: "100%",
+            border: "1px solid black",
+            marginTop: "1rem",
             marginBottom: "2rem",
           }}
         >
@@ -810,7 +742,6 @@ const GRI400 = () => {
             ))}
           </tbody>
         </table>
-
         <table
           style={{
             borderCollapse: "collapse",
@@ -858,16 +789,25 @@ const GRI400 = () => {
         </table>
       </div>
 
-      <div style={{ maxWidth: "900px", margin: "auto" }}>
-        <p class="section-marker" id="disclosure-403-10" style={{ fontWeight: "bold", color: "blue" }}>
-          Disclosure 403-10 Work-related ill health
+      <div
+        style={{
+          maxWidth: "900px",
+          margin: "auto",
+        }}
+      >
+        <p class="section-marker" style={{ fontWeight: "bold", color: "blue" }}>
+          Work-related ill health
         </p>
+        <small className="section-ref">
+          <BoldLettersOnly text="S1-4_01, S1-14_02, S1-14_03, S1-14_06, S1-14_08, S1-14_12, GRI 403-10" />
+        </small>
 
         <table
           style={{
             borderCollapse: "collapse",
             width: "100%",
             border: "1px solid black",
+            marginTop: "1rem",
             marginBottom: "2rem",
           }}
         >
@@ -944,34 +884,22 @@ const GRI400 = () => {
         }}
       >
         <h3
-          class="section-marker" id="gri404-title"
-          style={{ fontWeight: "bold", color: "blue", textAlign: "center" }}
+          class="section-marker"
+          id="Training-and-Education"
+          style={{ fontWeight: "bold" }}
         >
-          GRI 404 Training and Education
+          Training and Education
         </h3>
-
-        <p
-          class="section-marker" id="disclosure-404-3-3"
-          style={{ fontWeight: "bold", color: "blue" }}
-        >
-          Disclosure 3-3 Management of material topics
-        </p>
-
-        <BoxTableComponent />
-
-        <p
-          class="section-marker" id="disclosure-404-1"
-          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
-        >
-          Disclosure 404-1 Average hours of training per year per employee
-        </p>
-
+        <small className="section-ref">
+          <BoldLettersOnly text="GRI 404-1, S1-13_03 to S1-13_06" />
+        </small>
         <table
           style={{
             borderCollapse: "collapse",
             width: "100%",
             border: "1px solid black",
             textAlign: "left",
+            marginTop: "1rem",
             marginBottom: "2rem",
           }}
         >
@@ -1019,37 +947,48 @@ const GRI400 = () => {
             ))}
           </tbody>
         </table>
+      </div>
+
+      <div
+        style={{
+          maxWidth: "900px",
+          margin: "auto",
+        }}
+      >
+        <p class="section-marker" style={{ fontWeight: "bold", color: "blue" }}>
+          Human capital development
+        </p>
+        <small className="section-ref">
+          <BoldLettersOnly text="S1-1_22, GRI 404-2" />
+        </small>
 
         <BoxTableComponent />
       </div>
 
-      <div style={{ maxWidth: "900px", margin: "auto" }}>
-        <p class="section-marker" id="disclosure-404-2" style={{ fontWeight: "bold", color: "blue" }}>
-          Disclosure 404-2 Programs for upgrading employee skills and transition
-          assistance programs
+      <div
+        style={{
+          maxWidth: "900px",
+          margin: "auto",
+        }}
+      >
+        <p class="section-marker" style={{ fontWeight: "bold", color: "blue" }}>
+          Career development programs
         </p>
-
-        <BoxTableComponent />
-      </div>
-
-      <div style={{ maxWidth: "900px", margin: "auto" }}>
-        <p class="section-marker" id="disclosure-404-3" style={{ fontWeight: "bold", color: "blue" }}>
-          Disclosure 404-3 Percentage of employees receiving regular performance
-          and career development reviews
-        </p>
-
+        <small className="section-ref">
+          <BoldLettersOnly text="S1-13_01, S1-13_02, S1-13_05, S1-13_06, GRI 404-3" />
+        </small>
         <table
           style={{
             borderCollapse: "collapse",
             width: "100%",
             border: "1px solid black",
+            marginTop: "1rem",
             marginBottom: "2rem",
           }}
         >
           <thead>
             <tr>
               <th
-                colSpan={3}
                 style={{
                   border: "1px solid black",
                   padding: "8px",
@@ -1060,15 +999,7 @@ const GRI400 = () => {
                 % of total employees who received a regular performance and
                 career development review
               </th>
-            </tr>
-            <tr>
-              <th
-                style={{
-                  border: "1px solid black",
-                  padding: "8px",
-                  fontWeight: "bold",
-                }}
-              ></th>
+
               <th
                 style={{
                   border: "1px solid black",
@@ -1095,7 +1026,7 @@ const GRI400 = () => {
                   border: "1px solid black",
                   padding: "8px",
                   fontWeight: "bold",
-                  textAlign: "center",
+                  textAlign: "left",
                 }}
               >
                 Permanent employees
@@ -1118,7 +1049,6 @@ const GRI400 = () => {
             ))}
           </tbody>
         </table>
-
         <table
           style={{
             borderCollapse: "collapse",
@@ -1130,7 +1060,6 @@ const GRI400 = () => {
           <thead>
             <tr>
               <th
-                colSpan={3}
                 style={{
                   border: "1px solid black",
                   padding: "8px",
@@ -1141,15 +1070,6 @@ const GRI400 = () => {
                 % of total employees who received a regular performance and
                 career development review
               </th>
-            </tr>
-            <tr>
-              <th
-                style={{
-                  border: "1px solid black",
-                  padding: "8px",
-                  fontWeight: "bold",
-                }}
-              ></th>
               <th
                 style={{
                   border: "1px solid black",
@@ -1176,7 +1096,7 @@ const GRI400 = () => {
                   border: "1px solid black",
                   padding: "8px",
                   fontWeight: "bold",
-                  textAlign: "center",
+                  textAlign: "left",
                 }}
               >
                 Temporary Employees
@@ -1199,8 +1119,6 @@ const GRI400 = () => {
             ))}
           </tbody>
         </table>
-
-        <BoxTableComponent />
       </div>
 
       <div
@@ -1210,29 +1128,17 @@ const GRI400 = () => {
         }}
       >
         <h3
-          class="section-marker" id="gri405-title"
-          style={{ fontWeight: "bold", color: "blue", textAlign: "center" }}
+          class="section-marker"
+          id="Diversity-Inclusion"
+          style={{ fontWeight: "bold" }}
         >
-          GRI 405 Diversity & Inclusion
+          Diversity & Inclusion
         </h3>
+        <small className="section-ref">
+          <BoldLettersOnly text="S2.SBM-3_01 to S2.SBM-3_09, GRI 405-1, ESRS 2 GOV-1_05, GOV-1_06, S1-6_01 to S1-6_03, S1-9_01 to S1-9_05, S1-12_01" />
+        </small>
 
-        <p
-          class="section-marker" id="disclosure-405-3-3"
-          style={{ fontWeight: "bold", color: "blue" }}
-        >
-          Disclosure 3-3 Management of material topics
-        </p>
-
-        <BoxTableComponent />
-
-        <p
-          class="section-marker" id="disclosure-405-1"
-          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
-        >
-          Disclosure 401-1 New employee hires and employee turnover
-        </p>
-
-        <p style={{ fontWeight: "bold" }}>
+        <p style={{ fontWeight: "normal" }}>
           Percentage of individuals within the organization’s governance bodies
         </p>
         <table
@@ -1312,7 +1218,7 @@ const GRI400 = () => {
           </tbody>
         </table>
 
-        <p style={{ fontWeight: "bold" }}>
+        <p style={{ fontWeight: "normal" }}>
           Percentage of employees per employee category
         </p>
         <table
@@ -1389,15 +1295,20 @@ const GRI400 = () => {
             )}
           </tbody>
         </table>
-
-        <BoxTableComponent />
       </div>
 
-      <div style={{ maxWidth: "900px", margin: "auto" }}>
-        <p class="section-marker" id="disclosure-405-2" style={{ fontWeight: "bold", color: "blue" }}>
-          Disclosure 405-2 Ratio of basic salary and remuneration of women to
-          men
+      <div
+        style={{
+          maxWidth: "900px",
+          margin: "auto",
+        }}
+      >
+        <p class="section-marker" style={{ fontWeight: "bold", color: "blue" }}>
+          Basic salary and remuneration
         </p>
+        <small className="section-ref">
+          <BoldLettersOnly text="S1-16_01, S1-16_04, S1-16_05, GRI 405-2" />
+        </small>
 
         <table
           style={{
@@ -1405,6 +1316,8 @@ const GRI400 = () => {
             width: "100%",
             border: "1px solid black",
             textAlign: "left",
+            marginTop: "1rem",
+            marginBottom: "2rem",
           }}
         >
           <thead>
@@ -1475,29 +1388,12 @@ const GRI400 = () => {
           margin: "auto",
         }}
       >
-        <h3
-          class="section-marker" id="gri406-title"
-          style={{ fontWeight: "bold", color: "blue", textAlign: "center" }}
-        >
-          GRI 406 Non-discrimination
-        </h3>
-
-        <p
-          class="section-marker" id="disclosure-406-3-3"
-          style={{ fontWeight: "bold", color: "blue" }}
-        >
-          Disclosure 3-3 Management of material topics
+        <p class="section-marker" style={{ fontWeight: "bold", color: "blue" }}>
+          Non-discrimination
         </p>
-
-        <BoxTableComponent />
-
-        <p
-          class="section-marker" id="disclosure-406-1"
-          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
-        >
-          Disclosure 406-1 Incidents of discrimination and corrective actions
-          taken
-        </p>
+        <small className="section-ref">
+          <BoldLettersOnly text="GRI 406-1, S1-17_01, S1-17_02, S1-17_13" />
+        </small>
 
         <table
           style={{
@@ -1505,6 +1401,7 @@ const GRI400 = () => {
             width: "100%",
             border: "1px solid black",
             textAlign: "left",
+            marginTop: "1rem",
             marginBottom: "2rem",
           }}
         >
@@ -1550,28 +1447,20 @@ const GRI400 = () => {
         }}
       >
         <h3
-          class="section-marker" id="gri407-title"
-          style={{ fontWeight: "bold", color: "blue", textAlign: "center" }}
+          class="section-marker"
+          id="Human-Rights"
+          style={{ fontWeight: "bold" }}
         >
-          GRI 407 Freedom of Association and Collective Bargaining
+          Human Rights
         </h3>
 
-        <p
-          class="section-marker" id="disclosure-407-3-3"
-          style={{ fontWeight: "bold", color: "blue" }}
-        >
-          Disclosure 3-3 Management of material topics
+        <p style={{ fontWeight: "bold", color: "blue", margin: 0 }}>
+          Freedom of Association and Collective Bargaining
         </p>
 
-        <BoxTableComponent />
-
-        <p
-          class="section-marker" id="disclosure-407-1"
-          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
-        >
-          Disclosure 407-1 Operations and suppliers in which the right to
-          freedom of association and collective bargaining may be at risk
-        </p>
+        <small className="section-ref">
+          <BoldLettersOnly text="GRI 407-1" />
+        </small>
 
         <BoxTableComponent />
       </div>
@@ -1582,29 +1471,12 @@ const GRI400 = () => {
           margin: "auto",
         }}
       >
-        <h3
-          class="section-marker" id="gri408-title"
-          style={{ fontWeight: "bold", color: "blue", textAlign: "center" }}
-        >
-          GRI 408 Child Labor
-        </h3>
-
-        <p
-          class="section-marker" id="disclosure-408-3-3"
-          style={{ fontWeight: "bold", color: "blue" }}
-        >
-          Disclosure 3-3 Management of material topics
+        <p class="section-marker" style={{ fontWeight: "bold", color: "blue" }}>
+          Child Labor
         </p>
-
-        <BoxTableComponent />
-
-        <p
-          class="section-marker" id="disclosure-408-1"
-          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
-        >
-          Disclosure 408-1 Operations and suppliers at significant risk for
-          incidents of child labor
-        </p>
+        <small className="section-ref">
+          <BoldLettersOnly text="S1.SBM-3_01 to S1.SBM-3_06, S1-1_06, S1-1_08, S1-1_10, S1-1_13, S2-2_01, GRI 408-1, S1.SBM-3_09, S1.SBM-3_10, S1-1_08, S2-1_07, S2-1_09" />
+        </small>
 
         <table
           style={{
@@ -1612,6 +1484,7 @@ const GRI400 = () => {
             width: "100%",
             border: "1px solid black",
             textAlign: "left",
+            marginTop: "1rem",
             marginBottom: "2rem",
           }}
         >
@@ -1655,29 +1528,12 @@ const GRI400 = () => {
           margin: "auto",
         }}
       >
-        <h3
-          class="section-marker" id="gri409-title"
-          style={{ fontWeight: "bold", color: "blue", textAlign: "center" }}
-        >
-          GRI 409 Forced or Compulsory Labor
-        </h3>
-
-        <p
-          class="section-marker" id="disclosure-409-3-3"
-          style={{ fontWeight: "bold", color: "blue" }}
-        >
-          Disclosure 3-3 Management of material topics
+        <p class="section-marker" style={{ fontWeight: "bold", color: "blue" }}>
+          Forced or Compulsory Labor
         </p>
-
-        <BoxTableComponent />
-
-        <p
-          class="section-marker" id="disclosure-409-1"
-          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
-        >
-          Disclosure 409-1 Operations and suppliers at significant risk for
-          incidents of forced or compulsory labor
-        </p>
+        <small className="section-ref">
+          <BoldLettersOnly text="S1.SBM-3_01 to S1.SBM-3_06, S1-1_06, S1-1_08, S1-1_10, S1-1_13, S2-2_01, S2-1_07, S2-1_09, GRI 409-1, S1.SBM-3_07, S1.SBM-3_08, S1-1_08" />
+        </small>
 
         <BoxTableComponent />
       </div>
@@ -1688,29 +1544,12 @@ const GRI400 = () => {
           margin: "auto",
         }}
       >
-        <h3
-          class="section-marker" id="gri410-title"
-          style={{ fontWeight: "bold", color: "blue", textAlign: "center" }}
-        >
-          GRI 410: Security Practices
-        </h3>
-
-        <p
-          class="section-marker" id="disclosure-410-3-3"
-          style={{ fontWeight: "bold", color: "blue" }}
-        >
-          Disclosure 3-3 Management of material topics
+        <p class="section-marker" style={{ fontWeight: "bold", color: "blue" }}>
+          Rights of Indigenous Peoples
         </p>
-
-        <BoxTableComponent />
-
-        <p
-          class="section-marker" id="disclosure-410-1"
-          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
-        >
-          Disclosure 410-1 Security personnel trained in human rights policies
-          or procedures
-        </p>
+        <small className="section-ref">
+          <BoldLettersOnly text="S3-1_03, S3-1_07, S3-1_08, S3-2_04, S3-2_07, S3-2_01, GRI 411-1, S3-4_02, S3-4_06, S3-4_11, S3.MDR-A_01-12, S3-1_05" />
+        </small>
 
         <table
           style={{
@@ -1718,81 +1557,7 @@ const GRI400 = () => {
             width: "100%",
             border: "1px solid black",
             textAlign: "left",
-            marginBottom: "2rem",
-          }}
-        >
-          <thead>
-            <tr>
-              <th
-                style={{
-                  border: "1px solid black",
-                  padding: "8px",
-                  fontWeight: "bold",
-                  width: "40%",
-                }}
-              >
-                Particular
-              </th>
-              <th
-                style={{
-                  border: "1px solid black",
-                  padding: "8px",
-                  fontWeight: "bold",
-                }}
-              ></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td style={{ border: "1px solid black", padding: "8px" }}>
-                Percentage of security personnel who have received formal
-                training in the organization’s human rights policies or specific
-                procedures and their application to security.
-              </td>
-              <td style={{ border: "1px solid black", padding: "8px" }}></td>
-            </tr>
-          </tbody>
-        </table>
-
-        <BoxTableComponent />
-      </div>
-
-      <div
-        style={{
-          maxWidth: "900px",
-          margin: "auto",
-        }}
-      >
-        <h3
-          class="section-marker" id="gri411-title"
-          style={{ fontWeight: "bold", color: "blue", textAlign: "center" }}
-        >
-          GRI 411: Rights of Indigenous Peoples
-        </h3>
-
-        <p
-          class="section-marker" id="disclosure-411-3-3"
-          style={{ fontWeight: "bold", color: "blue" }}
-        >
-          Disclosure 3-3 Management of material topics
-        </p>
-
-        <BoxTableComponent />
-
-        <p
-          class="section-marker" id="disclosure-411-1"
-          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
-        >
-          Disclosure 411-1 Incidents of violations involving rights of
-          indigenous peoples
-        </p>
-
-        <table
-          style={{
-            borderCollapse: "collapse",
-            width: "100%",
-            border: "1px solid black",
-            textAlign: "left",
+            marginTop: "1rem",
             marginBottom: "2rem",
           }}
         >
@@ -1838,28 +1603,15 @@ const GRI400 = () => {
         }}
       >
         <h3
-          class="section-marker" id="gri413-title"
-          style={{ fontWeight: "bold", color: "blue", textAlign: "center" }}
+          class="section-marker"
+          id="Security-Practices"
+          style={{ fontWeight: "bold" }}
         >
-          GRI 413: Local Communities
+          Security Practices
         </h3>
-
-        <p
-          class="section-marker" id="disclosure-413-3-3"
-          style={{ fontWeight: "bold", color: "blue" }}
-        >
-          Disclosure 3-3 Management of material topics
-        </p>
-
-        <BoxTableComponent />
-
-        <p
-          class="section-marker" id="disclosure-413-1"
-          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
-        >
-          Disclosure 413-1 Operations with local community engagement, impact
-          assessments, and development programs
-        </p>
+        <small className="section-ref">
+          <BoldLettersOnly text="GRI 410-1" />
+        </small>
 
         <table
           style={{
@@ -1867,6 +1619,7 @@ const GRI400 = () => {
             width: "100%",
             border: "1px solid black",
             textAlign: "left",
+            marginTop: "1rem",
             marginBottom: "2rem",
           }}
         >
@@ -1894,29 +1647,14 @@ const GRI400 = () => {
           <tbody>
             <tr>
               <td style={{ border: "1px solid black", padding: "8px" }}>
-                Percentage of operations with implemented local community
-                engagement, impact assessments, and/or development programs
+                Percentage of security personnel who have received formal
+                training in the organization’s human rights policies or specific
+                procedures and their application to security.
               </td>
               <td style={{ border: "1px solid black", padding: "8px" }}></td>
             </tr>
           </tbody>
         </table>
-
-        <BoxTableComponent />
-      </div>
-
-      <div
-        style={{
-          maxWidth: "900px",
-          margin: "auto",
-        }}
-      >
-        <p class="section-marker" id="disclosure-413-2" style={{ fontWeight: "bold", color: "blue" }}>
-          Disclosure 413-2 Operations with significant actual and potential
-          negative impacts on local communities
-        </p>
-
-        <BoxTableComponent />
       </div>
 
       <div
@@ -1926,28 +1664,15 @@ const GRI400 = () => {
         }}
       >
         <h3
-          class="section-marker" id="gri414-title"
-          style={{ fontWeight: "bold", color: "blue", textAlign: "center" }}
+          class="section-marker"
+          id="Local-Communities"
+          style={{ fontWeight: "bold" }}
         >
-          GRI 414: Supplier Social Assessment
+          Local Communities
         </h3>
-
-        <p
-          class="section-marker" id="disclosure-414-3-3"
-          style={{ fontWeight: "bold", color: "blue" }}
-        >
-          Disclosure 3-3 Management of material topics
-        </p>
-
-        <BoxTableComponent />
-
-        <p
-          class="section-marker" id="disclosure-414-1"
-          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
-        >
-          Disclosure 414-1 New suppliers that were screened using social
-          criteria
-        </p>
+        <small className="section-ref">
+          <BoldLettersOnly text="S3.SBM-3_01 to S3.SBM-3_08, S3-3_19, S3-4_08, S3-4_09, S3-4_14, S3-4_16, S3-5_01, S3-5_04, S3-5_05, S3-2_09, S3-3_16, S3-3_17, S3-4_01 to S3-4_19, S3-5_02, S3-5_03, S3-5_06, GRI 413-1, S3-3_11, S3-2_06, S3-4_17, GRI 413-2, ESRS 2, SBM-3_04, SBM-3_07, SBM-3_04" />
+        </small>
 
         <table
           style={{
@@ -1955,6 +1680,7 @@ const GRI400 = () => {
             width: "100%",
             border: "1px solid black",
             textAlign: "left",
+            marginTop: "1rem",
             marginBottom: "2rem",
           }}
         >
@@ -1982,92 +1708,14 @@ const GRI400 = () => {
           <tbody>
             <tr>
               <td style={{ border: "1px solid black", padding: "8px" }}>
-                Percentage of new suppliers that were screened using social
-                criteria.
+                Percentage of security personnel who have received formal
+                training in the organization’s human rights policies or specific
+                procedures and their application to security.
               </td>
               <td style={{ border: "1px solid black", padding: "8px" }}></td>
             </tr>
           </tbody>
         </table>
-
-        <BoxTableComponent />
-      </div>
-
-      <div
-        style={{
-          maxWidth: "900px",
-          margin: "auto",
-        }}
-      >
-        <p class="section-marker" id="disclosure-414-2" style={{ fontWeight: "bold", color: "blue" }}>
-          Disclosure 414-2 Negative social impacts in the supply chain and
-          actions taken
-        </p>
-
-        <table
-          style={{
-            borderCollapse: "collapse",
-            width: "100%",
-            border: "1px solid black",
-            textAlign: "left",
-            marginBottom: "2rem",
-          }}
-        >
-          <thead>
-            <tr>
-              <th
-                style={{
-                  border: "1px solid black",
-                  padding: "8px",
-                  fontWeight: "bold",
-                  width: "40%",
-                }}
-              >
-                Particular
-              </th>
-              <th
-                style={{
-                  border: "1px solid black",
-                  padding: "8px",
-                  fontWeight: "bold",
-                }}
-              ></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td style={{ border: "1px solid black", padding: "8px" }}>
-                Number of suppliers assessed for social impacts
-              </td>
-              <td style={{ border: "1px solid black", padding: "8px" }}></td>
-            </tr>
-            <tr>
-              <td style={{ border: "1px solid black", padding: "8px" }}>
-                Number of suppliers identified as having significant actual and
-                potential negative social impacts.
-              </td>
-              <td style={{ border: "1px solid black", padding: "8px" }}></td>
-            </tr>
-            <tr>
-              <td style={{ border: "1px solid black", padding: "8px" }}>
-                Percentage of suppliers identified as having significant actual
-                and potential negative social impacts with which improvements
-                were agreed upon as a result of assessment
-              </td>
-              <td style={{ border: "1px solid black", padding: "8px" }}></td>
-            </tr>
-            <tr>
-              <td style={{ border: "1px solid black", padding: "8px" }}>
-                Percentage of suppliers identified as having significant actual
-                and potential negative social impacts with which relationships
-                were terminated as a result of assessment, and why
-              </td>
-              <td style={{ border: "1px solid black", padding: "8px" }}></td>
-            </tr>
-          </tbody>
-        </table>
-
-        <BoxTableComponent />
       </div>
 
       <div
@@ -2077,34 +1725,24 @@ const GRI400 = () => {
         }}
       >
         <h3
-          class="section-marker" id="gri415-title"
-          style={{ fontWeight: "bold", color: "blue", textAlign: "center" }}
+          class="section-marker"
+          id="Impact-on-Customers"
+          style={{ fontWeight: "bold" }}
         >
-          GRI 415: Public Policy
+          Impact on Customers
         </h3>
-
-        <p
-          class="section-marker" id="disclosure-415-3-3"
-          style={{ fontWeight: "bold", color: "blue" }}
-        >
-          Disclosure 3-3 Management of material topics
-        </p>
-
-        <BoxTableComponent />
-
-        <p
-          class="section-marker" id="disclosure-415-1"
-          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
-        >
-          Disclosure 415-1 Political contributions
-        </p>
+        <small className="section-ref">
+          <BoldLettersOnly text="S4-2_01 to S4-2_09, S4-3_10, S4-3_13, S4-4_01 to S4-4_18, S4-5_01 to S4-5_06, GRI 416-1, GRI 416-2, S4-4_11" />
+        </small>
 
         <table
           style={{
             borderCollapse: "collapse",
             width: "100%",
-            border: "1px solid black",
             textAlign: "left",
+            border: "1px solid black",
+            marginTop: "1rem",
+            marginTop: "1rem",
             marginBottom: "2rem",
           }}
         >
@@ -2115,7 +1753,7 @@ const GRI400 = () => {
                   border: "1px solid black",
                   padding: "8px",
                   fontWeight: "bold",
-                  width: "40%",
+                  width: "50%",
                 }}
               >
                 Particular
@@ -2126,82 +1764,9 @@ const GRI400 = () => {
                   padding: "8px",
                   fontWeight: "bold",
                 }}
-              ></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td style={{ border: "1px solid black", padding: "8px" }}>
-                Total monetary value of financial and in-kind political
-                contributions made directly and indirectly by the organization
-                by country and recipient/beneficiary.
-              </td>
-              <td style={{ border: "1px solid black", padding: "8px" }}></td>
-            </tr>
-          </tbody>
-        </table>
-
-        <BoxTableComponent />
-      </div>
-
-      <div
-        style={{
-          maxWidth: "900px",
-          margin: "auto",
-        }}
-      >
-        <h3
-          class="section-marker" id="gri416-title"
-          style={{ fontWeight: "bold", color: "blue", textAlign: "center" }}
-        >
-          GRI 416: Customer Health and Safety
-        </h3>
-
-        <p
-          class="section-marker" id="disclosure-416-3-3"
-          style={{ fontWeight: "bold", color: "blue" }}
-        >
-          Disclosure 3-3 Management of material topics
-        </p>
-
-        <BoxTableComponent />
-
-        <p
-          class="section-marker" id="disclosure-416-1"
-          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
-        >
-          Disclosure 416-1 Assessment of the health and safety impacts of
-          product and service categories
-        </p>
-
-        <table
-          style={{
-            borderCollapse: "collapse",
-            width: "100%",
-            border: "1px solid black",
-            textAlign: "left",
-            marginBottom: "2rem",
-          }}
-        >
-          <thead>
-            <tr>
-              <th
-                style={{
-                  border: "1px solid black",
-                  padding: "8px",
-                  fontWeight: "bold",
-                  width: "40%",
-                }}
               >
-                Particular
+                Response
               </th>
-              <th
-                style={{
-                  border: "1px solid black",
-                  padding: "8px",
-                  fontWeight: "bold",
-                }}
-              ></th>
             </tr>
           </thead>
           <tbody>
@@ -2215,26 +1780,12 @@ const GRI400 = () => {
           </tbody>
         </table>
 
-        <BoxTableComponent />
-      </div>
-
-      <div
-        style={{
-          maxWidth: "900px",
-          margin: "auto",
-        }}
-      >
-        <p class="section-marker" id="disclosure-416-2" style={{ fontWeight: "bold", color: "blue" }}>
-          Disclosure 416-2 Incidents of non-compliance concerning the health and
-          safety impacts of products and services
-        </p>
-
         <table
           style={{
             borderCollapse: "collapse",
             width: "100%",
-            border: "1px solid black",
             textAlign: "left",
+            border: "1px solid black",
             marginBottom: "2rem",
           }}
         >
@@ -2245,7 +1796,7 @@ const GRI400 = () => {
                   border: "1px solid black",
                   padding: "8px",
                   fontWeight: "bold",
-                  width: "40%",
+                  width: "50%",
                 }}
               >
                 Particular
@@ -2256,24 +1807,20 @@ const GRI400 = () => {
                   padding: "8px",
                   fontWeight: "bold",
                 }}
-              ></th>
-            </tr>
-            <tr>
-              <th
-                colSpan={2}
-                style={{
-                  border: "1px solid black",
-                  padding: "8px",
-                  fontWeight: "bold",
-                }}
               >
-                Total number of incidents of non-compliance with regulations
-                and/or voluntary codes concerning the health and safety impacts
-                of products and services
+                Response
               </th>
             </tr>
           </thead>
           <tbody>
+            <tr>
+              <td style={{ border: "1px solid black", padding: "8px" }}>
+                Total number of incidents of non-compliance with regulations
+                and/or voluntary codes concerning the health and safety impacts
+                of products and services
+              </td>
+              <td style={{ border: "1px solid black", padding: "8px" }}></td>
+            </tr>
             <tr>
               <td style={{ border: "1px solid black", padding: "8px" }}>
                 incidents of non-compliance with regulations resulting in a fine
@@ -2296,8 +1843,6 @@ const GRI400 = () => {
             </tr>
           </tbody>
         </table>
-
-        <BoxTableComponent />
       </div>
 
       <div
@@ -2307,35 +1852,24 @@ const GRI400 = () => {
         }}
       >
         <h3
-          class="section-marker" id="gri417-title"
-          style={{ fontWeight: "bold", color: "blue", textAlign: "center" }}
+          class="section-marker"
+          id="Product-service-quality"
+          style={{ fontWeight: "bold" }}
         >
-          GRI 417: Marketing and Labeling
+          Product & service quality
         </h3>
-
-        <p
-          class="section-marker" id="disclosure-417-3-3"
-          style={{ fontWeight: "bold", color: "blue" }}
-        >
-          Disclosure 3-3 Management of material topics
-        </p>
-
-        <BoxTableComponent />
-
-        <p
-          class="section-marker" id="disclosure-417-1"
-          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
-        >
-          Disclosure 417-1 Requirements for product and service information and
-          labeling
-        </p>
+        <small className="section-ref">
+          <BoldLettersOnly text="GRI 417-1, GRI 417-2, S4-4_11, GRI 417-3, S4-4_11, TR-AU-250a1" />
+        </small>
 
         <table
           style={{
             borderCollapse: "collapse",
             width: "100%",
-            border: "1px solid black",
             textAlign: "left",
+            border: "1px solid black",
+            marginTop: "1rem",
+            marginTop: "1rem",
             marginBottom: "2rem",
           }}
         >
@@ -2346,7 +1880,7 @@ const GRI400 = () => {
                   border: "1px solid black",
                   padding: "8px",
                   fontWeight: "bold",
-                  width: "40%",
+                  width: "50%",
                 }}
               >
                 Particular
@@ -2357,7 +1891,9 @@ const GRI400 = () => {
                   padding: "8px",
                   fontWeight: "bold",
                 }}
-              ></th>
+              >
+                Response
+              </th>
             </tr>
           </thead>
           <tbody>
@@ -2371,107 +1907,63 @@ const GRI400 = () => {
           </tbody>
         </table>
 
-        <BoxTableComponent />
-      </div>
-
-      <div
-        style={{
-          maxWidth: "900px",
-          margin: "auto",
-        }}
-      >
-        <p class="section-marker" id="disclosure-417-2" style={{ fontWeight: "bold", color: "blue" }}>
-          Disclosure 417-2 Incidents of non-compliance concerning product and
-          service information and labeling
-        </p>
-
         <table
           style={{
             borderCollapse: "collapse",
             width: "100%",
-            border: "1px solid black",
             textAlign: "left",
+            border: "1px solid black",
+            marginTop: "1rem",
             marginBottom: "2rem",
           }}
         >
           <thead>
             <tr>
               <th
-                colSpan={2}
                 style={{
                   border: "1px solid black",
                   padding: "8px",
                   fontWeight: "bold",
+                  width: "50%",
                 }}
               >
                 Total number of incidents of non-compliance with regulations
                 and/or voluntary codes concerning product and service
                 information and labeling
               </th>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                }}
+              >
+                Response
+              </th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td
-                style={{
-                  border: "1px solid black",
-                  width: "40%",
-                  padding: "8px",
-                }}
-              >
-                incidents of non-compliance with regulations resulting in a fine
-                or penalty
-              </td>
-              <td style={{ border: "1px solid black", padding: "8px" }}></td>
-            </tr>
-            <tr>
-              <td
-                style={{
-                  border: "1px solid black",
-                  width: "40%",
-                  padding: "8px",
-                }}
-              >
-                incidents of non-compliance with regulations resulting in a
-                warning
-              </td>
-              <td style={{ border: "1px solid black", padding: "8px" }}></td>
-            </tr>
-            <tr>
-              <td
-                style={{
-                  border: "1px solid black",
-                  width: "40%",
-                  padding: "8px",
-                }}
-              >
-                incidents of non-compliance with voluntary codes
-              </td>
-              <td style={{ border: "1px solid black", padding: "8px" }}></td>
-            </tr>
+            {[
+              "incidents of non-compliance with regulations resulting in a fine or penalty",
+              "incidents of non-compliance with regulations resulting in a warning",
+              "incidents of non-compliance with voluntary codes",
+            ].map((item, index) => (
+              <tr key={`info-${index}`}>
+                <td style={{ border: "1px solid black", padding: "8px" }}>
+                  {item}
+                </td>
+                <td style={{ border: "1px solid black", padding: "8px" }}></td>
+              </tr>
+            ))}
           </tbody>
         </table>
-
-        <BoxTableComponent />
-      </div>
-
-      <div
-        style={{
-          maxWidth: "900px",
-          margin: "auto",
-        }}
-      >
-        <p class="section-marker" id="disclosure-417-3" style={{ fontWeight: "bold", color: "blue" }}>
-          Disclosure 417-3 Incidents of non-compliance concerning marketing
-          communications
-        </p>
 
         <table
           style={{
             borderCollapse: "collapse",
             width: "100%",
-            border: "1px solid black",
             textAlign: "left",
+            border: "1px solid black",
             marginBottom: "2rem",
           }}
         >
@@ -2482,59 +1974,88 @@ const GRI400 = () => {
                   border: "1px solid black",
                   padding: "8px",
                   fontWeight: "bold",
-                  width: "40%",
-                }}
-              >
-                Particular
-              </th>
-              <th
-                style={{
-                  border: "1px solid black",
-                  padding: "8px",
-                  fontWeight: "bold",
-                }}
-              ></th>
-            </tr>
-            <tr>
-              <th
-                colSpan={2}
-                style={{
-                  border: "1px solid black",
-                  padding: "8px",
-                  fontWeight: "bold",
+                  width: "50%",
                 }}
               >
                 Total number of incidents of non-compliance with regulations
                 and/or voluntary codes concerning marketing communications,
                 including advertising, promotion, and sponsorship
               </th>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                }}
+              >
+                Response
+              </th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td style={{ border: "1px solid black", padding: "8px" }}>
-                incidents of non-compliance with regulations resulting in a fine
-                or penalty
-              </td>
-              <td style={{ border: "1px solid black", padding: "8px" }}></td>
-            </tr>
-            <tr>
-              <td style={{ border: "1px solid black", padding: "8px" }}>
-                incidents of non-compliance with regulations resulting in a
-                warning
-              </td>
-              <td style={{ border: "1px solid black", padding: "8px" }}></td>
-            </tr>
-            <tr>
-              <td style={{ border: "1px solid black", padding: "8px" }}>
-                incidents of non-compliance with voluntary codes
-              </td>
-              <td style={{ border: "1px solid black", padding: "8px" }}></td>
-            </tr>
+            {[
+              "incidents of non-compliance with regulations resulting in a fine or penalty",
+              "incidents of non-compliance with regulations resulting in a warning",
+              "incidents of non-compliance with voluntary codes",
+            ].map((item, index) => (
+              <tr key={`marketing-${index}`}>
+                <td style={{ border: "1px solid black", padding: "8px" }}>
+                  {item}
+                </td>
+                <td style={{ border: "1px solid black", padding: "8px" }}></td>
+              </tr>
+            ))}
           </tbody>
         </table>
 
-        <BoxTableComponent />
+        <table
+          style={{
+            borderCollapse: "collapse",
+            width: "100%",
+            textAlign: "left",
+            border: "1px solid black",
+            marginBottom: "2rem",
+          }}
+        >
+          <thead>
+            <tr>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                  width: "50%",
+                }}
+              >
+                Metric
+              </th>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                }}
+              >
+                Response
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              "Percentage of vehicle models rated by NCAP with an overall 5-star safety rating, by region",
+              "Number of safety-related defect complaints",
+              "Percentage investigated",
+              "Number of vehicles recalled",
+            ].map((item, index) => (
+              <tr key={`vehicle-${index}`}>
+                <td style={{ border: "1px solid black", padding: "8px" }}>
+                  {item}
+                </td>
+                <td style={{ border: "1px solid black", padding: "8px" }}></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
 
       <div
@@ -2544,35 +2065,23 @@ const GRI400 = () => {
         }}
       >
         <h3
-          class="section-marker" id="gri418-title"
-          style={{ fontWeight: "bold", color: "blue", textAlign: "center" }}
+          class="section-marker"
+          id="Cybersecurity-and-data-privacy"
+          style={{ fontWeight: "bold" }}
         >
-          GRI 418: Customer Privacy
+          Cybersecurity and data privacy
         </h3>
-
-        <p
-          class="section-marker" id="disclosure-418-3-3"
-          style={{ fontWeight: "bold", color: "blue" }}
-        >
-          Disclosure 3-3 Management of material topics
-        </p>
-
-        <BoxTableComponent />
-
-        <p
-          class="section-marker" id="disclosure-418-1"
-          style={{ fontWeight: "bold", color: "blue", marginTop: "2rem" }}
-        >
-          Disclosure 418-1 Substantiated complaints concerning breaches of
-          customer privacy and losses of customer data
-        </p>
+        <small className="section-ref">
+          <BoldLettersOnly text="S4-2_01 to S4-2_09, S4-3_10, S4-3_13, S4-4_01 to S4-4_18, S4-5_01 to S4-5_06, GRI 416-1, GRI 416-2, S4-4_11" />
+        </small>
 
         <table
           style={{
             borderCollapse: "collapse",
             width: "100%",
-            border: "1px solid black",
             textAlign: "left",
+            border: "1px solid black",
+            marginTop: "1rem",
             marginBottom: "2rem",
           }}
         >
@@ -2583,7 +2092,7 @@ const GRI400 = () => {
                   border: "1px solid black",
                   padding: "8px",
                   fontWeight: "bold",
-                  width: "40%",
+                  width: "50%",
                 }}
               >
                 Particular
@@ -2594,50 +2103,38 @@ const GRI400 = () => {
                   padding: "8px",
                   fontWeight: "bold",
                 }}
-              ></th>
-            </tr>
-            <tr>
-              <th
-                colSpan={2}
-                style={{
-                  border: "1px solid black",
-                  padding: "8px",
-                  fontWeight: "bold",
-                }}
               >
-                Total number of substantiated complaints received concerning
-                breaches of customer privacy
+                Response
               </th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td style={{ border: "1px solid black", padding: "8px" }}>
-                complaints received from outside parties and substantiated by
-                the organization
+            <tr style={{ fontWeight: "bold" }}>
+              <td
+                colSpan={2}
+                style={{ border: "1px solid black", padding: "8px" }}
+              >
+                Total number of substantiated complaints received concerning
+                breaches of customer privacy
               </td>
-              <td style={{ border: "1px solid black", padding: "8px" }}></td>
             </tr>
-            <tr>
-              <td style={{ border: "1px solid black", padding: "8px" }}>
-                complaints from regulatory bodies
-              </td>
-              <td style={{ border: "1px solid black", padding: "8px" }}></td>
-            </tr>
-            <tr>
-              <td style={{ border: "1px solid black", padding: "8px" }}>
-                Total number of identified leaks, thefts, or losses of customer
-                data
-              </td>
-              <td style={{ border: "1px solid black", padding: "8px" }}></td>
-            </tr>
+            {[
+              "complaints received from outside parties and substantiated by the organization",
+              "complaints from regulatory bodies",
+              "Total number of identified leaks, thefts, or losses of customer data",
+            ].map((item, index) => (
+              <tr key={index}>
+                <td style={{ border: "1px solid black", padding: "8px" }}>
+                  {item}
+                </td>
+                <td style={{ border: "1px solid black", padding: "8px" }}></td>
+              </tr>
+            ))}
           </tbody>
         </table>
-
-        <BoxTableComponent />
       </div>
     </div>
   );
 };
 
-export default GRI400;
+export default Social;

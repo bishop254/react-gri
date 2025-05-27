@@ -9,12 +9,11 @@ import { saveAs } from "file-saver";
 
 import GRI2 from "./components/GRI2";
 import GRI3 from "./components/GRI3";
-import GRI200 from "./components/GRI200";
-import GRI300 from "./components/GRI300";
-import GRI400 from "./components/GRI400";
+
 import { principles } from "./components/principles";
 import Governance from "./components/Governance";
 import Environment from "./components/Environment";
+import Social from "./components/Social";
 
 function App() {
   const [loadingType, setLoadingType] = useState(null);
@@ -62,64 +61,33 @@ function App() {
       .join("")}</ol>`;
   };
 
-  const exportWord = () => {
+  const exportWord = async () => {
     setLoadingType("word");
-    setTimeout(() => {
-      try {
-        const element = document.getElementById("report-content");
-        const html = element?.outerHTML || "";
 
-        const css = `
-          <style>
-            body { font-family: Arial; margin: 0; padding: 0; }
-            table { width: 100%; border-collapse: collapse; }
-            th, td { border: 1px solid #333; padding: 0px; text-align: left; }
-            h1, h2 { color: #2c3e50; margin: 20px; }
-          </style>`;
+    try {
+      const response = await fetch(
+        "http://127.0.0.1:3001/report/download/word",
+        {
+          method: "POST",
+          headers: {
+            Accept:
+              "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          },
+        }
+      );
 
-        const coverPage = `
-          <img 
-            src="${window.location.origin}/coverPage.jpg" 
-            alt="Cover"
-          />
-          <br style="page-break-before: always;">`;
-
-        const tocHtml = generateTocList(principles);
-        const tocPage = `
-          <div style="padding: 40px;">
-            <h2>Table of Contents</h2>
-            ${tocHtml}
-          </div>
-          <br style="page-break-before: always;">`;
-
-        const fullDoc = `
-          <!DOCTYPE html>
-          <html>
-            <head>
-              <meta charset='utf-8'/>
-              ${css}
-            </head>
-            <body>
-              ${coverPage}
-              ${tocPage}
-              <div style="padding: 40px;">
-                ${html}
-              </div>
-            </body>
-          </html>`;
-
-        const blob = new Blob([fullDoc], {
-          type: "application/msword;charset=utf-8",
-        });
-
-        saveAs(blob, "GRI_Report.doc");
-      } catch (e) {
-        console.error(e);
-        alert("Word export failed");
-      } finally {
-        setLoadingType(null);
+      if (!response.ok) {
+        throw new Error("Failed to generate Word document");
       }
-    }, 100);
+
+      const blob = await response.blob();
+      saveAs(blob, "GRI_Report.docx");
+    } catch (error) {
+      console.error(error);
+      alert("Word export failed");
+    } finally {
+      setLoadingType(null);
+    }
   };
 
   const exportPDF = async () => {
@@ -171,7 +139,7 @@ function App() {
       `;
 
       const response = await fetch(
-        "http://localhost:3001/report/download/pdf",
+        "http://127.0.0.1:3001/report/download/pdf",
         {
           method: "POST",
           headers: {
@@ -261,15 +229,9 @@ function App() {
         <div id="Environment">
           <Environment />
         </div>
-        {/* <div id="gri200">
-          <GRI200 />
+        <div id="Social">
+          <Social />
         </div>
-        <div id="gri300">
-          <GRI300 />
-        </div>
-        <div id="gri400">
-          <GRI400 />
-        </div> */}
 
         <div className="export-buttons" style={{ marginTop: "2rem" }}>
           <Button

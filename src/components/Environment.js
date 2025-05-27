@@ -23,7 +23,7 @@ const Environment = () => {
           id="Materials"
           style={{ fontWeight: "bold" }}
         >
-          Materials{" "}
+          Materials
         </h3>
         <small className="section-ref">
           <BoldLettersOnly text="GRI 301-1, GRI 301-2, GRI 301-3, E5-4_01 to E5-4_08, E5-5_01 to E5-5_06, TR-AU-440a., TR-AU-440b" />
@@ -57,7 +57,7 @@ const Environment = () => {
                   fontWeight: "bold",
                 }}
               >
-                non-renewable materials{" "}
+                non-renewable materials
               </th>
               <th
                 style={{
@@ -66,14 +66,14 @@ const Environment = () => {
                   fontWeight: "bold",
                 }}
               >
-                renewable materials{" "}
+                renewable materials
               </th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td style={{ border: "1px solid black", padding: "8px" }}>
-                Weight /Volume of materials that are used to produce{" "}
+                Weight /Volume of materials that are used to produce
               </td>
               <td style={{ border: "1px solid black", padding: "8px" }}>
                 &nbsp;
@@ -84,7 +84,7 @@ const Environment = () => {
             </tr>
             <tr>
               <td style={{ border: "1px solid black", padding: "8px" }}>
-                Weight /Volume of materials that are used to package{" "}
+                Weight /Volume of materials that are used to package
               </td>
               <td style={{ border: "1px solid black", padding: "8px" }}>
                 &nbsp;
@@ -124,7 +124,7 @@ const Environment = () => {
                   fontWeight: "bold",
                 }}
               >
-                &nbsp;{" "}
+                &nbsp;
               </th>
             </tr>
           </thead>
@@ -132,7 +132,7 @@ const Environment = () => {
             <tr>
               <td style={{ border: "1px solid black", padding: "8px" }}>
                 Percentage of recycled input materials used to manufacture the
-                organization's primary products and services.{" "}
+                organization's primary products and services.
               </td>
               <td style={{ border: "1px solid black", padding: "8px" }}>
                 &nbsp;
@@ -140,7 +140,7 @@ const Environment = () => {
             </tr>
             <tr>
               <td style={{ border: "1px solid black", padding: "8px" }}>
-                Minimum recyclability of vehicles sold{" "}
+                Minimum recyclability of vehicles sold
               </td>
               <td style={{ border: "1px solid black", padding: "8px" }}>
                 &nbsp;
@@ -192,7 +192,7 @@ const Environment = () => {
             </tr>
             <tr>
               <td style={{ border: "1px solid black", padding: "8px" }}>
-                &nbsp;{" "}
+                &nbsp;
               </td>
               <td style={{ border: "1px solid black", padding: "8px" }}>
                 &nbsp;
@@ -473,7 +473,7 @@ const Environment = () => {
           className="section-marker"
           style={{ fontWeight: "bold", color: "blue" }}
         >
-          Energy intensity{" "}
+          Energy intensity
         </p>
         <small className="section-ref">
           <BoldLettersOnly text="GRI 302-3, E1-5_18" />
@@ -509,7 +509,7 @@ const Environment = () => {
                   width: "30%",
                 }}
               >
-                Within the Organization{" "}
+                Within the Organization
               </th>
               <th
                 style={{
@@ -518,14 +518,14 @@ const Environment = () => {
                   fontWeight: "bold",
                 }}
               >
-                Outside of organization{" "}
+                Outside of organization
               </th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td style={{ border: "1px solid black", padding: "8px" }}>
-                Energy intensity ratio for the organization{" "}
+                Energy intensity ratio for the organization
               </td>
               <td style={{ border: "1px solid black", padding: "8px" }}>
                 &nbsp;
@@ -574,7 +574,7 @@ const Environment = () => {
                   style={{ textDecoration: "underline", color: "black" }}
                 >
                   Amount
-                </a>{" "}
+                </a>
                 of reductions in energy consumption (joules or multiples)
               </th>
               <th
@@ -694,7 +694,7 @@ const Environment = () => {
           id="Water-effluents"
           style={{ fontWeight: "bold" }}
         >
-          Water & effluents{" "}
+          Water & effluents
         </h3>
 
         <small className="section-ref">
@@ -1126,7 +1126,7 @@ const Environment = () => {
                   fontWeight: "bold",
                 }}
               >
-                Water withdrawal (clause 2.2.1){" "}
+                Water withdrawal (clause 2.2.1)
               </td>
             </tr>
             {[
@@ -1585,6 +1585,912 @@ const Environment = () => {
               <td style={{ border: "1px solid black", padding: "8px" }}></td>
               <td style={{ border: "1px solid black", padding: "8px" }}></td>
             </tr>
+          </tbody>
+        </table>
+
+        <table
+          style={{
+            borderCollapse: "collapse",
+            width: "100%",
+            textAlign: "left",
+            border: "1px solid black",
+            marginTop: "1rem",
+            marginBottom: "2rem",
+          }}
+        >
+          <thead>
+            <tr>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                  width: "35%",
+                }}
+              >
+                Quantitative Data
+              </th>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                }}
+              >
+                Unit of measurement
+              </th>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                }}
+              >
+                Base line year
+              </th>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                }}
+              >
+                FY 2023
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              "Energy Purchased from Third party sources",
+              "Category 1 - Purchased goods and services",
+              "Category 2 - Capital goods",
+              "Category 3 - Fuel- and energy-related activities",
+              "Category 4 - Upstream transportation and distribution",
+              "Category 5 - Waste generated in operations",
+              "Category 6 - Business travel",
+              "Category 7 - Employee commuting",
+              "Category 8 - Upstream leased assets",
+              "Category 9 - Downstream transportation and distribution",
+              "Category 10 - Processing of sold products",
+              "Category 11 - Use of sold products",
+              "Category 12 - End-of-life treatment of sold products",
+              "Category 13 - Downstream leased assets",
+              "Category 14 - Franchises",
+              "Category 15 - Investments",
+            ].map((label, index) => (
+              <tr key={index}>
+                <td style={{ border: "1px solid black", padding: "8px" }}>
+                  {label}
+                </td>
+                <td style={{ border: "1px solid black", padding: "8px" }}>
+                  GHG emissions in metric tons of CO2 equivalent.
+                </td>
+                <td style={{ border: "1px solid black", padding: "8px" }}></td>
+                <td style={{ border: "1px solid black", padding: "8px" }}></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <div style={{ maxWidth: "900px", margin: "auto" }}>
+        <p
+          className="section-marker"
+          style={{ fontWeight: "bold", color: "blue" }}
+        >
+          GHG emissions intensity
+        </p>
+        <small className="section-ref">
+          <BoldLettersOnly text="GRI 305-4" />
+        </small>
+
+        <table
+          style={{
+            borderCollapse: "collapse",
+            width: "100%",
+            textAlign: "left",
+            border: "1px solid black",
+            marginTop: "1rem",
+            marginBottom: "2rem",
+          }}
+        >
+          <thead>
+            <tr>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                  width: "30%",
+                }}
+              >
+                Quantitative Data
+              </th>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                  width: "30%",
+                }}
+              >
+                Unit of measurement
+              </th>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                }}
+              >
+                Data
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style={{ border: "1px solid black", padding: "8px" }}>
+                GHG emissions intensity ratio for the organization
+              </td>
+              <td style={{ border: "1px solid black", padding: "8px" }}>
+                [Organization-specific metric (the denominator) chosen to
+                calculate the ratio]
+              </td>
+              <td style={{ border: "1px solid black", padding: "8px" }}></td>
+            </tr>
+            <tr>
+              <td style={{ border: "1px solid black", padding: "8px" }}>
+                Total Emission Intensity for Scope 1: Direct Emissions
+              </td>
+              <td style={{ border: "1px solid black", padding: "8px" }}>
+                (in tCO2e/organization specific metrics)
+              </td>
+              <td style={{ border: "1px solid black", padding: "8px" }}></td>
+            </tr>
+            <tr>
+              <td style={{ border: "1px solid black", padding: "8px" }}>
+                Total Emission Intensity for Scope 2: Indirect Emissions
+              </td>
+              <td style={{ border: "1px solid black", padding: "8px" }}>
+                (in tCO2e/organization specific metrics)
+              </td>
+              <td style={{ border: "1px solid black", padding: "8px" }}></td>
+            </tr>
+            <tr>
+              <td style={{ border: "1px solid black", padding: "8px" }}>
+                Total Emission Intensity for Scope 3: Other Indirect Emissions
+              </td>
+              <td style={{ border: "1px solid black", padding: "8px" }}>
+                (in tCO2e/organization specific metrics)
+              </td>
+              <td style={{ border: "1px solid black", padding: "8px" }}></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div style={{ maxWidth: "900px", margin: "auto" }}>
+        <p
+          className="section-marker"
+          style={{ fontWeight: "bold", color: "blue" }}
+        >
+          Reduction of GHG emissions
+        </p>
+        <small className="section-ref">
+          <BoldLettersOnly text="GRI 305-5, E1-3_03, E1-4_03, E1-4_06, E1-4_09, E1-4_12, E1-4_15, E1-4_25, E1-7_02, TR-AU-410a" />
+        </small>
+
+        <table
+          style={{
+            borderCollapse: "collapse",
+            width: "100%",
+            textAlign: "left",
+            border: "1px solid black",
+            marginBottom: "2rem",
+          }}
+        >
+          <thead>
+            <tr>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                  width: "30%",
+                }}
+              >
+                Quantitative Data
+              </th>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                  width: "30%",
+                }}
+              >
+                Unit of measurement
+              </th>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                }}
+              >
+                Data
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              "GHG emissions reduced as a direct result of reduction initiatives",
+              "GHG emissions reduced in Scope 1 emissions",
+              "GHG emissions reduced in Scope 2 emissions",
+              "GHG emissions reduced in Scope 3 emissions",
+            ].map((label, idx) => (
+              <tr key={idx}>
+                <td style={{ border: "1px solid black", padding: "8px" }}>
+                  {label}
+                </td>
+                <td style={{ border: "1px solid black", padding: "8px" }}>
+                  GHG emissions in metric tons of CO2 equivalent.
+                </td>
+                <td style={{ border: "1px solid black", padding: "8px" }}></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+
+        <table
+          style={{
+            borderCollapse: "collapse",
+            width: "100%",
+            textAlign: "left",
+            border: "1px solid black",
+            marginTop: "1rem",
+            marginBottom: "2rem",
+          }}
+        >
+          <thead>
+            <tr>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                  width: "50%",
+                }}
+              >
+                Metric
+              </th>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                }}
+              >
+                Response
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              "Sales-weighted average passenger fleet",
+              " fuel economy, by region",
+              "Number of zero emission vehicles (ZEV)",
+              "Hybrid vehicles",
+              "Plug-in hybrid vehicles sold",
+              "Discussion of strategy for managing fleet fuel economy and emissions risks and opportunities",
+            ].map((metric, index) => (
+              <tr key={index}>
+                <td style={{ border: "1px solid black", padding: "8px" }}>
+                  {metric}
+                </td>
+                <td style={{ border: "1px solid black", padding: "8px" }}></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <div
+        style={{
+          maxWidth: "900px",
+          margin: "auto",
+        }}
+      >
+        <p
+          class="section-marker"
+          style={{ fontWeight: "bold", color: "blue", margin: 0 }}
+        >
+          Carbon pricing
+        </p>
+        <small className="section-ref">
+          <BoldLettersOnly text="E1-8_01 to E1-8_13" />
+        </small>
+
+        <BoxTableComponent />
+      </div>
+
+      <div
+        style={{
+          maxWidth: "900px",
+          margin: "auto",
+        }}
+      >
+        <p
+          class="section-marker"
+          style={{ fontWeight: "bold", color: "blue", margin: 0 }}
+        >
+          Emissions of ozone-depleting substances (ODS)
+        </p>
+        <small className="section-ref">
+          <BoldLettersOnly text="GRI 305-6, E2-5_01 to E2-5_13" />
+        </small>
+        <table
+          style={{
+            borderCollapse: "collapse",
+            width: "100%",
+            textAlign: "left",
+            border: "1px solid black",
+            marginBottom: "2rem",
+          }}
+        >
+          <thead>
+            <tr>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                }}
+              >
+                Quantitative Data
+              </th>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                }}
+              >
+                Unit of measurement
+              </th>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                }}
+              >
+                Data Input
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {["Production of ODS", "Import of ODS", "Export of ODS"].map(
+              (label, idx) => (
+                <tr key={idx}>
+                  <td style={{ border: "1px solid black", padding: "8px" }}>
+                    {label}
+                  </td>
+                  <td style={{ border: "1px solid black", padding: "8px" }}>
+                    metric tons of CFC-11 (trichlorofluoromethane) equivalent
+                  </td>
+                  <td
+                    style={{ border: "1px solid black", padding: "8px" }}
+                  ></td>
+                </tr>
+              )
+            )}
+          </tbody>
+        </table>
+      </div>
+
+      <div
+        style={{
+          maxWidth: "900px",
+          margin: "auto",
+        }}
+      >
+        <p
+          class="section-marker"
+          style={{ fontWeight: "bold", color: "blue", margin: 0 }}
+        >
+          Nitrogen oxides (NOx), sulfur oxides (SOx), and other significant air
+          emissions
+        </p>
+        <small className="section-ref">
+          <BoldLettersOnly text="E2-4_01, E2-4_02, E2-4_09, E2-4_08, E2-4_10, GRI 305-7" />
+        </small>
+
+        <table
+          style={{
+            borderCollapse: "collapse",
+            width: "100%",
+            textAlign: "left",
+            border: "1px solid black",
+            marginBottom: "2rem",
+          }}
+        >
+          <thead>
+            <tr>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                }}
+              >
+                Quantitative data
+              </th>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                }}
+              >
+                Unit of measurement
+              </th>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                }}
+              >
+                Data Input
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              "NOx",
+              "SOx",
+              "Persistent organic pollutants (POP)",
+              "Volatile organic compounds (VOC)",
+              "Hazardous air pollutants (HAP)",
+              "Particulate matter (PM)",
+              "Other standard categories of air emissions identified in relevant regulations",
+            ].map((label, idx) => (
+              <tr key={idx}>
+                <td style={{ border: "1px solid black", padding: "8px" }}>
+                  {label}
+                </td>
+                <td style={{ border: "1px solid black", padding: "8px" }}>
+                  kilograms or multiples
+                </td>
+                <td style={{ border: "1px solid black", padding: "8px" }}></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <div
+        style={{
+          maxWidth: "900px",
+          margin: "auto",
+        }}
+      >
+        <p
+          class="section-marker"
+          style={{ fontWeight: "bold", color: "blue", margin: 0 }}
+        >
+          Impact, risk and opportunity management
+        </p>
+        <small className="section-ref">
+          <BoldLettersOnly text="E2-6_01 to E2-6_11" />
+        </small>
+
+        <BoxTableComponent />
+      </div>
+
+      <div
+        style={{
+          maxWidth: "900px",
+          margin: "auto",
+        }}
+      >
+        <h3 class="section-marker" id="Waste" style={{ fontWeight: "bold" }}>
+          Waste
+        </h3>
+
+        <small className="section-ref">
+          <BoldLettersOnly text="GRI 306, E5.IRO-1_01, E5.MDR, E5-1_01 to E5-1_04, E5-3_01 to E5-3_13, E5-6_01 to E5-6_06, GRI 306-1, ESRS 2 SBM-3_01, SBM-3_05, SBM-3_07, E5.IRO-1_01, E5.IRO-1_02, E5-4_01, GRI 306-2, E2-4_05, E2-4_06, E2-4_07, E5-2_01 to E5-2_10, E5-5_17" />
+        </small>
+
+        <BoxTableComponent />
+      </div>
+
+      <div style={{ maxWidth: "900px", margin: "auto" }}>
+        <p
+          className="section-marker"
+          style={{ fontWeight: "bold", color: "blue" }}
+        >
+          Waste generated
+        </p>
+        <small className="section-ref">
+          <BoldLettersOnly text="GRI 306-3, E5-5_07, E5-5_12, E5-5_13, E5-5_14, E5-5_17" />
+        </small>
+
+        <table
+          style={{
+            borderCollapse: "collapse",
+            width: "100%",
+            textAlign: "left",
+            border: "1px solid black",
+            marginTop: "1rem",
+            marginBottom: "2rem",
+          }}
+        >
+          <thead>
+            <tr>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                }}
+              >
+                Quantitative Data
+              </th>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                }}
+              >
+                Unit of Measurement
+              </th>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                }}
+              >
+                Data
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style={{ border: "1px solid black", padding: "8px" }}>
+                Total weight of waste generated
+              </td>
+              <td style={{ border: "1px solid black", padding: "8px" }}>
+                Metric tons
+              </td>
+              <td style={{ border: "1px solid black", padding: "8px" }}></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table
+          style={{
+            borderCollapse: "collapse",
+            width: "100%",
+            textAlign: "left",
+            border: "1px solid black",
+            marginBottom: "2rem",
+          }}
+        >
+          <thead>
+            <tr>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                }}
+              >
+                Waste category
+              </th>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                }}
+              >
+                Unit of Measurement
+              </th>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                }}
+              >
+                Total weight
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {["Hazardous", "Non-hazardous"].map((label, index) => (
+              <tr key={index}>
+                <td style={{ border: "1px solid black", padding: "8px" }}>
+                  {label}
+                </td>
+                <td style={{ border: "1px solid black", padding: "8px" }}>
+                  Metric tons
+                </td>
+                <td style={{ border: "1px solid black", padding: "8px" }}></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+
+        <table
+          style={{
+            borderCollapse: "collapse",
+            width: "100%",
+            textAlign: "left",
+            border: "1px solid black",
+            marginBottom: "2rem",
+          }}
+        >
+          <thead>
+            <tr>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                }}
+              >
+                Sector-specific waste
+              </th>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                }}
+              >
+                Unit of Measurement
+              </th>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                }}
+              >
+                Total weight
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {[1, 2].map((_, index) => (
+              <tr key={index}>
+                <td style={{ border: "1px solid black", padding: "8px" }}></td>
+                <td style={{ border: "1px solid black", padding: "8px" }}>
+                  Metric tons
+                </td>
+                <td style={{ border: "1px solid black", padding: "8px" }}></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+
+        <table
+          style={{
+            borderCollapse: "collapse",
+            width: "100%",
+            textAlign: "left",
+            border: "1px solid black",
+            marginBottom: "2rem",
+          }}
+        >
+          <thead>
+            <tr>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                }}
+              >
+                Material-specific waste
+              </th>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                }}
+              >
+                Unit of Measurement
+              </th>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                }}
+              >
+                Total weight
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {[1, 2].map((_, index) => (
+              <tr key={index}>
+                <td style={{ border: "1px solid black", padding: "8px" }}></td>
+                <td style={{ border: "1px solid black", padding: "8px" }}>
+                  Metric tons
+                </td>
+                <td style={{ border: "1px solid black", padding: "8px" }}></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <div style={{ maxWidth: "900px", margin: "auto" }}>
+        <p
+          className="section-marker"
+          style={{ fontWeight: "bold", color: "blue" }}
+        >
+          Waste diverted from disposal
+        </p>
+        <small className="section-ref">
+          <BoldLettersOnly text="GRI 306-4, E5-5_08, E5-5_12, E5-5_13, E5-5_14, E5-5_17" />
+        </small>
+
+        <table
+          style={{
+            borderCollapse: "collapse",
+            width: "100%",
+            textAlign: "left",
+            border: "1px solid black",
+            marginTop: "1rem",
+            marginBottom: "2rem",
+          }}
+        >
+          <thead>
+            <tr>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                }}
+              >
+                Qualitative data
+              </th>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                }}
+              >
+                Unit of Measurement
+              </th>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                }}
+              >
+                Data
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style={{ border: "1px solid black", padding: "8px" }}>
+                Total weight of waste diverted from disposal
+              </td>
+              <td style={{ border: "1px solid black", padding: "8px" }}>
+                Metric tons
+              </td>
+              <td style={{ border: "1px solid black", padding: "8px" }}></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table
+          style={{
+            borderCollapse: "collapse",
+            width: "100%",
+            textAlign: "left",
+            border: "1px solid black",
+            marginBottom: "2rem",
+          }}
+        >
+          <thead>
+            <tr>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                  width: "30%",
+                }}
+              >
+                Total weight of waste diverted from disposal
+              </th>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                  width: "30%",
+                }}
+              >
+                Unit of Measurement
+              </th>
+              <th
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  fontWeight: "bold",
+                }}
+              >
+                Data
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td
+                colSpan={3}
+                style={{ border: "1px solid black", padding: "8px" }}
+              >
+                <strong>Hazardous waste</strong>
+              </td>
+            </tr>
+            {[
+              "Preparation for reuse",
+              "Recycling",
+              "Other recovery operations",
+              "Onsite",
+              "Offsite",
+            ].map((label, index) => (
+              <tr key={`hazard-${index}`}>
+                <td style={{ border: "1px solid black", padding: "8px" }}>
+                  {label}
+                </td>
+                <td style={{ border: "1px solid black", padding: "8px" }}>
+                  Metric tons
+                </td>
+                <td style={{ border: "1px solid black", padding: "8px" }}></td>
+              </tr>
+            ))}
+            <tr>
+              <td
+                colSpan={3}
+                style={{ border: "1px solid black", padding: "8px" }}
+              >
+                <strong>Non-hazardous waste</strong>
+              </td>
+            </tr>
+            {[
+              "Preparation for reuse",
+              "Recycling",
+              "Other recovery operations",
+              "Onsite",
+              "Offsite",
+            ].map((label, index) => (
+              <tr key={`nonhaz-${index}`}>
+                <td style={{ border: "1px solid black", padding: "8px" }}>
+                  {label}
+                </td>
+                <td style={{ border: "1px solid black", padding: "8px" }}>
+                  Metric tons
+                </td>
+                <td style={{ border: "1px solid black", padding: "8px" }}></td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
