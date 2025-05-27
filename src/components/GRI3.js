@@ -1,5 +1,6 @@
 import React from "react";
 import BoxTableComponent from "./boxTable";
+import { BoldLettersOnly } from "./BoldLetters";
 
 const GRI3 = () => {
   return (
@@ -10,25 +11,20 @@ const GRI3 = () => {
           margin: "auto",
         }}
       >
-        <h3 style={{ fontWeight: "bold" }} className="section-marker" id="gri3">
-          GRI 3
-        </h3>
-        <h3
-          style={{ fontWeight: "bold" }}
-          className="section-marker"
-          id="gri3-disclosures"
-          data-title="2. Disclosures on material topics"
-        >
-          2. Disclosures on material topics
-        </h3>
+        <h2 style={{ fontWeight: "bold" }} className="section-marker" id="gri3">
+          Materiality Assessment
+        </h2>
         <p
           className="section-marker"
           id="gri3-disclosure-3-1"
           data-title="Disclosure 3-1 Process to determine material topics"
           style={{ fontWeight: "bold", color: "blue" }}
         >
-          Disclosure 3-1 Process to determine material topics
+          Process to determine material topics
         </p>
+        <small className="section-ref">
+          <BoldLettersOnly text="GRI 3-1, ESRS 2, BP-1_04, IRO-1_14" />
+        </small>
 
         <BoxTableComponent />
       </div>
@@ -45,8 +41,11 @@ const GRI3 = () => {
           data-title="Disclosure 3-2 List of material topics"
           style={{ fontWeight: "bold", color: "blue" }}
         >
-          Disclosure 3-2 List of material topics
+          List of material topics
         </p>
+        <small className="section-ref">
+          <BoldLettersOnly text="GRI 3-2, ESRS 2 BP-2_21, ESRS 2 BP-2_22, ESRS 2 SBM-3_01, SBM-3_04, SBM-3_07, SBM-3_11" />
+        </small>
 
         <table
           style={{

@@ -485,6 +485,7 @@ const GRI2 = () => {
                   padding: "8px",
                   fontWeight: "bold",
                   width: "30%",
+                  color: "blue",
                 }}
               >
                 Stakeholder
@@ -494,6 +495,7 @@ const GRI2 = () => {
                   border: "none",
                   padding: "8px",
                   fontWeight: "bold",
+                  color: "blue",
                 }}
               >
                 Process
@@ -503,6 +505,7 @@ const GRI2 = () => {
                   border: "none",
                   padding: "8px",
                   fontWeight: "bold",
+                  color: "blue",
                 }}
               >
                 Objective
@@ -512,6 +515,7 @@ const GRI2 = () => {
                   border: "none",
                   padding: "8px",
                   fontWeight: "bold",
+                  color: "blue",
                 }}
               >
                 Frequency
@@ -527,68 +531,6 @@ const GRI2 = () => {
             </tr>
           </tbody>
         </table>
-      </div>
-
-      <div
-        style={{
-          maxWidth: "900px",
-          margin: "auto",
-        }}
-      >
-        <p
-          class="section-marker"
-          id="gri2-disclosure-2-30"
-          style={{ fontWeight: "bold", color: "blue" }}
-        >
-          Disclosure 2-30 Collective bargaining agreements
-        </p>
-
-        <table
-          style={{
-            borderCollapse: "collapse",
-            width: "100%",
-            textAlign: "left",
-            border: "1px solid black",
-            marginBottom: "2rem",
-          }}
-        >
-          <thead>
-            <tr>
-              <th
-                style={{
-                  border: "1px solid black",
-                  padding: "8px",
-                  fontWeight: "bold",
-                  width: "50%",
-                }}
-              >
-                Particulars
-              </th>
-              <th
-                style={{
-                  border: "1px solid black",
-                  padding: "8px",
-                  fontWeight: "bold",
-                }}
-              >
-                Response
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td style={{ border: "1px solid black", padding: "8px" }}>
-                Percentage of total employees covered by collective bargaining
-                agreements;
-              </td>
-              <td style={{ border: "1px solid black", padding: "8px" }}>
-                &nbsp;
-              </td>
-            </tr>
-          </tbody>
-        </table>
-
-        <BoxTableComponent />
       </div>
     </div>
   );

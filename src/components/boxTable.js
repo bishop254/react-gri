@@ -6,6 +6,7 @@ const BoxTableComponent = () => {
       style={{
         borderCollapse: "collapse",
         width: "100%",
+        marginBottom: "2rem",
       }}
     >
       <tr>
