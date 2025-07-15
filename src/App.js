@@ -7,13 +7,11 @@ import "primereact/resources/primereact.min.css";
 
 import { saveAs } from "file-saver";
 
-import GRI2 from "./components/GRI2";
-import GRI3 from "./components/GRI3";
-
 import { principles } from "./components/principles";
-import Governance from "./components/Governance";
-import Environment from "./components/Environment";
-import Social from "./components/Social";
+import ExecutiveSummary from "./components/ExecutiveSummary";
+import DefinitionsAbbreviations from "./components/DefinitionsAbbreviations";
+import OrganizationProfile from "./components/OrganizationProfile";
+import GhgInventoryDesignAndMethodology from "./components/GhgInventoryDesignAndMethodology";
 
 function App() {
   const [loadingType, setLoadingType] = useState(null);
@@ -169,9 +167,9 @@ function App() {
   };
 
   return (
-    <div className="brsr-report-container">
+    <div className="report-container">
       <div className="sidebar">
-        <h2 className="sidebar-title">GRI Report Index</h2>
+        <h2 className="sidebar-title">Rotary Group of Companies Index</h2>
         <ScrollPanel className="sidebar-scroll">
           <ul className="principles-list">
             {principles.map((item) => (
@@ -193,7 +191,7 @@ function App() {
                   {item.title}
                 </div>
                 {item.children && (
-                  <ul style={{ marginLeft: "-1.3rem" }}>
+                  <ul style={{ marginLeft: "-11rem" }}>
                     {item.children.map((sub) => (
                       <li style={{ listStyle: "none" }} key={sub.title}>
                         <div
@@ -217,10 +215,19 @@ function App() {
       </div>
 
       <div id="report-content" className="main-content scroll-sections">
-        <div id="gri2">
-          <GRI2 />
+        <div id="executive-summary">
+          <ExecutiveSummary />
         </div>
-        <div id="gri3">
+        <div id="definitions-abbreviation">
+          <DefinitionsAbbreviations />
+        </div>
+        <div id="organization-profile">
+          <OrganizationProfile />
+        </div>
+        <div id="ghg-inventory-design-and-methodology">
+          <GhgInventoryDesignAndMethodology />
+        </div>
+        {/* <div id="gri3">
           <GRI3 />
         </div>
         <div id="governance">
@@ -231,7 +238,7 @@ function App() {
         </div>
         <div id="Social">
           <Social />
-        </div>
+        </div> */}
 
         <div className="export-buttons" style={{ marginTop: "2rem" }}>
           <Button
