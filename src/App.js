@@ -12,6 +12,8 @@ import ExecutiveSummary from "./components/ExecutiveSummary";
 import DefinitionsAbbreviations from "./components/DefinitionsAbbreviations";
 import OrganizationProfile from "./components/OrganizationProfile";
 import GhgInventoryDesignAndMethodology from "./components/GhgInventoryDesignAndMethodology";
+import CalculatingGhgEmissions from "./components/CalculatingGhgEmissions";
+import ReductionTargetsAndImprovementMeasures from "./components/ReductionTargetsAndImprovementMeasures";
 
 function App() {
   const [loadingType, setLoadingType] = useState(null);
@@ -191,7 +193,7 @@ function App() {
                   {item.title}
                 </div>
                 {item.children && (
-                  <ul style={{ marginLeft: "-11rem" }}>
+                  <ul style={{ marginLeft: "-2rem" }}>
                     {item.children.map((sub) => (
                       <li style={{ listStyle: "none" }} key={sub.title}>
                         <div
@@ -227,18 +229,12 @@ function App() {
         <div id="ghg-inventory-design-and-methodology">
           <GhgInventoryDesignAndMethodology />
         </div>
-        {/* <div id="gri3">
-          <GRI3 />
+        <div id="calculating-ghg-emissions">
+          <CalculatingGhgEmissions />
         </div>
-        <div id="governance">
-          <Governance />
+        <div id="reduction-targets-and-improvement-measures">
+          <ReductionTargetsAndImprovementMeasures />
         </div>
-        <div id="Environment">
-          <Environment />
-        </div>
-        <div id="Social">
-          <Social />
-        </div> */}
 
         <div className="export-buttons" style={{ marginTop: "2rem" }}>
           <Button

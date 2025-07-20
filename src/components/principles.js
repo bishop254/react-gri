@@ -39,16 +39,28 @@ export const principles = [
       },
       {
         title: "ORGANISATIONAL BOUNDARIES",
-        targetId: "section-ghg-inventory-design-and-methodology-organisational-boundaries",
+        targetId:
+          "section-ghg-inventory-design-and-methodology-organisational-boundaries",
       },
       {
         title: "OPERATIONAL BOUNDARIES",
-        targetId: "section-ghg-inventory-design-and-methodology-operational-boundaries",
+        targetId:
+          "section-ghg-inventory-design-and-methodology-operational-boundaries",
       },
       {
         title: "GHG INVENTORY",
         targetId: "section-ghg-inventory-design-and-methodology-ghg-inventory",
       },
+      {
+        title: "EMISSION FACTORS",
+        targetId:
+          "section-ghg-inventory-design-and-methodology-emission-factors",
+      },
     ],
+  },
+  {
+    title: "REDUCTION TARGETS AND IMPROVEMENT MEASURES",
+    id: "reduction-targets-and-improvement-measures",
+    children: [],
   },
 ];

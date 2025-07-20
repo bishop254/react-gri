@@ -176,6 +176,44 @@ const GhgInventoryDesignAndMethodology = () => {
     },
   ];
 
+  const emissionFactors = [
+    {
+      location: "Singapore",
+      grid: "",
+      Source: "",
+    },
+    {
+      location: "Malaysia",
+      grid: "",
+      Source: "",
+    },
+    {
+      location: "Indonesia",
+      grid: "",
+      Source: "",
+    },
+    {
+      location: "Thailand",
+      grid: "",
+      Source: "",
+    },
+    {
+      location: "Saudi",
+      grid: "",
+      Source: "",
+    },
+    {
+      location: "Qatar",
+      grid: "",
+      Source: "",
+    },
+    {
+      location: "Thailand",
+      grid: "",
+      Source: "",
+    },
+  ];
+
   return (
     <div style={{ minHeight: "80vh", fontFamily: "Lato, sans-serif" }}>
       <div
@@ -509,6 +547,122 @@ const GhgInventoryDesignAndMethodology = () => {
         >
           [Above table listing scope of emissions for each Subsidiary, Emission
           Scopes, emission sources, and activity data source]
+        </p>
+      </div>
+
+      <div
+        style={{
+          maxWidth: "900px",
+          margin: "auto",
+        }}
+      >
+        <p
+          class="section-marker"
+          id="section-ghg-inventory-design-and-methodology-emission-factors"
+          style={{ marginBottom: "1rem" }}
+        >
+          4.4 EMISSION FACTORS
+        </p>
+
+        <p
+          class="section-marker"
+          style={{
+            marginBottom: "1rem",
+          }}
+        >
+          The emission factors used for Scope 1 emissions are sourced from the
+          GHG Protocol. For Scope 2 emissions, the following emission factors
+          are used for the different countries.
+        </p>
+
+        <p
+          class="section-marker"
+          style={{
+            textDecoration: "underline",
+            marginBottom: "1rem",
+          }}
+        >
+          Table 5 2: Emission Factors for Scope 2 Emissions
+        </p>
+
+        <p
+          class="section-marker"
+          style={{
+            textDecoration: "underline",
+            marginBottom: "1rem",
+            color: "red",
+          }}
+        >
+          [Table listing scope of emission factors for purchased electricity by
+          country, and source of emission factors]
+        </p>
+
+        <table
+          style={{
+            borderCollapse: "collapse",
+            width: "100%",
+            textAlign: "left",
+            marginBottom: "1rem",
+            border: "1px solid black",
+          }}
+        >
+          <thead>
+            <tr>
+              {["Location", "EF (Grid), Unit", "Source"].map((header) => (
+                <th
+                  key={header}
+                  style={{
+                    border: "1px solid black",
+                    padding: "8px",
+                    fontWeight: "bold",
+                  }}
+                >
+                  {header}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {emissionFactors.map((item, idx) => (
+              <tr key={idx}>
+                <td style={{ border: "1px solid black", padding: "8px" }}>
+                  {item.location}
+                </td>
+                <td style={{ border: "1px solid black", padding: "8px" }}>
+                  {item.grid}
+                </td>
+                <td style={{ border: "1px solid black", padding: "8px" }}>
+                  {item.scope}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <div
+        style={{
+          maxWidth: "900px",
+          margin: "auto",
+        }}
+      >
+        <p
+          class="section-marker"
+          id="section-ghg-inventory-design-and-methodology-emission-factors"
+          style={{ marginBottom: "1rem" }}
+        >
+          4.5 EXCLUSIONS AND DATA GAPS
+        </p>
+
+        <p
+          class="section-marker"
+          style={{
+            textDecoration: "underline",
+            marginBottom: "8rem",
+            color: "red",
+          }}
+        >
+          [Editable section]
         </p>
       </div>
     </div>
