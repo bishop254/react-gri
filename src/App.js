@@ -10,6 +10,12 @@ import { saveAs } from "file-saver";
 import Module_1_2_Perf from "./components/Module1_2/Module_1_2_Perf";
 import Module_1_2_Qual from "./components/Module1_2/Module_1_2_Qual";
 import Module_1_2_Quan from "./components/Module1_2/Module_1_2_Quan";
+import Module_3_6_Perf from "./components/Module3_6/Module_3_6_Perf";
+import Module_3_6_Qual from "./components/Module3_6/Module_3_6_Qual";
+import Module_3_6_Quan from "./components/Module3_6/Module_3_6_Quan";
+import Module_8_13_Quan from "./components/Module8_13/Module_8_13_Quan";
+import Module_8_13_Qual from "./components/Module8_13/Module_8_13_Qual";
+import Module_8_13_Perf from "./components/Module8_13/Module_8_13_Perf";
 
 const principles = [
   {
@@ -35,6 +41,82 @@ const principles = [
       {
         title: "Module 1 & 2 - Quantitative",
         targetId: "mod-1-2-quant",
+      },
+    ],
+  },
+  {
+    title: "Module 3 - 6",
+    id: "mod-3-6",
+    children: [
+      {
+        title: "Disclosure of risks and opportunities",
+        targetId: "mod-3-perf",
+      },
+      {
+        title: "Governance",
+        targetId: "mod-4-perf",
+      },
+      {
+        title: "Business Strategy",
+        targetId: "mod-5-perf",
+      },
+      {
+        title: "Environmental Performance – Consolidation Approach",
+        targetId: "mod-6-perf",
+      },
+      {
+        title: "Module 3 - Qualitative",
+        targetId: "mod-3-qual",
+      },
+      {
+        title: "Module 4 - Qualitative",
+        targetId: "mod-4-qual",
+      },
+      {
+        title: "Module 5 - Qualitative",
+        targetId: "mod-5-qual",
+      },
+      {
+        title: "Module 6 - Qualitative",
+        targetId: "mod-6-qual",
+      },
+      {
+        title: "Module 3 to 6 - Quantitative",
+        targetId: "mod-3-6-quan",
+      },
+    ],
+  },
+  {
+    title: "Module 8 - 13",
+    id: "mod-8-13",
+    children: [
+      {
+        title: "Environmental Performance - Forests, plastic, water",
+        targetId: "mod-8-perf",
+      },
+      {
+        title: "Environmental Performance – Water security",
+        targetId: "mod-9-perf",
+      },
+      {
+        title: " Environmental Performance – Plastics",
+        targetId: "mod-10-perf",
+      },
+      {
+        title: "Module 8 - Qualitative",
+        targetId: "mod-8-qual",
+      },
+      {
+        title: "Module 9 - Qualitative",
+        targetId: "mod-9-qual",
+      },
+      {
+        title: "Module 10 - Qualitative",
+        targetId: "mod-10-qual",
+      },
+      {
+        title: "Module 8 to 13 - Quantitative",
+        targetId: "mod-8-13-quan",
       },
     ],
   },
@@ -279,6 +361,22 @@ function App() {
           <Module_1_2_Qual />
           <br />
           <Module_1_2_Quan />
+        </div>
+
+        <div id="mod-3-6">
+          <Module_3_6_Perf />
+          <br />
+          <Module_3_6_Qual />
+          <br />
+          <Module_3_6_Quan />
+        </div>
+
+        <div id="mod-8-13">
+          <Module_8_13_Perf />
+          <br />
+          <Module_8_13_Qual />
+          <br />
+          <Module_8_13_Quan />
         </div>
 
         <div className="export-buttons" style={{ marginTop: "2rem" }}>
