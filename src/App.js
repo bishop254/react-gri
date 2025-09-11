@@ -7,13 +7,10 @@ import "primereact/resources/themes/lara-light-indigo/theme.css";
 import "primereact/resources/primereact.min.css";
 
 import Module_1_2_Perf from "./components/Module1_2/Module_1_2_Perf";
-import Module_1_2_Qual from "./components/Module1_2/Module_1_2_Qual";
 import Module_1_2_Quan from "./components/Module1_2/Module_1_2_Quan";
 import Module_3_6_Perf from "./components/Module3_6/Module_3_6_Perf";
-import Module_3_6_Qual from "./components/Module3_6/Module_3_6_Qual";
 import Module_3_6_Quan from "./components/Module3_6/Module_3_6_Quan";
 import Module_8_13_Quan from "./components/Module8_13/Module_8_13_Quan";
-import Module_8_13_Qual from "./components/Module8_13/Module_8_13_Qual";
 import Module_8_13_Perf from "./components/Module8_13/Module_8_13_Perf";
 import Module_7_Perf from "./components/Module7/Module_7_Perf";
 
@@ -31,18 +28,6 @@ const principles = [
           "Identification, assessment, and management of dependencies, impacts, risks, and opportunities",
         targetId: "mod-2-perf",
       },
-      // {
-      //   title: "Module 1 - Qualitative",
-      //   targetId: "mod-1-qual",
-      // },
-      // {
-      //   title: "Module 2 - Qualitative",
-      //   targetId: "mod-2-qual",
-      // },
-      // {
-      //   title: "Module 1 & 2 - Quantitative",
-      //   targetId: "mod-1-2-quant",
-      // },
     ],
   },
   {
@@ -65,26 +50,6 @@ const principles = [
         title: "Environmental Performance – Consolidation Approach",
         targetId: "mod-6-perf",
       },
-      // {
-      //   title: "Module 3 - Qualitative",
-      //   targetId: "mod-3-qual",
-      // },
-      // {
-      //   title: "Module 4 - Qualitative",
-      //   targetId: "mod-4-qual",
-      // },
-      // {
-      //   title: "Module 5 - Qualitative",
-      //   targetId: "mod-5-qual",
-      // },
-      // {
-      //   title: "Module 6 - Qualitative",
-      //   targetId: "mod-6-qual",
-      // },
-      // {
-      //   title: "Module 3 to 6 - Quantitative",
-      //   targetId: "mod-3-6-quan",
-      // },
     ],
   },
   {
@@ -121,22 +86,6 @@ const principles = [
         title: "Further information & Sign-off",
         targetId: "mod-13-perf",
       },
-      // {
-      //   title: "Module 8 - Qualitative",
-      //   targetId: "mod-8-qual",
-      // },
-      // {
-      //   title: "Module 9 - Qualitative",
-      //   targetId: "mod-9-qual",
-      // },
-      // {
-      //   title: "Module 10 - Qualitative",
-      //   targetId: "mod-10-qual",
-      // },
-      // {
-      //   title: "Module 8 to 13 - Quantitative",
-      //   targetId: "mod-8-13-quan",
-      // },
     ],
   },
 ];
@@ -169,8 +118,8 @@ function App() {
         const top = visible.sort(
           (a, b) => b.intersectionRatio - a.intersectionRatio
         )[0];
-        const title = top.target.getAttribute("data-title");
-        if (title) setSelected(title);
+        const sectionId = top.target.getAttribute("data-id");
+        if (sectionId) setSelected(sectionId);
       }
     }, options);
 
@@ -181,22 +130,6 @@ function App() {
     };
   }, []);
 
-  const generateTocList = (items) => {
-    return `<ol>${items
-      .map((item) => {
-        const childrenList = item.children
-          ? `<ul>${item.children
-              .map(
-                (child) =>
-                  `<li style="list-style: none; font-size: 0.9rem;">${child.title}</li>`
-              )
-              .join("")}</ul>`
-          : "";
-        return `<li><strong>${item.title}</strong>${childrenList}</li>`;
-      })
-      .join("")}</ol>`;
-  };
-
   const generateReport = async () => {};
 
   return (
@@ -206,31 +139,33 @@ function App() {
         <ScrollPanel className="sidebar-scroll">
           <ul className="principles-list">
             {principles.map((item) => (
-              <li key={item.title}>
+              <li key={item.id}>
+                {/* Main item */}
                 <div
                   className={`principle-item ${
-                    selected === item.title ? "selected" : ""
+                    selected === item.id ? "selected" : ""
                   }`}
                   onClick={() => {
-                    setSelected(item.title);
-                    const idx = principles.indexOf(item.title);
-                    if (idx !== -1) {
-                      sectionRefs.current[idx]?.scrollIntoView({
-                        behavior: "smooth",
-                      });
-                    }
+                    setSelected(item.id);
+                    const el = document.getElementById(item.id);
+                    if (el) el.scrollIntoView({ behavior: "smooth" });
                   }}
                 >
                   {item.title}
                 </div>
+
+                {/* Children */}
                 {item.children && (
                   <ul style={{ marginLeft: "-1.3rem" }}>
                     {item.children.map((sub) => (
-                      <li style={{ listStyle: "none" }} key={sub.title}>
+                      <li style={{ listStyle: "none" }} key={sub.targetId}>
                         <div
-                          className="principle-item"
+                          className={`principle-item ${
+                            selected === sub.targetId ? "selected" : ""
+                          }`}
                           style={{ fontSize: "0.8rem" }}
                           onClick={() => {
+                            setSelected(sub.targetId);
                             const el = document.getElementById(sub.targetId);
                             if (el) el.scrollIntoView({ behavior: "smooth" });
                           }}
@@ -251,11 +186,11 @@ function App() {
         <div
           className="filter-section"
           style={{
-            padding: "1rem",
             backgroundColor: "#f8f9fa",
-            marginBottom: "1rem",
+            margin: "0 auto 3rem auto",
             borderRadius: "8px",
             flexShrink: 0,
+            width: "1000px",
           }}
         >
           <div
@@ -366,32 +301,36 @@ function App() {
           </div>
         </div>
 
-        <div id="mod-1-2">
+        <div
+          id="mod-1-2"
+          data-id="mod-1-2"
+          ref={(el) => (sectionRefs.current[0] = el)}
+        >
           <Module_1_2_Perf />
-          <br />
-          {/* <Module_1_2_Qual /> */}
-          <br />
-          <Module_1_2_Quan />
         </div>
 
-        <div id="mod-3-6">
+        <div
+          id="mod-3-6"
+          data-id="mod-3-6"
+          ref={(el) => (sectionRefs.current[1] = el)}
+        >
           <Module_3_6_Perf />
-          <br />
-          {/* <Module_3_6_Qual /> */}
-          <br />
-          <Module_3_6_Quan />
         </div>
 
-        <div id="mod-7">
+        <div
+          id="mod-7"
+          data-id="mod-7"
+          ref={(el) => (sectionRefs.current[2] = el)}
+        >
           <Module_7_Perf />
         </div>
 
-        <div id="mod-8-13">
+        <div
+          id="mod-8-13"
+          data-id="mod-8-13"
+          ref={(el) => (sectionRefs.current[3] = el)}
+        >
           <Module_8_13_Perf />
-          <br />
-          {/* <Module_8_13_Qual /> */}
-          <br />
-          <Module_8_13_Quan />
         </div>
       </div>
     </div>
