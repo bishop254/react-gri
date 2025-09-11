@@ -1395,7 +1395,7 @@ const Module_8_13_Perf = () => {
     },
   ];
 
-  const tableDataModuleTenToThirteen = [
+  const tableDataModuleTen = [
     {
       slNo: "10.1",
       question: "Do you have plastics-related targets, and if so what type?",
@@ -1516,6 +1516,70 @@ const Module_8_13_Perf = () => {
       tableRows: 2,
       response: "",
     },
+
+    {
+      section: "Further information & Sign-off",
+      slNo: "13.1",
+      question:
+        "Indicate if any environmental information included in your CDP response (not already reported in 7.9.1/2/3, 8.9.1/2/3/4, and 9.3.2) is verified and/or assured by a third party?",
+      guidance:
+        "This information gives data users confidence in the quality and credibility of your organization's response. CDP supports third-party verification and assurance as good practice in environmental reporting as it ensures the reliability of the data and processes disclosed. This question allows leading organizations to report their efforts on this and to highlight trends in verification and assurance of interest to investors and purchasing organizations. CDP also recognizes the growing importance to organizations of disclosing credible independently verified environmental data for demonstrating compliance with emerging standards and regulations.",
+      tableColumns: [
+        "Other environmental information included in your CDP response is verified and/or assured by a third party",
+        "Primary reason why other environmental information included in your CDP response is not verified and/or assured by a third party",
+        "Explain why other environmental information included in your CDP response is not verified and/or assured by a third party",
+      ],
+      tableRows: 2,
+      response: "",
+    },
+    {
+      slNo: "13.1.1",
+      question:
+        "Which data points within your CDP response are verified and/or assured by a third party, and which standards were used?",
+      guidance:
+        "This information allows data users to understand which elements of your organizations CDP response have been verified/assured by an accredited third-party.",
+      tableColumns: [
+        "Environmental issue for which data has been verified and/or assured",
+        "Disclosure module and data verified and/or assured",
+        "Verification/assurance standard",
+        "Further details of the third-party verification/assurance process",
+        "Attach verification/assurance evidence/report (optional)",
+      ],
+      tableRows: 2,
+      response: "",
+    },
+    {
+      slNo: "13.2",
+      question:
+        "Use this field to provide any additional information or context that you feel is relevant to your organization's response. Please note that this field is optional and is not scored.",
+      guidance: "",
+      tableColumns: [],
+      tableRows: 0,
+      response: "",
+    },
+    {
+      slNo: "13.3",
+      question:
+        "Use this field to provide any additional information or context that you feel is relevant to your organization's response. Please note that this field is optional and is not scored.",
+      guidance:
+        "CDP asks organizations to identify the job title and corresponding job category of the person signing off (approving) the CDP response. This information indicates to investors where in the corporate structure direct responsibility is being taken for the response and the information contained therein.",
+      tableColumns: ["Job title", "Corresponding job category"],
+      tableRows: 2,
+      response: "",
+    },
+    {
+      slNo: "13.4",
+      question:
+        "Please indicate your consent for CDP to share contact details with the Pacific Institute to support content for its Water Action Hub website",
+      guidance:
+        "The CEO Water Mandate Water Action Hub is an online platform that catalogues water stewardship projects around the world and enables interested parties to connect and work together to solve local and regional water challenges. CDP will share public response data from 3.1.1 with the Pacific Institute to be reviewed as potential water stewardship projects for upload to the Water Action Hub website. Only responses to the following datapoints will be considered for upload: For the Water environmental issue: Country/Area where the risk occurs; River basin where the risk occurs; Primary response to risk; Description of response. CDP’s Privacy Policy can be found here.",
+      tableColumns: [],
+      tableRows: 0,
+      response: "",
+    },
+  ];
+
+  const tableDataModuleEleven = [
     {
       section: "Environmental Performance – Biodiversity",
       slNo: "11.2",
@@ -1591,6 +1655,9 @@ const Module_8_13_Perf = () => {
         "SDP98_42",
       ],
     },
+  ];
+
+  const tableDataModuleThirteen = [
     {
       section: "Further information & Sign-off",
       slNo: "13.1",
@@ -1673,8 +1740,24 @@ const Module_8_13_Perf = () => {
 
       <TableRenderer
         id="mod-10-perf"
-        title="Section:  Environmental Performance – Plastics "
-        tableData={tableDataModuleTenToThirteen}
+        title="Section:  Environmental Performance – Plastics"
+        tableData={tableDataModuleTen}
+      />
+
+      <br />
+
+      <TableRenderer
+        id="mod-11-perf"
+        title="Section:  Environmental Performance – Biodiversity"
+        tableData={tableDataModuleEleven}
+      />
+
+      <br />
+
+      <TableRenderer
+        id="mod-13-perf"
+        title="Section:  Further information & Sign-off"
+        tableData={tableDataModuleThirteen}
       />
     </div>
   );

@@ -2,10 +2,9 @@ import { useEffect, useRef, useState } from "react";
 import "./App.css";
 import { Button } from "primereact/button";
 import { ScrollPanel } from "primereact/scrollpanel";
+import { Dropdown } from "primereact/dropdown";
 import "primereact/resources/themes/lara-light-indigo/theme.css";
 import "primereact/resources/primereact.min.css";
-
-import { saveAs } from "file-saver";
 
 import Module_1_2_Perf from "./components/Module1_2/Module_1_2_Perf";
 import Module_1_2_Qual from "./components/Module1_2/Module_1_2_Qual";
@@ -16,6 +15,7 @@ import Module_3_6_Quan from "./components/Module3_6/Module_3_6_Quan";
 import Module_8_13_Quan from "./components/Module8_13/Module_8_13_Quan";
 import Module_8_13_Qual from "./components/Module8_13/Module_8_13_Qual";
 import Module_8_13_Perf from "./components/Module8_13/Module_8_13_Perf";
+import Module_7_Perf from "./components/Module7/Module_7_Perf";
 
 const principles = [
   {
@@ -23,25 +23,26 @@ const principles = [
     id: "mod-1-2",
     children: [
       {
-        title: "Module 1 - Performance",
+        title: "Introduction",
         targetId: "mod-1-perf",
       },
       {
-        title: "Module 2 - Performance",
+        title:
+          "Identification, assessment, and management of dependencies, impacts, risks, and opportunities",
         targetId: "mod-2-perf",
       },
-      {
-        title: "Module 1 - Qualitative",
-        targetId: "mod-1-qual",
-      },
-      {
-        title: "Module 2 - Qualitative",
-        targetId: "mod-2-qual",
-      },
-      {
-        title: "Module 1 & 2 - Quantitative",
-        targetId: "mod-1-2-quant",
-      },
+      // {
+      //   title: "Module 1 - Qualitative",
+      //   targetId: "mod-1-qual",
+      // },
+      // {
+      //   title: "Module 2 - Qualitative",
+      //   targetId: "mod-2-qual",
+      // },
+      // {
+      //   title: "Module 1 & 2 - Quantitative",
+      //   targetId: "mod-1-2-quant",
+      // },
     ],
   },
   {
@@ -64,25 +65,35 @@ const principles = [
         title: "Environmental Performance – Consolidation Approach",
         targetId: "mod-6-perf",
       },
+      // {
+      //   title: "Module 3 - Qualitative",
+      //   targetId: "mod-3-qual",
+      // },
+      // {
+      //   title: "Module 4 - Qualitative",
+      //   targetId: "mod-4-qual",
+      // },
+      // {
+      //   title: "Module 5 - Qualitative",
+      //   targetId: "mod-5-qual",
+      // },
+      // {
+      //   title: "Module 6 - Qualitative",
+      //   targetId: "mod-6-qual",
+      // },
+      // {
+      //   title: "Module 3 to 6 - Quantitative",
+      //   targetId: "mod-3-6-quan",
+      // },
+    ],
+  },
+  {
+    title: "Module 7",
+    id: "mod-7",
+    children: [
       {
-        title: "Module 3 - Qualitative",
-        targetId: "mod-3-qual",
-      },
-      {
-        title: "Module 4 - Qualitative",
-        targetId: "mod-4-qual",
-      },
-      {
-        title: "Module 5 - Qualitative",
-        targetId: "mod-5-qual",
-      },
-      {
-        title: "Module 6 - Qualitative",
-        targetId: "mod-6-qual",
-      },
-      {
-        title: "Module 3 to 6 - Quantitative",
-        targetId: "mod-3-6-quan",
+        title: "Environmental Performance - Climate Change",
+        targetId: "mod-7-perf",
       },
     ],
   },
@@ -99,25 +110,33 @@ const principles = [
         targetId: "mod-9-perf",
       },
       {
-        title: " Environmental Performance – Plastics",
+        title: "Environmental Performance – Plastics",
         targetId: "mod-10-perf",
       },
       {
-        title: "Module 8 - Qualitative",
-        targetId: "mod-8-qual",
+        title: "Environmental Performance – Biodiversity",
+        targetId: "mod-11-perf",
       },
       {
-        title: "Module 9 - Qualitative",
-        targetId: "mod-9-qual",
+        title: "Further information & Sign-off",
+        targetId: "mod-13-perf",
       },
-      {
-        title: "Module 10 - Qualitative",
-        targetId: "mod-10-qual",
-      },
-      {
-        title: "Module 8 to 13 - Quantitative",
-        targetId: "mod-8-13-quan",
-      },
+      // {
+      //   title: "Module 8 - Qualitative",
+      //   targetId: "mod-8-qual",
+      // },
+      // {
+      //   title: "Module 9 - Qualitative",
+      //   targetId: "mod-9-qual",
+      // },
+      // {
+      //   title: "Module 10 - Qualitative",
+      //   targetId: "mod-10-qual",
+      // },
+      // {
+      //   title: "Module 8 to 13 - Quantitative",
+      //   targetId: "mod-8-13-quan",
+      // },
     ],
   },
 ];
@@ -125,6 +144,16 @@ const principles = [
 function App() {
   const [loadingType, setLoadingType] = useState(null);
   const [selected, setSelected] = useState(principles[0]);
+  const [year, setYear] = useState(null);
+  const [quarter, setQuarter] = useState("All");
+  const [yearOptions, setYearOptions] = useState([]);
+  const [quarterOptions, setQuarterOptions] = useState([
+    { name: "All", label: "All" },
+  ]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [showQuarterFilter, setShowQuarterFilter] = useState(false);
+  const [showReport, setShowReport] = useState(false);
+
   const sectionRefs = useRef([]);
 
   useEffect(() => {
@@ -168,143 +197,7 @@ function App() {
       .join("")}</ol>`;
   };
 
-  const exportWord = () => {
-    setLoadingType("word");
-    setTimeout(() => {
-      try {
-        const element = document.getElementById("report-content");
-        const html = element?.outerHTML || "";
-
-        const css = `
-          <style>
-            body { font-family: Arial; margin: 0; padding: 0; }
-            table { width: 100%; border-collapse: collapse; }
-            th, td { border: 1px solid #333; padding: 0px; text-align: left; }
-            h1, h2 { color: #2c3e50; margin: 20px; }
-          </style>`;
-
-        const coverPage = `
-          <img 
-            src="${window.location.origin}/coverPage.jpg" 
-            alt="Cover"
-          />
-          <br style="page-break-before: always;">`;
-
-        const tocHtml = generateTocList(principles);
-        const tocPage = `
-          <div style="padding: 40px;">
-            <h2>Table of Contents</h2>
-            ${tocHtml}
-          </div>
-          <br style="page-break-before: always;">`;
-
-        const fullDoc = `
-          <!DOCTYPE html>
-          <html>
-            <head>
-              <meta charset='utf-8'/>
-              ${css}
-            </head>
-            <body>
-              ${coverPage}
-              ${tocPage}
-              <div style="padding: 40px;">
-                ${html}
-              </div>
-            </body>
-          </html>`;
-
-        const blob = new Blob([fullDoc], {
-          type: "application/msword;charset=utf-8",
-        });
-
-        saveAs(blob, "GRI_Report.doc");
-      } catch (e) {
-        console.error(e);
-        alert("Word export failed");
-      } finally {
-        setLoadingType(null);
-      }
-    }, 100);
-  };
-
-  const exportPDF = async () => {
-    setLoadingType("pdf");
-
-    try {
-      const content = document.getElementById("report-content");
-      if (!content) throw new Error("Report content not found");
-
-      const coverPage = `
-        <table style="width: 100%; height: 100%; border: none; margin: -1cm; padding: 0;">
-          <tr>
-            <td style="border: none; margin: 0; padding: 0;">
-              <img 
-                src="${window.location.origin}/coverPage.jpg" 
-                alt="Cover" 
-                style="width: 22cm; height: 31cm; display: block; border: none; margin: 0; padding: 0;" 
-              />
-            </td>
-          </tr>
-        </table>
-        <br style="page-break-before: always;">`;
-
-      const tocHtml = generateTocList(principles);
-      const tocPage = `
-        <div style="padding: 40px;">
-          <h2>Table of Contents</h2>
-          ${tocHtml}
-        </div>
-        <br style="page-break-before: always;">`;
-
-      const html = `
-        <html>
-          <head>
-            <style>
-              body { font-family: Arial; padding: 40px; }
-              .page-break { page-break-before: always; }
-              table { width: 100%; border-collapse: collapse; margin-top: 10px; }
-              th, td { border: 1px solid #333; padding: 6px; text-align: left; }
-              h2 { color: #2c3e50; }
-            </style>
-          </head>
-          <body>
-            ${coverPage}
-            ${tocPage}
-            ${content.innerHTML}
-          </body>
-        </html>
-      `;
-
-      const response = await fetch(
-        "http://localhost:3001/report/download/pdf",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ html }),
-        }
-      );
-
-      if (!response.ok) throw new Error("PDF generation failed");
-
-      const blob = await response.blob();
-      const blobUrl = window.URL.createObjectURL(blob);
-
-      const link = document.createElement("a");
-      link.href = blobUrl;
-      link.download = "GRI_Report.pdf";
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    } catch (err) {
-      console.error("PDF export failed", err);
-      alert("PDF export failed");
-    } finally {
-      setLoadingType(null);
-    }
-  };
+  const generateReport = async () => {};
 
   return (
     <div className="brsr-report-container">
@@ -355,10 +248,128 @@ function App() {
       </div>
 
       <div id="report-content" className="main-content scroll-sections">
+        <div
+          className="filter-section"
+          style={{
+            padding: "1rem",
+            backgroundColor: "#f8f9fa",
+            marginBottom: "1rem",
+            borderRadius: "8px",
+            flexShrink: 0,
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              gap: "1rem",
+              alignItems: "center",
+              flexWrap: "wrap",
+              justifyContent: "space-between",
+            }}
+          >
+            <div
+              style={{
+                display: "flex",
+                gap: "1rem",
+                alignItems: "center",
+                flexWrap: "wrap",
+              }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "0.5rem",
+                }}
+              >
+                <label style={{ fontWeight: "bold", fontSize: "0.9rem" }}>
+                  Select Year:
+                </label>
+                <Dropdown
+                  value={year}
+                  options={yearOptions}
+                  // onChange={(e) => handleYearChange(e.value)}
+                  placeholder="Select Year"
+                  style={{ width: "200px" }}
+                  optionLabel="label"
+                  optionValue="name"
+                  showClear
+                />
+              </div>
+              {showQuarterFilter && (
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "0.5rem",
+                  }}
+                >
+                  <label style={{ fontWeight: "bold", fontSize: "0.9rem" }}>
+                    Select Quarter:
+                  </label>
+                  <Dropdown
+                    value={quarter}
+                    options={quarterOptions}
+                    // onChange={(e) => handleQuarterChange(e.value)}
+                    placeholder="Select Quarter"
+                    style={{ width: "200px" }}
+                    optionLabel="label"
+                    optionValue="name"
+                  />
+                </div>
+              )}
+            </div>
+
+            {/* Action Buttons */}
+            <div
+              style={{
+                display: "flex",
+                gap: "0.5rem",
+                alignItems: "center",
+                flexWrap: "wrap",
+              }}
+            >
+              {/* Generate Report Button - Only show when report is available (same as export buttons) */}
+              {showReport && (
+                <Button
+                  label="Generate Report"
+                  icon="pi pi-cog"
+                  className="p-button-outlined p-button-success"
+                  onClick={generateReport}
+                  style={{ fontSize: "0.9rem", padding: "0.5rem 1rem" }}
+                />
+              )}
+
+              {/* Export Buttons - Only show when report is available */}
+              {/* {showReport && ( */}
+              <>
+                <Button
+                  label="Export PDF"
+                  icon="pi pi-file-pdf"
+                  className="p-button-outlined p-button-danger"
+                  // onClick={() => {
+                  //   reactToPrintFn();
+                  // }}
+                  loading={isLoading}
+                  style={{ fontSize: "0.9rem", padding: "0.5rem 1rem" }}
+                />
+                <Button
+                  label="Export Word"
+                  icon="pi pi-file-word"
+                  className="p-button-outlined p-button-info"
+                  loading={isLoading}
+                  style={{ fontSize: "0.9rem", padding: "0.5rem 1rem" }}
+                />
+              </>
+              {/* )} */}
+            </div>
+          </div>
+        </div>
+
         <div id="mod-1-2">
           <Module_1_2_Perf />
           <br />
-          <Module_1_2_Qual />
+          {/* <Module_1_2_Qual /> */}
           <br />
           <Module_1_2_Quan />
         </div>
@@ -366,34 +377,21 @@ function App() {
         <div id="mod-3-6">
           <Module_3_6_Perf />
           <br />
-          <Module_3_6_Qual />
+          {/* <Module_3_6_Qual /> */}
           <br />
           <Module_3_6_Quan />
+        </div>
+
+        <div id="mod-7">
+          <Module_7_Perf />
         </div>
 
         <div id="mod-8-13">
           <Module_8_13_Perf />
           <br />
-          <Module_8_13_Qual />
+          {/* <Module_8_13_Qual /> */}
           <br />
           <Module_8_13_Quan />
-        </div>
-
-        <div className="export-buttons" style={{ marginTop: "2rem" }}>
-          <Button
-            label={loadingType === "word" ? "Exporting Word..." : "Export Word"}
-            icon="pi pi-file-word"
-            onClick={exportWord}
-            loading={loadingType === "word"}
-            severity="info"
-          />
-          <Button
-            label={loadingType === "pdf" ? "Exporting PDF..." : "Export PDF"}
-            icon="pi pi-file-pdf"
-            onClick={exportPDF}
-            loading={loadingType === "pdf"}
-            severity="danger"
-          />
         </div>
       </div>
     </div>
