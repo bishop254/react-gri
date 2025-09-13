@@ -7,16 +7,13 @@ import "primereact/resources/themes/lara-light-indigo/theme.css";
 import "primereact/resources/primereact.min.css";
 
 import Module_1_2_Perf from "./components/Module1_2/Module_1_2_Perf";
-import Module_1_2_Quan from "./components/Module1_2/Module_1_2_Quan";
 import Module_3_6_Perf from "./components/Module3_6/Module_3_6_Perf";
-import Module_3_6_Quan from "./components/Module3_6/Module_3_6_Quan";
-import Module_8_13_Quan from "./components/Module8_13/Module_8_13_Quan";
 import Module_8_13_Perf from "./components/Module8_13/Module_8_13_Perf";
 import Module_7_Perf from "./components/Module7/Module_7_Perf";
 
 const principles = [
   {
-    title: "Module 1 & 2",
+    title: "Module 1 - 2",
     id: "mod-1-2",
     children: [
       {

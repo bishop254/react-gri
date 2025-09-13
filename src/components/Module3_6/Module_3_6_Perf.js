@@ -116,7 +116,7 @@ const TableRenderer = ({ id, title, tableData }) => (
                                   padding: "8px",
                                 }}
                               >
-                                {item.tableData?.[rowIdx]?.[colIdx] || "\u00A0"}
+                                {/* {item.tableData?.[rowIdx]?.[colIdx] || "\u00A0"} */}
                               </td>
                             ))}
                           </tr>
@@ -134,7 +134,7 @@ const TableRenderer = ({ id, title, tableData }) => (
                 Response
               </td>
               <td style={{ border: "1px solid black", padding: "8px" }}>
-                {item.response}
+                {/* {item.response} */}
               </td>
             </tr>
 
