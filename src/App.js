@@ -6,12 +6,22 @@ import { Dropdown } from "primereact/dropdown";
 import "primereact/resources/themes/lara-light-indigo/theme.css";
 import "primereact/resources/primereact.min.css";
 
-import Ecovadis from "./components/Ecovadis";
+import Governance from "./components/Governance";
+import Environment from "./components/Environment";
+import Social from "./components/Social";
 
 const principles = [
   {
-    title: "Ecovadis Report",
-    id: "mod",
+    title: "Governance & Economic",
+    id: "mod-1",
+  },
+  {
+    title: "Environment",
+    id: "mod-2",
+  },
+  {
+    title: "Social",
+    id: "mod-3",
   },
 ];
 
@@ -58,9 +68,9 @@ function App() {
   const generateReport = async () => {};
 
   return (
-    <div className="brsr-report-container">
-      <div className="sidebar">
-        <h2 className="sidebar-title">Ecovadis Report Index</h2>
+    <div className="report-container">
+      <div className="report-sidebar">
+        <h2 className="sidebar-title">DJSI Submission Report Index</h2>
         <ScrollPanel className="sidebar-scroll">
           <ul className="principles-list">
             {principles.map((item) => (
@@ -180,7 +190,6 @@ function App() {
               )}
             </div>
 
-            {/* Action Buttons */}
             <div
               style={{
                 display: "flex",
@@ -189,7 +198,6 @@ function App() {
                 flexWrap: "wrap",
               }}
             >
-              {/* Generate Report Button - Only show when report is available (same as export buttons) */}
               {showReport && (
                 <Button
                   label="Generate Report"
@@ -200,8 +208,6 @@ function App() {
                 />
               )}
 
-              {/* Export Buttons - Only show when report is available */}
-              {/* {showReport && ( */}
               <>
                 <Button
                   label="Export PDF"
@@ -221,13 +227,32 @@ function App() {
                   style={{ fontSize: "0.9rem", padding: "0.5rem 1rem" }}
                 />
               </>
-              {/* )} */}
             </div>
           </div>
         </div>
 
-        <div id="mod" data-id="mod" ref={(el) => (sectionRefs.current[0] = el)}>
-          <Ecovadis />
+        <div
+          id="mod-1"
+          data-id="mod-1"
+          ref={(el) => (sectionRefs.current[0] = el)}
+        >
+          <Governance />
+        </div>
+
+        <div
+          id="mod-2"
+          data-id="mod-2"
+          ref={(el) => (sectionRefs.current[0] = el)}
+        >
+          <Environment />
+        </div>
+
+        <div
+          id="mod-3"
+          data-id="mod-3"
+          ref={(el) => (sectionRefs.current[0] = el)}
+        >
+          <Social />
         </div>
       </div>
     </div>
