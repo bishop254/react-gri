@@ -6,84 +6,12 @@ import { Dropdown } from "primereact/dropdown";
 import "primereact/resources/themes/lara-light-indigo/theme.css";
 import "primereact/resources/primereact.min.css";
 
-import Module_1_2_Perf from "./components/Module1_2/Module_1_2_Perf";
-import Module_3_6_Perf from "./components/Module3_6/Module_3_6_Perf";
-import Module_8_13_Perf from "./components/Module8_13/Module_8_13_Perf";
-import Module_7_Perf from "./components/Module7/Module_7_Perf";
+import Ecovadis from "./components/Ecovadis";
 
 const principles = [
   {
-    title: "Module 1 - 2",
-    id: "mod-1-2",
-    children: [
-      {
-        title: "Introduction",
-        targetId: "mod-1-perf",
-      },
-      {
-        title:
-          "Identification, assessment, and management of dependencies, impacts, risks, and opportunities",
-        targetId: "mod-2-perf",
-      },
-    ],
-  },
-  {
-    title: "Module 3 - 6",
-    id: "mod-3-6",
-    children: [
-      {
-        title: "Disclosure of risks and opportunities",
-        targetId: "mod-3-perf",
-      },
-      {
-        title: "Governance",
-        targetId: "mod-4-perf",
-      },
-      {
-        title: "Business Strategy",
-        targetId: "mod-5-perf",
-      },
-      {
-        title: "Environmental Performance – Consolidation Approach",
-        targetId: "mod-6-perf",
-      },
-    ],
-  },
-  {
-    title: "Module 7",
-    id: "mod-7",
-    children: [
-      {
-        title: "Environmental Performance - Climate Change",
-        targetId: "mod-7-perf",
-      },
-    ],
-  },
-  {
-    title: "Module 8 - 13",
-    id: "mod-8-13",
-    children: [
-      {
-        title: "Environmental Performance - Forests, plastic, water",
-        targetId: "mod-8-perf",
-      },
-      {
-        title: "Environmental Performance – Water security",
-        targetId: "mod-9-perf",
-      },
-      {
-        title: "Environmental Performance – Plastics",
-        targetId: "mod-10-perf",
-      },
-      {
-        title: "Environmental Performance – Biodiversity",
-        targetId: "mod-11-perf",
-      },
-      {
-        title: "Further information & Sign-off",
-        targetId: "mod-13-perf",
-      },
-    ],
+    title: "Ecovadis Report",
+    id: "mod",
   },
 ];
 
@@ -132,7 +60,7 @@ function App() {
   return (
     <div className="brsr-report-container">
       <div className="sidebar">
-        <h2 className="sidebar-title">CDP Report Index</h2>
+        <h2 className="sidebar-title">Ecovadis Report Index</h2>
         <ScrollPanel className="sidebar-scroll">
           <ul className="principles-list">
             {principles.map((item) => (
@@ -298,36 +226,8 @@ function App() {
           </div>
         </div>
 
-        <div
-          id="mod-1-2"
-          data-id="mod-1-2"
-          ref={(el) => (sectionRefs.current[0] = el)}
-        >
-          <Module_1_2_Perf />
-        </div>
-
-        <div
-          id="mod-3-6"
-          data-id="mod-3-6"
-          ref={(el) => (sectionRefs.current[1] = el)}
-        >
-          <Module_3_6_Perf />
-        </div>
-
-        <div
-          id="mod-7"
-          data-id="mod-7"
-          ref={(el) => (sectionRefs.current[2] = el)}
-        >
-          <Module_7_Perf />
-        </div>
-
-        <div
-          id="mod-8-13"
-          data-id="mod-8-13"
-          ref={(el) => (sectionRefs.current[3] = el)}
-        >
-          <Module_8_13_Perf />
+        <div id="mod" data-id="mod" ref={(el) => (sectionRefs.current[0] = el)}>
+          <Ecovadis />
         </div>
       </div>
     </div>
