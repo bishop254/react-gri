@@ -1036,93 +1036,197 @@ const Ecovadis = () => {
       Remarks: "",
     },
     {
-      Section: "25. Business Ethics",
+      Section: "25. Procurement KPIs & certifications",
+      "Policy / Action": "Supply chain certificates eg ISO20400",
+      "Evidence / Link": "",
+      Remarks: "",
+    },
+    {
+      Section: "25. Procurement KPIs & certifications",
+      "Policy / Action":
+        "Percentage of targeted suppliers that have signed the sustainable procurement charter/supplier code of conduct",
+      "Evidence / Link": "",
+      Remarks: "",
+    },
+    {
+      Section: "25. Procurement KPIs & certifications",
+      "Policy / Action":
+        "Percentage of targeted suppliers with contracts that include clauses on environmental, labor, and human rights requirements",
+      "Evidence / Link": "",
+      Remarks: "",
+    },
+    {
+      Section: "25. Procurement KPIs & certifications",
+      "Policy / Action":
+        "Percentage of targeted suppliers that have gone through a CSR assessment (e.g. questionnaire)",
+      "Evidence / Link": "",
+      Remarks: "",
+    },
+    {
+      Section: "25. Procurement KPIs & certifications",
+      "Policy / Action":
+        "Percentage of targeted suppliers that have gone through a CSR on-site audit",
+      "Evidence / Link": "",
+      Remarks: "",
+    },
+    {
+      Section: "25. Procurement KPIs & certifications",
+      "Policy / Action":
+        "Percentage of buyers across all locations who have received training on sustainable procurement",
+      "Evidence / Link": "",
+      Remarks: "",
+    },
+    {
+      Section: "25. Procurement KPIs & certifications",
+      "Policy / Action":
+        "Percentage or number of audited/assessed suppliers engaged in corrective actions or capacity building",
+      "Evidence / Link": "",
+      Remarks: "",
+    },
+    {
+      Section: "26. Monitoring suppliers scope 3",
+      "Policy / Action":
+        "Documentation showing how your organization engages suppliers in climate action (e.g., supplier engagement programs, workshops, disclosure requests).",
+      "Evidence / Link": "",
+      Remarks: "",
+    },
+    {
+      Section: "26. Monitoring suppliers scope 3",
+      "Policy / Action":
+        "Evidence that your organization selects suppliers based on GHG emissions intensity or their GHG reduction efforts (e.g., procurement criteria, scoring systems, supplier evaluation reports).",
+      "Evidence / Link": "",
+      Remarks: "",
+    },
+    {
+      Section: "26. Monitoring suppliers scope 3",
+      "Policy / Action":
+        "Documentation of initiatives where you partner with suppliers to help them achieve GHG emissions reduction (e.g., joint projects, training sessions, technology transfer, funding support).",
+      "Evidence / Link": "",
+      Remarks: "",
+    },
+    {
+      Section: "26. Monitoring suppliers scope 3",
+      "Policy / Action":
+        "Evidence of other actions taken to reduce GHG emissions in the supply chain (e.g., logistics optimization, renewable energy collaborations, low-carbon product design with suppliers).",
+      "Evidence / Link": "",
+      Remarks: "",
+    },
+    {
+      Section: "26. Monitoring suppliers scope 3",
+      "Policy / Action":
+        "Provide documentation showing how your organization screens Scope 3 categories to identify the most relevant for your activities (e.g., screening methodology, relevance assessment, prioritization reports).",
+      "Evidence / Link": "",
+      Remarks: "",
+    },
+    {
+      Section: "26. Monitoring suppliers scope 3",
+      "Policy / Action":
+        "Provide evidence that your organization uses industry-average data to estimate Scope 3 emissions (e.g., databases, emission factors, calculation methodologies).",
+      "Evidence / Link": "",
+      Remarks: "",
+    },
+    {
+      Section: "26. Monitoring suppliers scope 3",
+      "Policy / Action":
+        "Provide evidence of how you collect primary Scope 3 data from suppliers (e.g., supplier questionnaires, data requests, reporting platforms).",
+      "Evidence / Link": "",
+      Remarks: "",
+    },
+    {
+      Section: "26. Monitoring suppliers scope 3",
+      "Policy / Action":
+        "Provide documentation of how you collect primary Scope 3 data from internal stakeholders (e.g., data collection templates, reporting procedures, internal communications).",
+      "Evidence / Link": "",
+      Remarks: "",
+    },
+    {
+      Section: "26. Business Ethics",
       "Policy / Action":
         "Policies covering corruption, fraud, conflicts of interest, money laundering, competition, and information security",
       "Evidence / Link": "",
       Remarks: "",
     },
     {
-      Section: "25. Business Ethics",
+      Section: "26. Business Ethics",
       "Policy / Action": "Awareness training on corruption and bribery",
       "Evidence / Link": "",
       Remarks: "",
     },
     {
-      Section: "25. Business Ethics",
+      Section: "26. Business Ethics",
       "Policy / Action": "Anti-corruption due diligence programs",
       "Evidence / Link": "",
       Remarks: "",
     },
     {
-      Section: "25. Business Ethics",
+      Section: "26. Business Ethics",
       "Policy / Action": "Whistleblower reporting mechanisms",
       "Evidence / Link": "",
       Remarks: "",
     },
     {
-      Section: "25. Business Ethics",
+      Section: "26. Business Ethics",
       "Policy / Action": "Risk assessments conducted for ethics issues",
       "Evidence / Link": "",
       Remarks: "",
     },
     {
-      Section: "25. Business Ethics",
+      Section: "26. Business Ethics",
       "Policy / Action": "Audits of control procedures",
       "Evidence / Link": "",
       Remarks: "",
     },
     {
-      Section: "25. Business Ethics",
+      Section: "26. Business Ethics",
       "Policy / Action":
         "Information security management certifications (ISO 27001, etc.)",
       "Evidence / Link": "",
       Remarks: "",
     },
     {
-      Section: "26. Ethics KPIs",
+      Section: "27. Ethics KPIs",
       "Policy / Action": "Reporting year covered by data",
       "Evidence / Link": "",
       Remarks: "",
     },
     {
-      Section: "26. Ethics KPIs",
+      Section: "27. Ethics KPIs",
       "Policy / Action": "% of workforce trained on ethics policies",
       "Evidence / Link": "",
       Remarks: "",
     },
     {
-      Section: "26. Ethics KPIs",
+      Section: "27. Ethics KPIs",
       "Policy / Action": "Number of whistleblower reports filed",
       "Evidence / Link": "",
       Remarks: "",
     },
     {
-      Section: "26. Ethics KPIs",
+      Section: "27. Ethics KPIs",
       "Policy / Action": "Confirmed corruption incidents",
       "Evidence / Link": "",
       Remarks: "",
     },
     {
-      Section: "26. Ethics KPIs",
+      Section: "27. Ethics KPIs",
       "Policy / Action": "Confirmed information security incidents",
       "Evidence / Link": "",
       Remarks: "",
     },
     {
-      Section: "26. Ethics KPIs",
+      Section: "27. Ethics KPIs",
       "Policy / Action": "% of sites with ethics audits conducted",
       "Evidence / Link": "",
       Remarks: "",
     },
     {
-      Section: "26. Ethics KPIs",
+      Section: "27. Ethics KPIs",
       "Policy / Action": "% of sites with anti-corruption management systems",
       "Evidence / Link": "",
       Remarks: "",
     },
     {
-      Section: "26. Ethics KPIs",
+      Section: "27. Ethics KPIs",
       "Policy / Action": "% of sites with ISO 27000-certified ISMS",
       "Evidence / Link": "",
       Remarks: "",
