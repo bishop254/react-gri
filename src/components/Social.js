@@ -35,7 +35,7 @@ const TableRenderer = ({ id, title, tableData }) => {
                 width: "30%",
               }}
             >
-              Labor Practice Indicators
+              Social Dimension
             </th>
             <th
               style={{
@@ -45,9 +45,9 @@ const TableRenderer = ({ id, title, tableData }) => {
                 width: "20%",
               }}
             >
-              Output
+              Response for Social Dimension
             </th>
-            <th
+            {/* <th
               style={{
                 border: "1px solid black",
                 padding: "8px",
@@ -77,7 +77,7 @@ const TableRenderer = ({ id, title, tableData }) => {
               }}
             >
               If not, then new Question
-            </th>
+            </th> */}
           </tr>
         </thead>
         <tbody>
@@ -104,7 +104,7 @@ const TableRenderer = ({ id, title, tableData }) => {
               <td style={{ border: "1px solid black", padding: "8px" }}>
                 {item["Output"]}
               </td>
-              <td style={{ border: "1px solid black", padding: "8px" }}>
+              {/* <td style={{ border: "1px solid black", padding: "8px" }}>
                 {
                   item[
                     "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet"
@@ -116,7 +116,7 @@ const TableRenderer = ({ id, title, tableData }) => {
               </td>
               <td style={{ border: "1px solid black", padding: "8px" }}>
                 {item["If not, then new Question"]}
-              </td>
+              </td> */}
             </tr>
           ))}
         </tbody>
@@ -127,6 +127,16 @@ const TableRenderer = ({ id, title, tableData }) => {
 
 const Social = () => {
   const socialModuleOne = [
+    {
+      ID: "3.1",
+      "Labor Practice Indicators": "Labor Practice Indicators",
+      Output: "",
+      "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
+        "",
+      "SDP/MT#": "",
+      "If, not then new Question": "",
+      isTitle: true,
+    },
     {
       ID: "3.1.1",
       "Labor Practice Indicators": "Discrimination & Harassment",
@@ -769,7 +779,7 @@ const Social = () => {
     {
       ID: "",
       "Labor Practice Indicators":
-        'What was your company’s total revenue (a), as specified in the "Denominator" question, for the past four fiscal years? Please state the currency.',
+        "What was your company’s total revenue (a) ? Please state the currency.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -780,7 +790,7 @@ const Social = () => {
     {
       ID: "",
       "Labor Practice Indicators":
-        "What were your company’s total operating expenses (b) for the past four fiscal years? Please state the currency.",
+        "What were your company’s total operating expenses (b) ? Please state the currency.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -791,7 +801,7 @@ const Social = () => {
     {
       ID: "",
       "Labor Practice Indicators":
-        "What were your company’s total employee-related expenses (c) (salaries + benefits) for the past four fiscal years? Please state the currency.",
+        "What were your company’s total employee-related expenses (c) (salaries + benefits)? Please state the currency.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -802,7 +812,7 @@ const Social = () => {
     {
       ID: "",
       "Labor Practice Indicators":
-        "What was your company’s resulting Human Capital ROI, calculated as (a–(b–c))/(c) for the past four fiscal years?",
+        "What was your company’s resulting Human Capital ROI, calculated as (a–(b–c))/c(a – (b – c)) / c(a–(b–c))/c?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -813,7 +823,7 @@ const Social = () => {
     {
       ID: "",
       "Labor Practice Indicators":
-        'What was the total number of employees, as specified in the "Denominator" question, for the past four fiscal years?',
+        'What was the total number of employees, as specified in the "Denominator" question?',
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -866,7 +876,7 @@ const Social = () => {
     {
       ID: "",
       "Labor Practice Indicators":
-        "What is the total number of new employee hires for the past four fiscal years? Is this data publicly available? If yes, please provide supporting evidence or a web link.",
+        "What is the total number of new employee hires? Is this data publicly available? If yes, please provide supporting evidence or a web link.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -888,7 +898,7 @@ const Social = () => {
     {
       ID: "",
       "Labor Practice Indicators":
-        "What is the average hiring cost per FTE for the past four fiscal years? Please state the currency.",
+        "What is the average hiring cost per FTE? Please state the currency.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -899,7 +909,7 @@ const Social = () => {
     {
       ID: "",
       "Labor Practice Indicators":
-        "Do you break down the data for new employee hires and/or internal hires by any of the following categories? If yes, please provide supporting evidence.\n1) Age group\n2) Gender\n3) Management level (e.g., junior/low level, middle, senior/top level management)\n4) Race, ethnicity, nationality, country of origin, or cultural background",
+        "Do you break down the data for new employee hires and/or internal hires by any of the following categories? If yes, please provide supporting evidence.\n1) Age group - MT1997, MT1998, MT1999, MT2000, MT2001, MT2002, MT2003, MT2004, MT2005, MT2006, MT2007, MT2008\n2) Gender - MT1997, MT1998, MT1999, MT2000, MT2001, MT2002, MT2003, MT2004, MT2005, MT2006, MT2007, MT2008\n3) Management level (e.g., junior/low level, middle, senior/top level management)\n4) Race, ethnicity, nationality, country of origin, or cultural background",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -1072,7 +1082,7 @@ const Social = () => {
     {
       ID: "",
       "Labor Practice Indicators":
-        "What is your company’s total employee turnover rate? Data to be provided for the last four fiscal years. If this data is publicly available, please provide supporting evidence or a web link.",
+        "What is your company’s total employee turnover rate?. If this data is publicly available, please provide supporting evidence or a web link.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -1083,7 +1093,7 @@ const Social = () => {
     {
       ID: "",
       "Labor Practice Indicators":
-        "What is your company’s voluntary employee turnover rate? Data to be provided for the last four fiscal years. If this data is publicly available, please provide supporting evidence or a web link.",
+        "What is your company’s voluntary employee turnover rate?. If this data is publicly available, please provide supporting evidence or a web link.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -1094,7 +1104,7 @@ const Social = () => {
     {
       ID: "",
       "Labor Practice Indicators":
-        "What is the data coverage of the turnover rates (as a % of all FTEs globally)? Data to be provided for the last four fiscal years.",
+        "What is the data coverage of the turnover rates (as a % of all FTEs globally)?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -1178,6 +1188,188 @@ const Social = () => {
       "If, not then new Question": "",
       isTitle: false,
     },
+    {
+      ID: "3.4.7",
+      "Labor Practice Indicators": "MSA Talent Attraction & Retention",
+      Output: "",
+      "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
+        "",
+      "SDP/MT#": "",
+      "If, not then new Question": "",
+      isTitle: true,
+    },
+    {
+      ID: "",
+      "Labor Practice Indicators":
+        "In this section DJSI includes a performance score on the Corporate Sustainability Monitoring with the objective of verifying the company's involvement and management of crisis situations that can have a damaging effect on reputation. The evaluation will be filled in by the responsible analyst of your industry. No additional information is required from your company.",
+      Output: "",
+      "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
+        "",
+      "SDP/MT#": "",
+      "If, not then new Question": "",
+      isTitle: false,
+    },
+    {
+      ID: "3.5",
+      "Labor Practice Indicators": "Occupational Health & Safety",
+      Output: "",
+      "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
+        "",
+      "SDP/MT#": "",
+      "If, not then new Question": "",
+      isTitle: true,
+    },
+    {
+      ID: "3.5.1",
+      "Labor Practice Indicators": "OHS Policy",
+      Output: "",
+      "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
+        "",
+      "SDP/MT#": "",
+      "If, not then new Question": "",
+      isTitle: true,
+    },
+    {
+      ID: "",
+      "Labor Practice Indicators":
+        "Does your company have an OHS policy/ commitment? If yes, what are the elements covered in the policy.",
+      Output: "",
+      "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
+        "",
+      "SDP/MT#": "",
+      "If, not then new Question": "",
+      isTitle: false,
+    },
+    {
+      ID: "3.5.2",
+      "Labor Practice Indicators": "OHS Programs",
+      Output: "",
+      "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
+        "",
+      "SDP/MT#": "",
+      "If, not then new Question": "",
+      isTitle: true,
+    },
+    {
+      ID: "",
+      "Labor Practice Indicators":
+        "Does your company have an OHS management system? If yes, what are the elements covered in the system.",
+      Output: "",
+      "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
+        "",
+      "SDP/MT#": "",
+      "If, not then new Question": "",
+      isTitle: false,
+    },
+    {
+      ID: "3.5.3",
+      "Labor Practice Indicators": "Fatalities",
+      Output: "",
+      "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
+        "",
+      "SDP/MT#": "",
+      "If, not then new Question": "",
+      isTitle: true,
+    },
+    {
+      ID: "",
+      "Labor Practice Indicators":
+        "What is the number of work-related fatalities for employees and contractors? Please provide data for the past four fiscal years.",
+      Output: "",
+      "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
+        "",
+      "SDP/MT#": "",
+      "If, not then new Question": "",
+      isTitle: false,
+    },
+    {
+      ID: "",
+      "Labor Practice Indicators":
+        "Has your data been third-party verified in the most recent financial year reported? If yes, please provide supporting evidence.",
+      Output: "",
+      "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
+        "",
+      "SDP/MT#": "",
+      "If, not then new Question": "",
+      isTitle: false,
+    },
+    {
+      ID: "",
+      "Labor Practice Indicators":
+        "Please provide any relevant information that may affect the consistency of the data reported.",
+      Output: "",
+      "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
+        "",
+      "SDP/MT#": "",
+      "If, not then new Question": "",
+      isTitle: false,
+    },
+    {
+      ID: "3.5.4",
+      "Labor Practice Indicators":
+        "Lost-Time Injury Frequency Rate (LTIFR) - Employees",
+      Output: "",
+      "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
+        "",
+      "SDP/MT#": "",
+      "If, not then new Question": "",
+      isTitle: true,
+    },
+    {
+      ID: "",
+      "Labor Practice Indicators":
+        "Please provide your company's lost-time injury frequency rate for employees (per one million hours worked).",
+      Output: "",
+      "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
+        "",
+      "SDP/MT#": "",
+      "If, not then new Question": "",
+      isTitle: false,
+    },
+    {
+      ID: "",
+      "Labor Practice Indicators":
+        "Please provide your company's Lost Workday Rate (LWR) or Days Away/Restricted or Transfer Rate (DART) for employees (per 200,000 hours worked).",
+      Output: "",
+      "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
+        "",
+      "SDP/MT#": "",
+      "If, not then new Question": "",
+      isTitle: false,
+    },
+    {
+      ID: "",
+      "Labor Practice Indicators":
+        "What is the data coverage (as a percentage of employees, operations, or revenues)?",
+      Output: "",
+      "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
+        "",
+      "SDP/MT#": "",
+      "If, not then new Question": "",
+      isTitle: false,
+    },
+    {
+      ID: "",
+      "Labor Practice Indicators":
+        "Has your data been third-party verified in the most recent financial year reported? If yes, please provide supporting evidence.",
+      Output: "",
+      "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
+        "",
+      "SDP/MT#": "",
+      "If, not then new Question": "",
+      isTitle: false,
+    },
+    {
+      ID: "",
+      "Labor Practice Indicators":
+        "Please provide any relevant information that may affect the consistency of the data reported.",
+      Output: "",
+      "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
+        "",
+      "SDP/MT#": "",
+      "If, not then new Question": "",
+      isTitle: false,
+    },
 
     {
       ID: "3.5.5",
@@ -1193,7 +1385,7 @@ const Social = () => {
     {
       ID: "",
       "Labor Practice Indicators":
-        "Please provide your company's lost-time injury frequency rate for contractors (per one million hours worked).\nData to be provided of past four fiscal years.",
+        "Please provide your company's lost-time injury frequency rate for contractors (per one million hours worked).",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -1204,7 +1396,7 @@ const Social = () => {
     {
       ID: "",
       "Labor Practice Indicators":
-        "Please provide your company's Lost Workday Rate (LWR) or Days Away/Restricted or Transfer Rate (DART) for contractors (per 200,000 hours worked).\nData to be provided of past four fiscal years.",
+        "Please provide your company's Lost Workday Rate (LWR) or Days Away/Restricted or Transfer Rate (DART) for contractors (per 200,000 hours worked).",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -1311,7 +1503,7 @@ const Social = () => {
     {
       ID: "",
       "Labor Practice Indicators":
-        "Report the satisfaction measrement for the past four fiscal years.",
+        "Report the satisfaction measurement.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -1378,7 +1570,7 @@ const Social = () => {
     {
       ID: "",
       "Labor Practice Indicators":
-        "Please indicate which measures your company uses to implement your Quality Management System, and the percentage of distributors (whether exclusive distributors or non-exclusive distributors) affected by each measure in the last fiscal year. Please provide supporting evidence",
+        "Please indicate which measures your company uses to implement your Quality Management System, and the percentage of distributors (whether exclusive distributors or non-exclusive distributors) affected by each measure . Please provide supporting evidence",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",

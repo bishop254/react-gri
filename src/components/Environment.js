@@ -45,9 +45,9 @@ const TableRenderer = ({ id, title, tableData }) => {
                 width: "20%",
               }}
             >
-              Output
+              Response from Environmental Dimension
             </th>
-            <th
+            {/* <th
               style={{
                 border: "1px solid black",
                 padding: "8px",
@@ -77,7 +77,7 @@ const TableRenderer = ({ id, title, tableData }) => {
               }}
             >
               If not, then new Question
-            </th>
+            </th> */}
           </tr>
         </thead>
         <tbody>
@@ -104,7 +104,7 @@ const TableRenderer = ({ id, title, tableData }) => {
               <td style={{ border: "1px solid black", padding: "8px" }}>
                 {item["Output"]}
               </td>
-              <td style={{ border: "1px solid black", padding: "8px" }}>
+              {/* <td style={{ border: "1px solid black", padding: "8px" }}>
                 {
                   item[
                     "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet"
@@ -116,7 +116,7 @@ const TableRenderer = ({ id, title, tableData }) => {
               </td>
               <td style={{ border: "1px solid black", padding: "8px" }}>
                 {item["If not, then new Question"]}
-              </td>
+              </td> */}
             </tr>
           ))}
         </tbody>
@@ -150,7 +150,7 @@ const Environment = () => {
     {
       ID: "I",
       "Environmental Dimension":
-        "Does your company have a public environmental policy that defines elements of an Environmental Management System? If yes, please indicate which of the following elements are included in your policy by writing the corresponding numbers in the response box:\n\n 1) Commitment and oversight by the highest decision-making body (Board of Directors or Executive Management)\n 2) Roles and responsibilities for implementing the environmental management policy\n 3) Ensuring compliance with relevant environmental laws and regulations\n 4) Commitment to continuous improvement of environmental performance\n 5) Setting of targets and objectives to reduce environmental impacts\n 6) Measures to raise internal and external stakeholders’ awareness of environmental management policy and environmental impacts\n 7) Training for employees to understand the impacts of their work activities on the environment",
+        "Does your company have a publicly available environmental policy outlining the elements of an Environmental Management System? If so, please specify which elements are covered in the policy.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -171,7 +171,7 @@ const Environment = () => {
     {
       ID: "I",
       "Environmental Dimension":
-        "Which parts of your operations, corporate processes, and supply chain are covered by your environmental policy? Please indicate the applicable areas by writing the corresponding numbers in the response box. All selected areas should be clearly defined in the publicly available policy (i.e., formal policies and not different sections of a report or case study).\n\n1) Production operations and business facilities\n2) Products and services\n3) Distribution and logistics\n4) Management of waste\n5) Suppliers, service providers, and contractors\n6) Other key business partners (e.g., non-managed operations, joint venture partners, licensees, outsourcing partners, etc.)\n7) Due diligence, mergers, and acquisitions\n8) Other (please specify)",
+        "Which parts of your operations, corporate processes, and supply chain are covered by your environmental policy?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -193,7 +193,7 @@ const Environment = () => {
     {
       ID: "",
       "Environmental Dimension":
-        "How is your Environmental Management System (EMS) certified, audited, or verified across your global operations? Please answer by:\n1) Indicating the type of verification used (choose one for each part of your operations, in the following order of priority):\n(a) International standards (e.g., ISO 14001)\n(b) Third-party verification\n(c) Internal verification\n\n2) Specifying the coverage (%) of each verification type.\nNote: The total coverage across all three options should not exceed 100%.\nIf an operation has multiple certifications, count it only once using the order of priority listed above.\n\n3) Providing the source (e.g., link to corporate website or section of public report) where this information is available.",
+        "How is your Environmental Management System (EMS) certified, audited, or verified across your global operations? Please provide the following details:\na) The coverage (%) of each verification type—ensuring that the total coverage across all options does not exceed 100%, and that any operation with multiple certifications is counted only once using the priority order provided.\nb) The source where this information is available (e.g., link to your corporate website or section of a public report).",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -214,7 +214,18 @@ const Environment = () => {
     {
       ID: "I",
       "Environmental Dimension":
-        "Has your company paid any significant fines or penalties related to environmental or ecological matters in the past four fiscal years? If yes, please provide the following details for each of the following years:\n1) Number of violations of legal obligations/regulations\n2) Amount of fines/penalties related to the above (Amount and Currency)\n3) Environmental liability accrued at year-end  (Amount and Currency)",
+        "Has your company paid any significant fines or penalties related to environmental or ecological matters ?",
+      Output: "",
+      "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
+        "",
+      "SDP/MT#": "",
+      "If not, then new Question": "",
+      isTitle: false,
+    },
+    {
+      ID: "II",
+      "Environmental Dimension":
+        "If yes, please provide the following details for each of the following years:\n1) Number of violations of legal obligations/regulations\n2) Amount of fines/penalties related to the above (Amount and Currency)\n3) Environmental liability accrued at year-end  (Amount and Currency)",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -236,7 +247,7 @@ const Environment = () => {
     {
       ID: "I",
       "Environmental Dimension":
-        "In this section, DJSI assigns a performance score under Corporate Sustainability Monitoring to assess how the company is involved in and manages crisis situations that could negatively impact its reputation. The evaluation will be conducted by the analyst responsible for your industry, and no further information is required from your company.\n\nNo further information is required from the company",
+        "In this section, DJSI assigns a performance score under Corporate Sustainability Monitoring to assess how the company is involved in and manages crisis situations that could negatively impact its reputation. The evaluation will be conducted by the analyst responsible for your industry, and no further information is required from your company.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -268,7 +279,7 @@ const Environment = () => {
     {
       ID: "I",
       "Environmental Dimension":
-        "Please provide your company’s total direct greenhouse gas emissions (Scope 1) for the past four fiscal years, covering the parts of your operations where you have reliable and auditable data. Use the same unit for all values. Ensure that the coverage reported here matches the company information provided.",
+        "Please provide your company’s total direct greenhouse gas emissions (Scope 1) , covering the parts of your operations where you have reliable and auditable data. Use the same unit for all values. Ensure that the coverage reported here matches the company information provided.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -333,7 +344,7 @@ const Environment = () => {
     {
       ID: "I",
       "Environmental Dimension":
-        "Please provide your company’s Location based indirect greenhouse gas emissions (Scope 2)  for the past four fiscal years, covering the parts of your operations where you have reliable and auditable data. Use the same unit for all values. Ensure that the coverage reported here matches the company information provided.",
+        "Please provide your company’s Location based indirect greenhouse gas emissions (Scope 2) , covering the parts of your operations where you have reliable and auditable data. Use the same unit for all values. Ensure that the coverage reported here matches the company information provided.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -344,7 +355,7 @@ const Environment = () => {
     {
       ID: "II",
       "Environmental Dimension":
-        "What was your Location based indirect greenhouse gas emissions (Scope 2) target for the past fiscal year?",
+        "What was your  Location based indirect greenhouse gas emissions (Scope 2) target ?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -355,7 +366,7 @@ const Environment = () => {
     {
       ID: "III",
       "Environmental Dimension":
-        "Please provide your company’s Market based indirect greenhouse gas emissions (Scope 2) for the past four fiscal years, covering the parts of your operations where you have reliable and auditable data. Use the same unit for all values. Ensure that the coverage reported here matches the company information provided.",
+        "Please provide your company’s Market based indirect greenhouse gas emissions (Scope 2)  , covering the parts of your operations where you have reliable and auditable data. Use the same unit for all values. Ensure that the coverage reported here matches the company information provided.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -366,7 +377,7 @@ const Environment = () => {
     {
       ID: "IV",
       "Environmental Dimension":
-        "What was your Market based indirect greenhouse gas emissions (Scope 2) target for the past fiscal year?",
+        "What was your  Market based indirect greenhouse gas emissions (Scope 2) target ?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -421,7 +432,7 @@ const Environment = () => {
     {
       ID: "I",
       "Environmental Dimension":
-        "Please provide your company’s total indirect greenhouse gas emissions (Scope 3) for the past four fiscal years, reported as the sum of all 15 Scope 3 categories calculated in accordance with the GHG Protocol Corporate Value Chain Standard. Use the same unit for all values.",
+        "Please provide your company’s total indirect greenhouse gas emissions (Scope 3) , reported as the sum of all 15 Scope 3 categories calculated in accordance with the GHG Protocol Corporate Value Chain Standard. Use the same unit for all values.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -517,7 +528,7 @@ const Environment = () => {
     {
       ID: "I",
       "Environmental Dimension":
-        "Please provide your company’s Total non-renewable energy consumption for the past four fiscal years, covering the parts of your operations where you have reliable and auditable data. Use the same unit for all values. Ensure that the coverage reported here matches the company information provided.",
+        "Please provide your company’s Total non-renewable energy consumption  , covering the parts of your operations where you have reliable and auditable data. Use the same unit for all values. Ensure that the coverage reported here matches the company information provided.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -528,7 +539,7 @@ const Environment = () => {
     {
       ID: "II",
       "Environmental Dimension":
-        "What was your Total non-renewable energy consumption target for the past fiscal year?",
+        "What was your  Total non-renewable energy consumption target ?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -539,7 +550,7 @@ const Environment = () => {
     {
       ID: "III",
       "Environmental Dimension":
-        "Please provide your company’s Total renewable energy consumption for the past four fiscal years, covering the parts of your operations where you have reliable and auditable data. Use the same unit for all values. Ensure that the coverage reported here matches the company information provided.",
+        "Please provide your company’s Total renewable energy consumption  , covering the parts of your operations where you have reliable and auditable data. Use the same unit for all values. Ensure that the coverage reported here matches the company information provided.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -550,7 +561,7 @@ const Environment = () => {
     {
       ID: "IV",
       "Environmental Dimension":
-        "What was your Total renewable energy consumption target for the past fiscal year?",
+        "What was your  Total renewable energy consumption target ?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -636,7 +647,7 @@ const Environment = () => {
     {
       ID: "I",
       "Environmental Dimension":
-        "Please provide your company’s Total waste recycled/ reused for the past four fiscal years, covering the parts of your operations where you have reliable and auditable data. Use the same unit for all values. Ensure that the coverage reported here matches the company information provided.",
+        "Please provide your company’s Total waste recycled/ reused, covering the parts of your operations where you have reliable and auditable data. Use the same unit for all values. Ensure that the coverage reported here matches the company information provided.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -647,7 +658,7 @@ const Environment = () => {
     {
       ID: "II",
       "Environmental Dimension":
-        "What was your Total waste recycled/ reused consumption target for the past fiscal year?",
+        "What was your  Total waste recycled/ reused consumption target?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -658,7 +669,7 @@ const Environment = () => {
     {
       ID: "III",
       "Environmental Dimension":
-        "Please provide your company’s Total waste disposed for the past four fiscal years, covering the parts of your operations where you have reliable and auditable data. Use the same unit for all values. Ensure that the coverage reported here matches the company information provided.",
+        "Please provide your company’s Total waste disposed, covering the parts of your operations where you have reliable and auditable data. Use the same unit for all values. Ensure that the coverage reported here matches the company information provided.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -669,7 +680,7 @@ const Environment = () => {
     {
       ID: "IV",
       "Environmental Dimension":
-        "What was your Total waste disposed target for the past fiscal year?",
+        "What was your  Total waste disposed target?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -680,7 +691,7 @@ const Environment = () => {
     {
       ID: "V",
       "Environmental Dimension":
-        "Please provide your company’s Total waste sent to landfill for the past four fiscal years, covering the parts of your operations where you have reliable and auditable data. Use the same unit for all values. Ensure that the coverage reported here matches the company information provided.",
+        "Please provide your company’s Total waste sent to landfill , covering the parts of your operations where you have reliable and auditable data. Use the same unit for all values. Ensure that the coverage reported here matches the company information provided.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -691,7 +702,7 @@ const Environment = () => {
     {
       ID: "VI",
       "Environmental Dimension":
-        "What was your Total waste to be sent to landfill target for the past fiscal year?",
+        "What was your  Total waste to be sent to landfill target?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -702,7 +713,7 @@ const Environment = () => {
     {
       ID: "VII",
       "Environmental Dimension":
-        "Please provide your company’s Total waste sent to incineration with energy recovery for the past four fiscal years, covering the parts of your operations where you have reliable and auditable data. Use the same unit for all values. Ensure that the coverage reported here matches the company information provided.",
+        "Please provide your company’s Total waste sent to incineration with energy recovery, covering the parts of your operations where you have reliable and auditable data. Use the same unit for all values. Ensure that the coverage reported here matches the company information provided.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -713,7 +724,7 @@ const Environment = () => {
     {
       ID: "VIII",
       "Environmental Dimension":
-        "What was your Total waste to be sent to incineration with energy recovery target for the past fiscal year?",
+        "What was your  Total waste to be sent to incineration with energy recovery target?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -724,7 +735,7 @@ const Environment = () => {
     {
       ID: "IX",
       "Environmental Dimension":
-        "Please provide your company’s Total waste sent to incineration without energy recovery for the past four fiscal years, covering the parts of your operations where you have reliable and auditable data. Use the same unit for all values. Ensure that the coverage reported here matches the company information provided.",
+        "Please provide your company’s Total waste  sent to incineration without energy recovery  , covering the parts of your operations where you have reliable and auditable data. Use the same unit for all values. Ensure that the coverage reported here matches the company information provided.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -735,7 +746,7 @@ const Environment = () => {
     {
       ID: "X",
       "Environmental Dimension":
-        "What was your Total waste to be sent to incineration without energy recovery target for the past fiscal year?",
+        "What was your  Total waste to be sent to incineration without energy recovery target?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -746,7 +757,7 @@ const Environment = () => {
     {
       ID: "XI",
       "Environmental Dimension":
-        "Please provide your company’s Total waste otherwise disposed for the past four fiscal years, covering the parts of your operations where you have reliable and auditable data. Use the same unit for all values. Ensure that the coverage reported here matches the company information provided.",
+        "Please provide your company’s Total waste otherwise disposed, covering the parts of your operations where you have reliable and auditable data. Use the same unit for all values. Ensure that the coverage reported here matches the company information provided.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -757,7 +768,7 @@ const Environment = () => {
     {
       ID: "XII",
       "Environmental Dimension":
-        "What was your Total waste otherwise disposed target for the past fiscal year?",
+        "What was your  Total waste otherwise disposed target ?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -768,7 +779,7 @@ const Environment = () => {
     {
       ID: "XIII",
       "Environmental Dimension":
-        "Please provide your company’s Total waste with unknown disposal method for the past four fiscal years, covering the parts of your operations where you have reliable and auditable data. Use the same unit for all values. Ensure that the coverage reported here matches the company information provided.",
+        "Please provide your company’s Total waste with unknown disposal method , covering the parts of your operations where you have reliable and auditable data. Use the same unit for all values. Ensure that the coverage reported here matches the company information provided.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -779,7 +790,7 @@ const Environment = () => {
     {
       ID: "XIV",
       "Environmental Dimension":
-        "What was your Total waste with unknown disposal methods target for the past fiscal year?",
+        "What was your  Total waste with unknown disposal methods target?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -834,7 +845,7 @@ const Environment = () => {
     {
       ID: "I",
       "Environmental Dimension":
-        "In this section, DJSI assigns a performance score for Corporate Sustainability Monitoring to evaluate how the company manages crisis situations that could harm its reputation. The assessment will be carried out by the industry analyst, and no further input is required from your company. No further information is required from the company",
+        "In this section, DJSI assigns a performance score for Corporate Sustainability Monitoring to evaluate how the company manages crisis situations that could harm its reputation. The assessment will be carried out by the industry analyst, and no further input is required from your company.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -865,7 +876,7 @@ const Environment = () => {
     {
       ID: "I",
       "Environmental Dimension":
-        "Please provide your company’s Total water withdrawn from municipal water supplies (or from other water utilities) for the past four fiscal years, covering the parts of your operations where you have reliable and auditable data. Use the same unit for all values. Ensure that the coverage reported here matches the company information provided. (A)",
+        "Please provide your company’s Total water withdrawn from municipal water supplies (or from other water utilities) covering the parts of your operations where you have reliable and auditable data. Use the same unit for all values. Ensure that the coverage reported here matches the company information provided. (A)",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -876,7 +887,7 @@ const Environment = () => {
     {
       ID: "II",
       "Environmental Dimension":
-        "Please provide your company’s Total water withdrawn from Fresh surface water (lakes, rivers, etc.) for the past four fiscal years, covering the parts of your operations where you have reliable and auditable data. Use the same unit for all values. Ensure that the coverage reported here matches the company information provided. (B)",
+        "Please provide your company’s Total water withdrawn from Fresh surface water (lakes, rivers, etc.)  covering the parts of your operations where you have reliable and auditable data.  Ensure that the coverage reported here matches the company information provided. (B)",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -887,7 +898,7 @@ const Environment = () => {
     {
       ID: "III",
       "Environmental Dimension":
-        "Please provide your company’s Total water withdrawn from Fresh groundwater for the past four fiscal years, covering the parts of your operations where you have reliable and auditable data. Use the same unit for all values. Ensure that the coverage reported here matches the company information provided. (C)",
+        "Please provide your company’s Total water withdrawn from Fresh groundwater covering the parts of your operations where you have reliable and auditable data. Ensure that the coverage reported here matches the company information provided. (C)",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -898,7 +909,7 @@ const Environment = () => {
     {
       ID: "IV",
       "Environmental Dimension":
-        "Please provide your company’s Total water discharged to the source of extraction at similar or higher quality as raw water extracted for the past four fiscal years, covering the parts of your operations where you have reliable and auditable data. Use the same unit for all values. Ensure that the coverage reported here matches the company information provided. (D) (This question only applies to water withdrawn from fresh surface water and fresh groundwater sources)",
+        "Please provide your company’s Total water discharged to the source of extraction at similar or higher quality as raw water extracted covering the parts of your operations where you have reliable and auditable data. Ensure that the coverage reported here matches the company information provided. (D)\n(This question only applies to water withdrawn from fresh surface water and fresh groundwater sources)",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -909,7 +920,7 @@ const Environment = () => {
     {
       ID: "V",
       "Environmental Dimension":
-        "What was the total net fresh water consumption (A+B+C+D) for the past four fiscal years?",
+        "What was the total net fresh water consumption (A+B+C+D)?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -920,7 +931,7 @@ const Environment = () => {
     {
       ID: "VI",
       "Environmental Dimension":
-        "What was the total net fresh water consumption (A+B+C+D) target for the past fiscal year?",
+        "What was the total net fresh water consumption (A+B+C+D) target?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -1425,7 +1436,7 @@ const Environment = () => {
     {
       ID: "I",
       "Environmental Dimension":
-        'Please provide the following details of your products and/or services that you classify as low carbon products or that enable a third party to avoid GHG emissions.\n1) Type & Description of product(s)\n2) Public Reporting\n3) Level of aggregation\n4) % of total revenues from "climate change" product(s) in FY 2022\n5) Estimated total avoided emissions per year',
+        'Please provide the following details of your products and/or services that you classify as low carbon products or that enable a third party to avoid GHG emissions.\n1) Type & Description of product(s)\n2) Public Reporting\n3) Level of aggregation\n4) % of total revenues from "climate change" product(s)\n5) Estimated total avoided emissions per year',
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -1767,6 +1778,16 @@ const Environment = () => {
       isTitle: true,
     },
     {
+      ID: "2.8.1",
+      "Environmental Dimension": "Life Cycle Assessment",
+      Output: "",
+      "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
+        "",
+      "SDP/MT#": "",
+      "If not, then new Question": "",
+      isTitle: true,
+    },
+    {
       ID: "I",
       "Environmental Dimension":
         "Which impacts are covered by your company’s life cycle assessment (LCA)? Please specify the impacts included under each of the following categories:\na) Resource use\nb) Ecological consequences\nc) Human health",
@@ -1910,7 +1931,7 @@ const Environment = () => {
     {
       ID: "II",
       "Environmental Dimension":
-        "What percentage of the products sold in the last fiscal year can be reused or recycled? If products are only partially recyclable, please provide an estimated proportion. Additionally, indicate whether this data is publicly available and, if so, provide suitable evidence.",
+        "What percentage of the products sold  can be reused or recycled? If products are only partially recyclable, please provide an estimated proportion. Additionally, indicate whether this data is publicly available and, if so, provide suitable evidence.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -1964,7 +1985,7 @@ const Environment = () => {
     {
       ID: "II",
       "Environmental Dimension":
-        "What is the % of products with Environmental Labels and Declarations, and what is the % of revenues covered by them in the past fiscal year ? (Total revenues covered should not exceed 100%)",
+        "What is the % of products with Environmental Labels and Declarations, and what is the % of revenues ? (Total revenues covered should not exceed 100%)",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -1975,7 +1996,7 @@ const Environment = () => {
     {
       ID: "III",
       "Environmental Dimension":
-        "What is the % of products covered in Type III Environmental Product Declarations (in accordance with ISO 14025 or the European construction standard EN 15804)? Please also indicate the % of revenues covered in the past fiscal year. Attach supporting documents.",
+        "What is the % of products covered in Type III Environmental Product Declarations (in accordance with ISO 14025 or the European construction standard EN 15804)? Please also indicate the % of revenues covered. Attach supporting documents.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -1986,7 +2007,7 @@ const Environment = () => {
     {
       ID: "IV",
       "Environmental Dimension":
-        "What is the % of products covered in Type II self-declared environmental claims (in accordance with ISO 14021)? Please also indicate the % of revenues covered in the past fiscal year. Attach supporting documents.",
+        "What is the % of products covered in Type II self-declared environmental claims (in accordance with ISO 14021)? Please also indicate the % of revenues covered. Attach supporting documents.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -1997,7 +2018,7 @@ const Environment = () => {
     {
       ID: "V",
       "Environmental Dimension":
-        "What is the % of products covered in Type I or other ecolabels (in accordance with ISO 14024 or independent ecolabels such as WWF, Energy Star, LEED, or accepted industry-specific best practices)? Please also indicate the % of revenues covered in the past fiscal year. Specify the standards or labels used and attach supporting documents.",
+        "What is the % of products covered in Type I or other ecolabels (in accordance with ISO 14024 or independent ecolabels such as WWF, Energy Star, LEED, or accepted industry-specific best practices)? Please also indicate the % of revenues covered. Specify the standards or labels used and attach supporting documents.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -2104,7 +2125,7 @@ const Environment = () => {
     {
       ID: "II",
       "Environmental Dimension":
-        "What is the total percentage of Battery Electric Vehicles (BEV) and Fuel Cell Electric Vehicles (FCEV) sold using the Worldwide Harmonized Light Vehicles Test Procedure (WLTP), Environmental Protection Agency (EPA), and Corporate Average Fuel Consumption – New European Driving Cycle (CAFC-NEDC) energy economy standards (should not exceed 100%)?\n\nData to be provided for past four fiscal years.",
+        "What is the total percentage of Battery Electric Vehicles (BEV) and Fuel Cell Electric Vehicles (FCEV) sold using the Worldwide Harmonized Light Vehicles Test Procedure (WLTP), Environmental Protection Agency (EPA), and Corporate Average Fuel Consumption – New European Driving Cycle (CAFC-NEDC) energy economy standards (should not exceed 100%)?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -2115,7 +2136,7 @@ const Environment = () => {
     {
       ID: "III",
       "Environmental Dimension":
-        "What is the average energy economy of Battery Electric Vehicles (BEV) and Fuel Cell Electric Vehicles (FCEV)? Please specify the unit (kWh/100 kilometers, kWh/100 miles, or MPG-e).\n\nData to be provided for past four fiscal years.",
+        "What is the average energy economy of Battery Electric Vehicles (BEV) and Fuel Cell Electric Vehicles (FCEV)? Please specify the unit (kWh/100 kilometers, kWh/100 miles, or MPG-e).",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -2126,7 +2147,7 @@ const Environment = () => {
     {
       ID: "IV",
       "Environmental Dimension":
-        "What is the percentage of new cars sold (as a share of all Battery Electric Vehicles (BEV) and Fuel Cell Electric Vehicles (FCEV) sold globally)?\n\nData to be provided for past four fiscal years.",
+        "What is the percentage of new cars sold (as a share of all Battery Electric Vehicles (BEV) and Fuel Cell Electric Vehicles (FCEV) sold globally)?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -2137,7 +2158,7 @@ const Environment = () => {
     {
       ID: "V",
       "Environmental Dimension":
-        "What is the average energy economy of Battery Electric Vehicles (BEV) and Fuel Cell Electric Vehicles (FCEV), and in which unit is it reported (kWh/100 kilometers, kWh/100 miles, or MPG-e)?\n\nData to be provided for past four fiscal years.",
+        "What is the average energy economy of Battery Electric Vehicles (BEV) and Fuel Cell Electric Vehicles (FCEV), and in which unit is it reported (kWh/100 kilometers, kWh/100 miles, or MPG-e)?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -2148,7 +2169,7 @@ const Environment = () => {
     {
       ID: "VI",
       "Environmental Dimension":
-        "What percentage of new cars sold globally were Battery Electric Vehicles (BEV) and Fuel Cell Electric Vehicles (FCEV), expressed as a share of total BEV and FCEV sales?\n\nData to be provided for past four fiscal years.",
+        "What percentage of new cars sold globally were Battery Electric Vehicles (BEV) and Fuel Cell Electric Vehicles (FCEV), expressed as a share of total BEV and FCEV sales?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -2160,7 +2181,7 @@ const Environment = () => {
     {
       ID: "VII",
       "Environmental Dimension":
-        "What is the total percentage of Battery Electric Vehicles (BEV) and Fuel Cell Electric Vehicles (FCEV) sold that are measured using the Worldwide Harmonized Light Vehicles Test Procedure (WLTP), the Environmental Protection Agency (EPA) standard, and the Corporate Average Fuel Consumption – New European Driving Cycle (CAFC-NEDC) energy economy standards (should not exceed 100%)?\n\nData to be provided for past four fiscal years.",
+        "What is the total percentage of Battery Electric Vehicles (BEV) and Fuel Cell Electric Vehicles (FCEV) sold that are measured using the Worldwide Harmonized Light Vehicles Test Procedure (WLTP), the Environmental Protection Agency (EPA) standard, and the Corporate Average Fuel Consumption – New European Driving Cycle (CAFC-NEDC) energy economy standards (should not exceed 100%)?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -2171,7 +2192,7 @@ const Environment = () => {
     {
       ID: "VIII",
       "Environmental Dimension":
-        "What is the average energy economy of Battery Electric Vehicles (BEV) and Fuel Cell Electric Vehicles (FCEV)? Please specify the unit used:  kWh/100 kilometers / kWh/100 miles / Miles per Gallon gasoline-equivalent (MPG-e).\n\nData to be provided for past four fiscal years.",
+        "What is the average energy economy of Battery Electric Vehicles (BEV) and Fuel Cell Electric Vehicles (FCEV)? Please specify the unit used:  kWh/100 kilometers / kWh/100 miles / Miles per Gallon gasoline-equivalent (MPG-e).",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -2182,7 +2203,7 @@ const Environment = () => {
     {
       ID: "IX",
       "Environmental Dimension":
-        "What percentage of new cars sold were Battery Electric Vehicles (BEV) and Fuel Cell Electric Vehicles (FCEV), expressed as a share of all BEV and FCEV sold globally?\n\nData to be provided for past four fiscal years.",
+        "What percentage of new cars sold were Battery Electric Vehicles (BEV) and Fuel Cell Electric Vehicles (FCEV), expressed as a share of all BEV and FCEV sold globally?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -2225,7 +2246,7 @@ const Environment = () => {
     {
       ID: "I",
       "Environmental Dimension":
-        "Do you measure the average vehicle or carbon efficiency of your vehicles sold under your brands for the past four years in the EU, the US and China? The data should meet respective market regulations and be supported with percentage of cars sold in those regions. If yes, provide supporting evidence.",
+        "Do you measure the average vehicle or carbon efficiency of your vehicles sold under your brands in the EU, the US and China? The data should meet respective market regulations and be supported with percentage of cars sold in those regions. If yes, provide supporting evidence.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -2236,7 +2257,7 @@ const Environment = () => {
     {
       ID: "II",
       "Environmental Dimension":
-        "What is the total percentage of cars sold in EU-27 (CO₂ regulation – NEDC/WLTP)? Please provide data for the past four fiscal years.",
+        "What is the total percentage of cars sold in EU-27 (CO₂ regulation – NEDC/WLTP)?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -2247,7 +2268,7 @@ const Environment = () => {
     {
       ID: "III",
       "Environmental Dimension":
-        "What is the total percentage of cars sold in the USA (CAFE – US combined)? Please provide data for the past four fiscal years.",
+        "What is the total percentage of cars sold in the USA (CAFE – US combined)? ",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -2258,7 +2279,7 @@ const Environment = () => {
     {
       ID: "IV",
       "Environmental Dimension":
-        "What is the total percentage of cars sold in China (CAFC – NEDC)? Please provide data for the past four fiscal years.",
+        "What is the total percentage of cars sold in China (CAFC – NEDC)?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -2269,7 +2290,7 @@ const Environment = () => {
     {
       ID: "V",
       "Environmental Dimension":
-        "What is the total percentage of cars sold in EU-27 (CO₂ regulation – NEDC/WLTP), USA (CAFE – US combined), and China (CAFC – NEDC)? (The sum should not exceed 100%.). Please provide data for the past four fiscal years.",
+        "What is the total percentage of cars sold in EU-27 (CO₂ regulation – NEDC/WLTP), USA (CAFE – US combined), and China (CAFC – NEDC)? (The sum should not exceed 100%.).",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -2280,7 +2301,7 @@ const Environment = () => {
     {
       ID: "VI",
       "Environmental Dimension":
-        "What is the average CO₂ efficiency (or alternative fuel efficiency) of vehicles? Please specify the unit used:\n❍ Liters/100 kilometers\n❍ Grams of CO₂/kilometer\n❍ Miles per gallon (mpg)\n\nPlease provide data for the past four fiscal years.",
+        "What is the average CO₂ efficiency (or alternative fuel efficiency) of vehicles? Please specify the unit used:\n❍ Liters/100 kilometers\n❍ Grams of CO₂/kilometer\n❍ Miles per gallon (mpg)",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -2292,7 +2313,7 @@ const Environment = () => {
     {
       ID: "VII",
       "Environmental Dimension":
-        "What percentage of new cars sold represents the share of all cars sold globally? Please provide data for the past four fiscal years.",
+        "What percentage of new cars sold represents the share of all cars sold globally?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -2313,7 +2334,7 @@ const Environment = () => {
     {
       ID: "I",
       "Environmental Dimension":
-        "For Battery Electric Vehicles (BEVs), what was the number of vehicles sold in the last fiscal year, and what is the projection for FY 2030 (as a % of total vehicles sold)?",
+        "For Battery Electric Vehicles (BEVs), what was the number of vehicles sold , and what is the projection for FY 2030 (as a % of total vehicles sold)?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -2324,7 +2345,7 @@ const Environment = () => {
     {
       ID: "II",
       "Environmental Dimension":
-        "For Fuel Cell Electric Vehicles (FCEVs), what was the number of vehicles sold in the last fiscal year, and what is the projection for FY 2030 (as a % of total vehicles sold)?",
+        "For Fuel Cell Electric Vehicles (FCEVs), what was the number of vehicles sold, and what is the projection for FY 2030 (as a % of total vehicles sold)?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -2335,7 +2356,7 @@ const Environment = () => {
     {
       ID: "III",
       "Environmental Dimension":
-        "For Plug-in Hybrid Electric Vehicles (PHEVs), what was the number of vehicles sold in the last fiscal year, and what is the projection for FY 2030 (as a % of total vehicles sold)?",
+        "For Plug-in Hybrid Electric Vehicles (PHEVs), what was the number of vehicles sold, and what is the projection for FY 2030 (as a % of total vehicles sold)?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -2346,7 +2367,7 @@ const Environment = () => {
     {
       ID: "IV",
       "Environmental Dimension":
-        "For Battery-assisted Hybrid Vehicles (BAHVs), what was the number of vehicles sold in the last fiscal year, and what is the projection for FY 2030 (as a % of total vehicles sold)?",
+        "For Battery-assisted Hybrid Vehicles (BAHVs), what was the number of vehicles sold , and what is the projection for FY 2030 (as a % of total vehicles sold)?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -2357,7 +2378,7 @@ const Environment = () => {
     {
       ID: "V",
       "Environmental Dimension":
-        "For Compressed Natural Gas Vehicles (CNGVs), what was the number of vehicles sold in the last fiscal year, and what is the projection for FY 2030 (as a % of total vehicles sold)?",
+        "For Compressed Natural Gas Vehicles (CNGVs), what was the number of vehicles sold, and what is the projection for FY 2030 (as a % of total vehicles sold)?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -2368,7 +2389,7 @@ const Environment = () => {
     {
       ID: "VI",
       "Environmental Dimension":
-        "For Liquid Petroleum Gas Vehicles (LPGVs), what was the number of vehicles sold in the last fiscal year, and what is the projection for FY 2030 (as a % of total vehicles sold)?",
+        "For Liquid Petroleum Gas Vehicles (LPGVs), what was the number of vehicles sold, and what is the projection for FY 2030 (as a % of total vehicles sold)?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -2379,7 +2400,7 @@ const Environment = () => {
     {
       ID: "VII",
       "Environmental Dimension":
-        "For Flex Fuel Vehicles (FFVs), what was the number of vehicles sold in the last fiscal year, and what is the projection for FY 2030 (as a % of total vehicles sold)?",
+        "For Flex Fuel Vehicles (FFVs), what was the number of vehicles sold, and what is the projection for FY 2030 (as a % of total vehicles sold)?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",

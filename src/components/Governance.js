@@ -45,9 +45,9 @@ const TableRenderer = ({ id, title, tableData }) => {
                 width: "20%",
               }}
             >
-              Output
+              Response from Goverance and economic
             </th>
-            <th
+            {/* <th
               style={{
                 border: "1px solid black",
                 padding: "8px",
@@ -77,7 +77,7 @@ const TableRenderer = ({ id, title, tableData }) => {
               }}
             >
               If not, then new Question
-            </th>
+            </th> */}
           </tr>
         </thead>
         <tbody>
@@ -104,7 +104,7 @@ const TableRenderer = ({ id, title, tableData }) => {
               <td style={{ border: "1px solid black", padding: "8px" }}>
                 {item["Output"]}
               </td>
-              <td style={{ border: "1px solid black", padding: "8px" }}>
+              {/* <td style={{ border: "1px solid black", padding: "8px" }}>
                 {
                   item[
                     "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet"
@@ -116,7 +116,7 @@ const TableRenderer = ({ id, title, tableData }) => {
               </td>
               <td style={{ border: "1px solid black", padding: "8px" }}>
                 {item["If not, then new Question"]}
-              </td>
+              </td> */}
             </tr>
           ))}
         </tbody>
@@ -291,7 +291,7 @@ const Governance = () => {
     {
       ID: "",
       "Governance and economic":
-        "Revenues\nPlease indicate\nif figures are\nreported or constant\ncurrency:\n❍ Constant Currency\n❍ Reported Revenues",
+        "Are your revenues reported in constant currency or reported currency?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -480,6 +480,17 @@ const Governance = () => {
       "SDP/MT#": "",
       "If, not then new Question": "",
       isTitle: false,
+    },
+    {
+      ID: "1.1.4",
+      "Governance and economic":
+        "MSA Transparency & Reporting",
+      Output: "",
+      "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
+        "",
+      "SDP/MT#": "",
+      "If, not then new Question": "",
+      isTitle: true,
     },
     {
       ID: "1.1.4",
@@ -2250,7 +2261,7 @@ const Governance = () => {
     {
       ID: "",
       "Governance and economic":
-        "What is the total number of suppliers assessed via desk assessments or on-site assessments? Please specify the number and the percentage of significant suppliers. Provide the status as of last year and the target for the last fiscal year.",
+        "What is the total number of suppliers assessed via desk assessments or on-site assessments? Please specify the number and the percentage of significant suppliers. Provide the status and target.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -2261,7 +2272,7 @@ const Governance = () => {
     {
       ID: "",
       "Governance and economic":
-        "What is the percentage of significant suppliers assessed? Provide the status as of last year and the target for the last fiscal year.",
+        "What is the percentage of significant suppliers assessed? Provide the status and target.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -2272,7 +2283,7 @@ const Governance = () => {
     {
       ID: "",
       "Governance and economic":
-        "What is the number of suppliers assessed with substantial actual or potential negative impacts? Provide the status as of last year and the target for the last fiscal year.",
+        "What is the number of suppliers assessed with substantial actual or potential negative impacts? Provide the status and target.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -2283,7 +2294,7 @@ const Governance = () => {
     {
       ID: "",
       "Governance and economic":
-        "What is the percentage of suppliers with substantial actual or potential negative impacts that have an agreed corrective action or improvement plan? Provide the status as of last year and the target for the last fiscal year.",
+        "What is the percentage of suppliers with substantial actual or potential negative impacts that have an agreed corrective action or improvement plan? Provide the status and target.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -2294,7 +2305,7 @@ const Governance = () => {
     {
       ID: "",
       "Governance and economic":
-        "What is the number of suppliers with substantial actual or potential negative impacts that were terminated? Provide the status as of last year and the target for the last fiscal year.",
+        "What is the number of suppliers with substantial actual or potential negative impacts that were terminated?Provide the status and target.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -2305,7 +2316,7 @@ const Governance = () => {
     {
       ID: "",
       "Governance and economic":
-        "What is the total number of suppliers supported in corrective action plan implementation? Please specify the number and the percentage of significant suppliers. Provide the status as of last year and the target for the last fiscal year.",
+        "What is the total number of suppliers supported in corrective action plan implementation? Please specify the number and the percentage of significant suppliers. Provide the status and target.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -2316,7 +2327,7 @@ const Governance = () => {
     {
       ID: "",
       "Governance and economic":
-        "What is the percentage of suppliers assessed with substantial actual or potential negative impacts that were supported in corrective action plan implementation? Provide the status as of last year and the target for the last fiscal year.",
+        "What is the percentage of suppliers assessed with substantial actual or potential negative impacts that were supported in corrective action plan implementation? Provide the status and target.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -2327,7 +2338,7 @@ const Governance = () => {
     {
       ID: "",
       "Governance and economic":
-        "What is the total number of suppliers in capacity building programs? Please specify the number of suppliers and the percentage of significant suppliers. Provide the status as of last year and the target for the last fiscal year.",
+        "What is the total number of suppliers in capacity building programs? Please specify the number of suppliers and the percentage of significant suppliers.Provide the status and target.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -2338,7 +2349,7 @@ const Governance = () => {
     {
       ID: "",
       "Governance and economic":
-        "What is the percentage of significant suppliers participating in capacity building programs? Provide the status as of last year and the target for the last fiscal year.",
+        "What is the percentage of significant suppliers participating in capacity building programs? Provide the status and target.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -2426,7 +2437,7 @@ const Governance = () => {
     {
       ID: "",
       "Governance and economic":
-        "What is the percentage of total revenues from products containing minerals sourced from conflict-affected and high-risk areas? Please provide this data for the past four fiscal years.",
+        "What is the percentage of total revenues from products containing minerals sourced from conflict-affected and high-risk areas? Provide status and target.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -2437,7 +2448,7 @@ const Governance = () => {
     {
       ID: "",
       "Governance and economic":
-        "What is the percentage of total revenues from products containing minerals sourced from conflict-affected and high-risk areas that come from suppliers verified as conflict-free? Please provide this data for the past four fiscal years.",
+        "What is the percentage of total revenues from products containing minerals sourced from conflict-affected and high-risk areas that come from suppliers verified as conflict-free? Provide status and target.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -2542,7 +2553,7 @@ const Governance = () => {
     {
       ID: "",
       "Governance and economic":
-        "What were your Earnings Before Tax (EBT) for FY 2021 and FY 2022? Please provide the currency used.",
+        "What were your Earnings Before Tax (EBT)? Please provide the currency used.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -2553,7 +2564,7 @@ const Governance = () => {
     {
       ID: "",
       "Governance and economic":
-        "What were your Reported Taxes for FY 2021 and FY 2022? Please provide the currency used.",
+        "What were your Reported Taxes? Please provide the currency used.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -2586,7 +2597,7 @@ const Governance = () => {
     {
       ID: "",
       "Governance and economic":
-        "What were your Cash Taxes Paid for FY 2021 and FY 2022?",
+        "What were your Cash Taxes Paid ?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -2597,7 +2608,7 @@ const Governance = () => {
     {
       ID: "",
       "Governance and economic":
-        "What was your Cash Tax Rate (%) for the same period?",
+        "What was your Cash Tax Rate (%)?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -2869,7 +2880,7 @@ const Governance = () => {
     {
       ID: "",
       "Governance and economic":
-        "What was your company’s total R&D spending (in million USD) for each of the past four fiscal years?",
+        "What was your company’s total R&D spending (in million USD)?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -2880,7 +2891,7 @@ const Governance = () => {
     {
       ID: "",
       "Governance and economic":
-        "What was the total number of R&D positions (in full-time equivalents – FTEs) for each of the past four fiscal years?",
+        "What was the total number of R&D positions (in full-time equivalents – FTEs) ?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -2891,7 +2902,7 @@ const Governance = () => {
     {
       ID: "",
       "Governance and economic":
-        "What was your company’s R&D spending as a percentage of sales for each of the past four fiscal years?",
+        "What was your company’s R&D spending as a percentage of sales?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -2964,7 +2975,7 @@ const Governance = () => {
     {
       ID: "",
       "Governance and economic":
-        "What was the provision warranty balance at the beginning of the period for each of the past four fiscal years?",
+        "What was the provision warranty balance at the beginning of the period ?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -2975,7 +2986,7 @@ const Governance = () => {
     {
       ID: "",
       "Governance and economic":
-        "What were the warranty payments (costs) made during the period for each of the past four fiscal years? Please specify the currency.",
+        "What were the warranty payments (costs) made during the period? Please specify the currency.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -2986,7 +2997,7 @@ const Governance = () => {
     {
       ID: "",
       "Governance and economic":
-        "What were the revenues for each of the past four fiscal years, as provided in the Company Information section?",
+        "What were the revenues as provided in the Company Information section?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -2997,7 +3008,7 @@ const Governance = () => {
     {
       ID: "",
       "Governance and economic":
-        "What was the cost of warranty payments as a percentage of annual revenues for each of the past four fiscal years?",
+        "What was the cost of warranty payments as a percentage of annual revenues ?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -3019,7 +3030,7 @@ const Governance = () => {
     {
       ID: "",
       "Governance and economic":
-        "What was the number of vehicles recalled in each of the past four fiscal years?",
+        "What was the number of vehicles recalled ?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -3030,7 +3041,7 @@ const Governance = () => {
     {
       ID: "",
       "Governance and economic":
-        "What were the expenses incurred due to recalls issued in the corresponding fiscal year? Please specify the currency for each year.",
+        "What were the expenses incurred due to recalls issued in the corresponding fiscal year? Please specify the currency.",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -3041,7 +3052,7 @@ const Governance = () => {
     {
       ID: "",
       "Governance and economic":
-        "What was the number of vehicles recalled that were mandated (involuntary) in each of the past four fiscal years?",
+        "What was the number of vehicles recalled that were mandated (involuntary)?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -3052,7 +3063,7 @@ const Governance = () => {
     {
       ID: "",
       "Governance and economic":
-        "What were the revenues for each of the past four fiscal years, as provided in the Company Information section?",
+        "What were the revenues as provided in the Company Information section?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
@@ -3063,7 +3074,7 @@ const Governance = () => {
     {
       ID: "",
       "Governance and economic":
-        "What was the cost of recalls as a percentage of annual revenues for each of the past four fiscal years?",
+        "What was the cost of recalls as a percentage of annual revenues?",
       Output: "",
       "Whether the question is present and mapped to DJSI in Navigos Indicator Listing Sheet":
         "",
