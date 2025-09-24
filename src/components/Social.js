@@ -45,7 +45,7 @@ const TableRenderer = ({ id, title, tableData }) => {
                 width: "20%",
               }}
             >
-              Response for Social Dimension
+              Response
             </th>
           </tr>
         </thead>
@@ -171,8 +171,7 @@ const Social = () => {
 
     {
       ID: "3.1.3",
-      "Social Dimension":
-        "Workforce Breakdown: Race/ Ethnicity & Nationality",
+      "Social Dimension": "Workforce Breakdown: Race/ Ethnicity & Nationality",
       Output: "",
 
       isTitle: true,
@@ -633,7 +632,7 @@ const Social = () => {
     {
       ID: "",
       "Social Dimension":
-        "What is the percentage of open positions filled by internal candidates (internal hires) for the past four fiscal years? Is this data publicly available? If yes, please provide supporting evidence or a web link.",
+        "What is the percentage of open positions filled by internal candidates (internal hires)? Is this data publicly available? If yes, please provide supporting evidence or a web link.",
       Output: "",
 
       isTitle: false,
@@ -812,8 +811,7 @@ const Social = () => {
     },
     {
       ID: "",
-      "Social Dimension":
-        "Does your company conduct an employee survey?",
+      "Social Dimension":"Does your company conduct an employee survey?",
       Output: "",
 
       isTitle: false,
@@ -935,8 +933,7 @@ const Social = () => {
     },
     {
       ID: "3.5.4",
-      "Social Dimension":
-        "Lost-Time Injury Frequency Rate (LTIFR) - Employees",
+      "Social Dimension":"Lost-Time Injury Frequency Rate (LTIFR) - Employees",
       Output: "",
 
       isTitle: true,
@@ -1234,8 +1231,7 @@ const Social = () => {
     },
     {
       ID: "3.7.3",
-      "Social Dimension":
-        "MSA Sustainable Marketing & Brand Perception",
+      "Social Dimension":"MSA Sustainable Marketing & Brand Perception",
       Output: "",
 
       isTitle: true,

@@ -45,7 +45,7 @@ const TableRenderer = ({ id, title, tableData }) => {
                 width: "20%",
               }}
             >
-              Response from Goverance and economic
+              Response
             </th>
           </tr>
         </thead>
@@ -206,14 +206,15 @@ const Governance = () => {
     },
     {
       ID: "",
-      "Governance and economic": "Total Employees",
+      "Governance and economic": "What is your total number of employees?",
       Output: "",
 
       isTitle: false,
     },
     {
       ID: "",
-      "Governance and economic": "Units",
+      "Governance and economic":
+        "How many units are there in your organsiation?",
       Output: "",
 
       isTitle: false,
@@ -343,7 +344,7 @@ const Governance = () => {
       isTitle: true,
     },
     {
-      ID: "1.1.4",
+      ID: "",
       "Governance and economic":
         "In this section, DJSI includes a performance score for Corporate Sustainability Monitoring to verify how the company manages crisis situations that could harm its reputation. The evaluation will be completed by the responsible industry analyst, and no additional information is required from your company.",
       Output: "",
