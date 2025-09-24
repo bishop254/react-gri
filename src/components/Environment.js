@@ -171,7 +171,7 @@ const Environment = () => {
       ID: "",
       "Environmental Dimension":
         "In this section, DJSI assigns a performance score under Corporate Sustainability Monitoring to assess how the company is involved in and manages crisis situations that could negatively impact its reputation. The evaluation will be conducted by the analyst responsible for your industry, and no further information is required from your company.",
-      Output: "",
+      Output: "No further information is required from the company",
 
       isTitle: false,
     },
@@ -352,7 +352,7 @@ const Environment = () => {
       ID: "",
       "Environmental Dimension":
         "In this section, DJSI assigns a performance score under Corporate Sustainability Monitoring to assess how the company manages crisis situations that could harm its reputation. The evaluation will be completed by the analyst responsible for your industry, and no additional input is required from your company.",
-      Output: "",
+      Output: "No further information is required from the company",
 
       isTitle: false,
     },
@@ -438,7 +438,7 @@ const Environment = () => {
       ID: "",
       "Environmental Dimension":
         "In this section, DJSI provides a performance score under Corporate Sustainability Monitoring to assess how the company handles crisis situations that may impact its reputation. The evaluation will be completed by the industry analyst, and no additional information is required from your company.",
-      Output: "",
+      Output: "No further information is required from the company",
 
       isTitle: false,
     },
@@ -603,7 +603,7 @@ const Environment = () => {
       ID: "",
       "Environmental Dimension":
         "In this section, DJSI assigns a performance score for Corporate Sustainability Monitoring to evaluate how the company manages crisis situations that could harm its reputation. The assessment will be carried out by the industry analyst, and no further input is required from your company.",
-      Output: "",
+      Output: "No further information is required from the company",
 
       isTitle: false,
     },
@@ -704,7 +704,7 @@ const Environment = () => {
       ID: "",
       "Environmental Dimension":
         "In this section, DJSI gives a performance score for Corporate Sustainability Monitoring to assess how the company manages crisis situations that could affect its reputation. The evaluation will be completed by the industry analyst, and no additional information is required from your company.",
-      Output: "",
+      Output: "No further information is required from the company",
 
       isTitle: false,
     },
@@ -1122,7 +1122,7 @@ const Environment = () => {
       ID: "",
       "Environmental Dimension":
         "In this section, DJSI assigns a performance score under Corporate Sustainability Monitoring to assess how the company manages crisis situations that could harm its reputation. The evaluation will be conducted by the industry analyst, and no additional information is required from your company.",
-      Output: "",
+      Output: "No further information is required from the company",
 
       isTitle: false,
     },
@@ -1749,7 +1749,7 @@ const Environment = () => {
       ID: "",
       "Environmental Dimension":
         "In this section, DJSI includes a performance score for Corporate Sustainability Monitoring to verify how the company manages crisis situations that could harm its reputation. The evaluation will be completed by the responsible industry analyst, and no additional information is required from your company.",
-      Output: "",
+      Output: "No further information is required from the company",
 
       isTitle: false,
     },

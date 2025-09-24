@@ -347,7 +347,7 @@ const Governance = () => {
       ID: "",
       "Governance and economic":
         "In this section, DJSI includes a performance score for Corporate Sustainability Monitoring to verify how the company manages crisis situations that could harm its reputation. The evaluation will be completed by the responsible industry analyst, and no additional information is required from your company.",
-      Output: "",
+      Output: "No further information is required from the company",
 
       isTitle: false,
     },
@@ -773,7 +773,7 @@ const Governance = () => {
       ID: "",
       "Governance and economic":
         "In this section, DJSI includes a performance score for Corporate Sustainability Monitoring to verify how the company manages crisis situations that could harm its reputation. The evaluation will be completed by the responsible industry analyst, and no additional information is required from your company.",
-      Output: "",
+      Output: "No further information is required from the company",
 
       isTitle: false,
     },
@@ -1033,7 +1033,7 @@ const Governance = () => {
       ID: "",
       "Governance and economic":
         "In this section, DJSI includes a performance score for Corporate Sustainability Monitoring to verify how the company manages crisis situations that could harm its reputation. The evaluation will be completed by the responsible industry analyst, and no additional information is required from your company.",
-      Output: "",
+      Output: "No further information is required from the company",
 
       isTitle: false,
     },
@@ -1253,7 +1253,7 @@ const Governance = () => {
       ID: "",
       "Governance and economic":
         "In this section, DJSI includes a performance score for Corporate Sustainability Monitoring to verify how the company manages crisis situations that could harm its reputation. The evaluation will be completed by the responsible industry analyst, and no additional information is required from your company.",
-      Output: "",
+      Output: "No further information is required from the company",
 
       isTitle: false,
     },
@@ -1359,7 +1359,7 @@ const Governance = () => {
       ID: "",
       "Governance and economic":
         "In this section, DJSI includes a performance score for Corporate Sustainability Monitoring to verify how the company manages crisis situations that could harm its reputation. The evaluation will be completed by the responsible industry analyst, and no additional information is required from your company.",
-      Output: "",
+      Output: "No further information is required from the company",
 
       isTitle: false,
     },
@@ -1427,7 +1427,7 @@ const Governance = () => {
       ID: "",
       "Governance and economic":
         "In this section, DJSI includes a performance score for Corporate Sustainability Monitoring to verify how the company manages crisis situations that could harm its reputation. The evaluation will be completed by the responsible industry analyst, and no additional information is required from your company.",
-      Output: "",
+      Output: "No further information is required from the company",
 
       isTitle: false,
     },
@@ -1780,7 +1780,7 @@ const Governance = () => {
       ID: "",
       "Governance and economic":
         "In this section, DJSI includes a performance score for Corporate Sustainability Monitoring to verify how the company manages crisis situations that could harm its reputation. The evaluation will be completed by the responsible industry analyst, and no additional information is required from your company.",
-      Output: "",
+      Output: "No further information is required from the company",
 
       isTitle: false,
     },
@@ -1902,7 +1902,7 @@ const Governance = () => {
       ID: "",
       "Governance and economic":
         "In this section, DJSI includes a performance score for Corporate Sustainability Monitoring to verify how the company manages crisis situations that could harm its reputation. The evaluation will be completed by the responsible industry analyst, and no additional information is required from your company.",
-      Output: "",
+      Output: "No further information is required from the company",
 
       isTitle: false,
     },
@@ -2044,7 +2044,7 @@ const Governance = () => {
       ID: "",
       "Governance and economic":
         "In this section, DJSI includes a performance score for Corporate Sustainability Monitoring to verify how the company manages crisis situations that could harm its reputation. The evaluation will be completed by the responsible industry analyst, and no additional information is required from your company.",
-      Output: "",
+      Output: "No further information is required from the company",
 
       isTitle: false,
     },
@@ -2113,7 +2113,7 @@ const Governance = () => {
       ID: "",
       "Governance and economic":
         "In this section, DJSI includes a performance score for Corporate Sustainability Monitoring to verify how the company manages crisis situations that could harm its reputation. The evaluation will be completed by the responsible industry analyst, and no additional information is required from your company.",
-      Output: "",
+      Output: "No further information is required from the company",
 
       isTitle: false,
     },
@@ -2221,7 +2221,7 @@ const Governance = () => {
       ID: "",
       "Governance and economic":
         "In this section, DJSI includes a performance score for Corporate Sustainability Monitoring to verify how the company manages crisis situations that could harm its reputation. The evaluation will be completed by the responsible industry analyst, and no additional information is required from your company.",
-      Output: "",
+      Output: "No further information is required from the company",
 
       isTitle: false,
     },

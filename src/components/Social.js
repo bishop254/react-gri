@@ -298,7 +298,7 @@ const Social = () => {
       ID: "",
       "Social Dimension":
         "In this section DJSI includes a performance score on the Corporate Sustainability Monitoring with the objective of verifying the company's involvement and management of crisis situations that can have a damaging effect on reputation. The evaluation will be filled in by the responsible analyst of your industry. No additional information is required from your company.",
-      Output: "",
+      Output: "No further information is required from the company",
 
       isTitle: false,
     },
@@ -462,7 +462,7 @@ const Social = () => {
       ID: "",
       "Social Dimension":
         "In this section DJSI includes a performance score on the Corporate Sustainability Monitoring with the objective of verifying the company's involvement and management of crisis situations that can have a damaging effect on reputation. The evaluation will be filled in by the responsible analyst of your industry. No additional information is required from your company.",
-      Output: "",
+      Output: "No further information is required from the company",
 
       isTitle: false,
     },
@@ -602,7 +602,7 @@ const Social = () => {
       ID: "",
       "Social Dimension":
         "In this section DJSI includes a performance score on the Corporate Sustainability Monitoring with the objective of verifying the company's involvement and management of crisis situations that can have a damaging effect on reputation. The evaluation will be filled in by the responsible analyst of your industry. No additional information is required from your company.",
-      Output: "",
+      Output: "No further information is required from the company",
 
       isTitle: false,
     },
@@ -859,7 +859,7 @@ const Social = () => {
       ID: "",
       "Social Dimension":
         "In this section DJSI includes a performance score on the Corporate Sustainability Monitoring with the objective of verifying the company's involvement and management of crisis situations that can have a damaging effect on reputation. The evaluation will be filled in by the responsible analyst of your industry. No additional information is required from your company.",
-      Output: "",
+      Output: "No further information is required from the company",
 
       isTitle: false,
     },
@@ -1038,7 +1038,7 @@ const Social = () => {
       ID: "",
       "Social Dimension":
         "In this section DJSI includes a performance score on the Corporate Sustainability Monitoring with the objective of verifying the company's involvement and management of crisis situations that can have a damaging effect on reputation. The evaluation will be filled in by the responsible analyst of your industry. No additional information is required from your company.",
-      Output: "",
+      Output: "No further information is required from the company",
 
       isTitle: false,
     },
@@ -1163,7 +1163,7 @@ const Social = () => {
       ID: "",
       "Social Dimension":
         "In this section DJSI includes a performance score on the Corporate Sustainability Monitoring with the objective of verifying the company's involvement and management of crisis situations that can have a damaging effect on reputation. The evaluation will be filled in by the responsible analyst of your industry. No additional information is required from your company.",
-      Output: "",
+      Output: "No further information is required from the company",
 
       isTitle: false,
     },
@@ -1240,7 +1240,7 @@ const Social = () => {
       ID: "",
       "Social Dimension":
         "In this section DJSI includes a performance score on the Corporate Sustainability Monitoring with the objective of verifying the company's involvement and management of crisis situations that can have a damaging effect on reputation. The evaluation will be filled in by the responsible analyst of your industry. No additional information is required from your company.",
-      Output: "",
+      Output: "No further information is required from the company",
 
       isTitle: false,
     },
@@ -1300,7 +1300,7 @@ const Social = () => {
       ID: "",
       "Social Dimension":
         "In this section DJSI includes a performance score on the Corporate Sustainability Monitoring with the objective of verifying the company's involvement and management of crisis situations that can have a damaging effect on reputation. The evaluation will be filled in by the responsible analyst of your industry. No additional information is required from your company.",
-      Output: "",
+      Output: "No further information is required from the company",
 
       isTitle: false,
     },
